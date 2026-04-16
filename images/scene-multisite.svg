@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Multi-site map with connected venues">
+  <defs>
+    <linearGradient id="m_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e2a3a"/>
+      <stop offset="1" stop-color="#2a3a4e"/>
+    </linearGradient>
+    <radialGradient id="m_glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c8a04e" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#c8a04e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="m_card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf6e6"/>
+      <stop offset="1" stop-color="#f3e3b9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- dark map background -->
+  <rect width="800" height="520" fill="url(#m_bg)"/>
+
+  <!-- grid lines -->
+  <g stroke="#c8a04e" stroke-width="1" opacity="0.1">
+    <line x1="0" y1="80" x2="800" y2="80"/>
+    <line x1="0" y1="160" x2="800" y2="160"/>
+    <line x1="0" y1="240" x2="800" y2="240"/>
+    <line x1="0" y1="320" x2="800" y2="320"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="480" x2="800" y2="480"/>
+    <line x1="100" y1="0" x2="100" y2="520"/>
+    <line x1="200" y1="0" x2="200" y2="520"/>
+    <line x1="300" y1="0" x2="300" y2="520"/>
+    <line x1="400" y1="0" x2="400" y2="520"/>
+    <line x1="500" y1="0" x2="500" y2="520"/>
+    <line x1="600" y1="0" x2="600" y2="520"/>
+    <line x1="700" y1="0" x2="700" y2="520"/>
+  </g>
+
+  <!-- abstract landmass shapes -->
+  <g fill="#c8a04e" opacity="0.12">
+    <path d="M80,120 Q180,80 260,140 Q320,200 280,260 Q200,300 120,260 Q60,200 80,120 Z"/>
+    <path d="M440,80 Q560,60 620,120 Q680,180 640,240 Q560,280 480,240 Q420,180 440,80 Z"/>
+    <path d="M140,360 Q260,340 320,400 Q360,460 300,490 Q200,510 140,470 Q100,420 140,360 Z"/>
+    <path d="M500,340 Q620,320 700,380 Q740,440 680,480 Q580,500 520,460 Q460,410 500,340 Z"/>
+  </g>
+
+  <!-- connecting dotted lines between pins -->
+  <g stroke="#c8a04e" stroke-width="2" fill="none" stroke-dasharray="4,6" opacity="0.7">
+    <path d="M180,200 Q350,140 540,160"/>
+    <path d="M540,160 Q620,280 600,420"/>
+    <path d="M600,420 Q400,460 240,420"/>
+    <path d="M240,420 Q200,300 180,200"/>
+    <path d="M180,200 Q350,320 600,420"/>
+    <path d="M540,160 Q400,300 240,420"/>
+  </g>
+
+  <!-- glows around pins -->
+  <g>
+    <circle cx="180" cy="200" r="50" fill="url(#m_glow)"/>
+    <circle cx="540" cy="160" r="50" fill="url(#m_glow)"/>
+    <circle cx="600" cy="420" r="50" fill="url(#m_glow)"/>
+    <circle cx="240" cy="420" r="50" fill="url(#m_glow)"/>
+  </g>
+
+  <!-- location pins -->
+  <g>
+    <!-- pin 1 -->
+    <g transform="translate(180,200)">
+      <path d="M0,-30 C-16,-30 -22,-16 -22,-8 C-22,8 0,28 0,28 C0,28 22,8 22,-8 C22,-16 16,-30 0,-30 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="2"/>
+      <circle cx="0" cy="-8" r="6" fill="#1e2a3a"/>
+    </g>
+    <!-- pin 2 -->
+    <g transform="translate(540,160)">
+      <path d="M0,-30 C-16,-30 -22,-16 -22,-8 C-22,8 0,28 0,28 C0,28 22,8 22,-8 C22,-16 16,-30 0,-30 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="2"/>
+      <circle cx="0" cy="-8" r="6" fill="#1e2a3a"/>
+    </g>
+    <!-- pin 3 -->
+    <g transform="translate(600,420)">
+      <path d="M0,-30 C-16,-30 -22,-16 -22,-8 C-22,8 0,28 0,28 C0,28 22,8 22,-8 C22,-16 16,-30 0,-30 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="2"/>
+      <circle cx="0" cy="-8" r="6" fill="#1e2a3a"/>
+    </g>
+    <!-- pin 4 -->
+    <g transform="translate(240,420)">
+      <path d="M0,-30 C-16,-30 -22,-16 -22,-8 C-22,8 0,28 0,28 C0,28 22,8 22,-8 C22,-16 16,-30 0,-30 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="2"/>
+      <circle cx="0" cy="-8" r="6" fill="#1e2a3a"/>
+    </g>
+    <!-- pin 5 (center) -->
+    <g transform="translate(400,300)">
+      <circle cx="0" cy="0" r="18" fill="#f6e1a2" stroke="#1e2a3a" stroke-width="2"/>
+      <circle cx="0" cy="0" r="10" fill="#c8a04e"/>
+    </g>
+  </g>
+
+  <!-- storefront cards floating near pins -->
+  <g transform="translate(80,230)">
+    <rect x="0" y="0" width="140" height="70" rx="6" fill="url(#m_card)" stroke="#1e2a3a" stroke-width="2"/>
+    <rect x="0" y="0" width="140" height="16" fill="#c8a04e"/>
+    <text x="70" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1e2a3a">QUEEN ST</text>
+    <!-- mini storefront -->
+    <rect x="20" y="28" width="100" height="36" fill="#1e2a3a"/>
+    <rect x="28" y="36" width="24" height="20" fill="#c8a04e" opacity="0.6"/>
+    <rect x="58" y="36" width="24" height="20" fill="#c8a04e" opacity="0.6"/>
+    <rect x="88" y="36" width="24" height="20" fill="#c8a04e" opacity="0.6"/>
+  </g>
+
+  <g transform="translate(580,70)">
+    <rect x="0" y="0" width="140" height="70" rx="6" fill="url(#m_card)" stroke="#1e2a3a" stroke-width="2"/>
+    <rect x="0" y="0" width="140" height="16" fill="#c8a04e"/>
+    <text x="70" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1e2a3a">HARBOUR</text>
+    <rect x="20" y="28" width="100" height="36" fill="#1e2a3a"/>
+    <circle cx="38" cy="46" r="8" fill="#c8a04e" opacity="0.7"/>
+    <circle cx="70" cy="46" r="8" fill="#c8a04e" opacity="0.7"/>
+    <circle cx="102" cy="46" r="8" fill="#c8a04e" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(640,450)">
+    <rect x="0" y="0" width="140" height="70" rx="6" fill="url(#m_card)" stroke="#1e2a3a" stroke-width="2"/>
+    <rect x="0" y="0" width="140" height="16" fill="#c8a04e"/>
+    <text x="70" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1e2a3a">SOUTHGATE</text>
+    <rect x="20" y="28" width="100" height="36" fill="#1e2a3a"/>
+    <path d="M20,28 L70,20 L120,28 Z" fill="#c83a4e"/>
+    <rect x="60" y="44" width="20" height="20" fill="#c8a04e" opacity="0.7"/>
+  </g>
+
+  <g transform="translate(60,440)">
+    <rect x="0" y="0" width="140" height="70" rx="6" fill="url(#m_card)" stroke="#1e2a3a" stroke-width="2"/>
+    <rect x="0" y="0" width="140" height="16" fill="#c8a04e"/>
+    <text x="70" y="12" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#1e2a3a">WESTSIDE</text>
+    <rect x="20" y="28" width="100" height="36" fill="#1e2a3a"/>
+    <rect x="28" y="40" width="14" height="16" fill="#c8a04e" opacity="0.7"/>
+    <rect x="48" y="36" width="14" height="20" fill="#c8a04e" opacity="0.7"/>
+    <rect x="68" y="40" width="14" height="16" fill="#c8a04e" opacity="0.7"/>
+    <rect x="88" y="36" width="14" height="20" fill="#c8a04e" opacity="0.7"/>
+  </g>
+
+  <!-- HQ label -->
+  <g transform="translate(400,340)">
+    <rect x="-40" y="0" width="80" height="24" rx="4" fill="#1e2a3a" stroke="#c8a04e" stroke-width="1.5"/>
+    <text x="0" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#c8a04e">HQ</text>
+  </g>
+</svg>

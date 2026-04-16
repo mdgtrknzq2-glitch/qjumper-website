@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Bar and drinks scene">
+  <defs>
+    <linearGradient id="b_wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e2a3a"/>
+      <stop offset="1" stop-color="#2a3a4e"/>
+    </linearGradient>
+    <linearGradient id="b_counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c8a04e"/>
+      <stop offset="1" stop-color="#8b6a30"/>
+    </linearGradient>
+    <radialGradient id="b_lamp" cx="0.5" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#ffe9a0" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="800" height="520" fill="#fdf6e6"/>
+  <rect y="0" width="800" height="300" fill="url(#b_wall)"/>
+
+  <!-- back bar shelves -->
+  <g opacity="0.7">
+    <rect x="40" y="80" width="720" height="4" fill="#c8a04e"/>
+    <rect x="40" y="160" width="720" height="4" fill="#c8a04e"/>
+    <rect x="40" y="240" width="720" height="4" fill="#c8a04e"/>
+  </g>
+
+  <!-- bottles on shelves -->
+  <g>
+    <!-- top shelf -->
+    <g>
+      <path d="M70,84 L70,60 L74,56 L74,40 L86,40 L86,56 L90,60 L90,84 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M104,84 L104,60 L108,56 L108,40 L120,40 L120,56 L124,60 L124,84 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M138,84 L138,60 L142,56 L142,40 L154,40 L154,56 L158,60 L158,84 Z" fill="#5a7b3a" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M172,84 L172,60 L176,56 L176,40 L188,40 L188,56 L192,60 L192,84 Z" fill="#f6e1a2" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M210,84 L210,55 L214,50 L214,36 L226,36 L226,50 L230,55 L230,84 Z" fill="#6f3a1f" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M244,84 L244,60 L248,56 L248,40 L260,40 L260,56 L264,60 L264,84 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M278,84 L278,60 L282,56 L282,40 L294,40 L294,56 L298,60 L298,84 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M320,84 L320,50 L324,46 L324,30 L336,30 L336,46 L340,50 L340,84 Z" fill="#1e2a3a" stroke="#c8a04e" stroke-width="1.5"/>
+      <path d="M358,84 L358,60 L362,56 L362,40 L374,40 L374,56 L378,60 L378,84 Z" fill="#5a7b3a" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M392,84 L392,60 L396,56 L396,40 L408,40 L408,56 L412,60 L412,84 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M430,84 L430,55 L434,50 L434,36 L446,36 L446,50 L450,55 L450,84 Z" fill="#6f3a1f" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M464,84 L464,60 L468,56 L468,40 L480,40 L480,56 L484,60 L484,84 Z" fill="#f6e1a2" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M498,84 L498,60 L502,56 L502,40 L514,40 L514,56 L518,60 L518,84 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M540,84 L540,50 L544,46 L544,30 L556,30 L556,46 L560,50 L560,84 Z" fill="#1e2a3a" stroke="#c8a04e" stroke-width="1.5"/>
+      <path d="M578,84 L578,60 L582,56 L582,40 L594,40 L594,56 L598,60 L598,84 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M612,84 L612,60 L616,56 L616,40 L628,40 L628,56 L632,60 L632,84 Z" fill="#5a7b3a" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M646,84 L646,55 L650,50 L650,36 L662,36 L662,50 L666,55 L666,84 Z" fill="#6f3a1f" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M680,84 L680,60 L684,56 L684,40 L696,40 L696,56 L700,60 L700,84 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M714,84 L714,60 L718,56 L718,40 L730,40 L730,56 L734,60 L734,84 Z" fill="#f6e1a2" stroke="#1e2a3a" stroke-width="1.5"/>
+    </g>
+    <!-- middle shelf -->
+    <g opacity="0.95">
+      <path d="M80,164 L80,140 L84,136 L84,120 L96,120 L96,136 L100,140 L100,164 Z" fill="#6f3a1f" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M130,164 L130,140 L134,136 L134,120 L146,120 L146,136 L150,140 L150,164 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M190,164 L190,135 L194,130 L194,112 L206,112 L206,130 L210,135 L210,164 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M250,164 L250,140 L254,136 L254,120 L266,120 L266,136 L270,140 L270,164 Z" fill="#5a7b3a" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M310,164 L310,130 L314,126 L314,110 L326,110 L326,126 L330,130 L330,164 Z" fill="#1e2a3a" stroke="#c8a04e" stroke-width="1.5"/>
+      <path d="M370,164 L370,140 L374,136 L374,120 L386,120 L386,136 L390,140 L390,164 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M430,164 L430,140 L434,136 L434,120 L446,120 L446,136 L450,140 L450,164 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M490,164 L490,135 L494,130 L494,112 L506,112 L506,130 L510,135 L510,164 Z" fill="#6f3a1f" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M550,164 L550,140 L554,136 L554,120 L566,120 L566,136 L570,140 L570,164 Z" fill="#f6e1a2" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M610,164 L610,140 L614,136 L614,120 L626,120 L626,136 L630,140 L630,164 Z" fill="#c83a4e" stroke="#1e2a3a" stroke-width="1.5"/>
+      <path d="M670,164 L670,130 L674,126 L674,110 L686,110 L686,126 L690,130 L690,164 Z" fill="#c8a04e" stroke="#1e2a3a" stroke-width="1.5"/>
+    </g>
+    <!-- lower shelf - glasses -->
+    <g fill="#ffffff" opacity="0.85" stroke="#1e2a3a" stroke-width="1">
+      <path d="M70,244 L78,204 L102,204 L110,244 Z"/>
+      <path d="M130,244 L138,204 L162,204 L170,244 Z"/>
+      <path d="M190,244 L198,204 L222,204 L230,244 Z"/>
+      <path d="M250,244 L258,204 L282,204 L290,244 Z"/>
+      <path d="M310,244 L318,204 L342,204 L350,244 Z"/>
+      <path d="M370,244 L378,204 L402,204 L410,244 Z"/>
+      <path d="M430,244 L438,204 L462,204 L470,244 Z"/>
+      <path d="M490,244 L498,204 L522,204 L530,244 Z"/>
+      <path d="M550,244 L558,204 L582,204 L590,244 Z"/>
+      <path d="M610,244 L618,204 L642,204 L650,244 Z"/>
+      <path d="M670,244 L678,204 L702,204 L710,244 Z"/>
+    </g>
+  </g>
+
+  <!-- hanging pendant -->
+  <g>
+    <line x1="200" y1="0" x2="200" y2="90" stroke="#c8a04e" stroke-width="2"/>
+    <circle cx="200" cy="100" r="14" fill="#c8a04e"/>
+    <ellipse cx="200" cy="160" rx="120" ry="80" fill="url(#b_lamp)"/>
+    <line x1="600" y1="0" x2="600" y2="90" stroke="#c8a04e" stroke-width="2"/>
+    <circle cx="600" cy="100" r="14" fill="#c8a04e"/>
+    <ellipse cx="600" cy="160" rx="120" ry="80" fill="url(#b_lamp)"/>
+  </g>
+
+  <!-- bar counter -->
+  <rect x="0" y="300" width="800" height="20" fill="url(#b_counter)"/>
+  <rect x="0" y="320" width="800" height="8" fill="#8b6a30"/>
+  <rect x="0" y="328" width="800" height="192" fill="#6f5627"/>
+
+  <!-- cocktail glass -->
+  <g transform="translate(260,230)">
+    <path d="M-40,0 L40,0 L0,55 Z" fill="#f9a34e" opacity="0.9" stroke="#1e2a3a" stroke-width="2"/>
+    <path d="M-40,0 L40,0" stroke="#1e2a3a" stroke-width="2"/>
+    <line x1="0" y1="55" x2="0" y2="90" stroke="#1e2a3a" stroke-width="2"/>
+    <ellipse cx="0" cy="92" rx="30" ry="5" fill="#1e2a3a"/>
+    <!-- olive/garnish -->
+    <circle cx="26" cy="-4" r="5" fill="#5a7b3a" stroke="#1e2a3a" stroke-width="1.5"/>
+    <line x1="26" y1="-4" x2="10" y2="30" stroke="#1e2a3a" stroke-width="1.5"/>
+  </g>
+
+  <!-- beer mug -->
+  <g transform="translate(420,240)">
+    <rect x="-30" y="0" width="60" height="80" fill="#f9c74e" stroke="#1e2a3a" stroke-width="2"/>
+    <!-- foam -->
+    <path d="M-30,0 Q-22,-12 -14,-4 Q-6,-16 2,-6 Q10,-18 18,-4 Q26,-12 30,0 Z" fill="#ffffff" stroke="#1e2a3a" stroke-width="2"/>
+    <!-- handle -->
+    <path d="M30,10 q22,4 22,30 q0,26 -22,30" fill="none" stroke="#1e2a3a" stroke-width="3"/>
+    <!-- bubbles -->
+    <circle cx="-14" cy="30" r="2" fill="#ffffff" opacity="0.6"/>
+    <circle cx="8" cy="50" r="2" fill="#ffffff" opacity="0.6"/>
+    <circle cx="-8" cy="60" r="2" fill="#ffffff" opacity="0.6"/>
+  </g>
+
+  <!-- wine bottle & glass -->
+  <g transform="translate(560,180)">
+    <!-- bottle -->
+    <path d="M-12,0 L-12,-80 L-8,-84 L-8,-110 L8,-110 L8,-84 L12,-80 L12,0 Z" fill="#5a7b3a" stroke="#1e2a3a" stroke-width="2"/>
+    <rect x="-12" y="-40" width="24" height="30" fill="#c8a04e"/>
+    <!-- glass beside -->
+    <g transform="translate(50,20)">
+      <path d="M-18,0 Q-18,30 0,36 Q18,30 18,0 Z" fill="#c83a4e" opacity="0.85" stroke="#1e2a3a" stroke-width="2"/>
+      <line x1="0" y1="36" x2="0" y2="70" stroke="#1e2a3a" stroke-width="2"/>
+      <ellipse cx="0" cy="72" rx="20" ry="4" fill="#1e2a3a"/>
+    </g>
+  </g>
+
+  <!-- barstools -->
+  <g>
+    <g transform="translate(120,420)">
+      <rect x="-20" y="0" width="40" height="8" rx="2" fill="#c8a04e"/>
+      <rect x="-4" y="8" width="8" height="60" fill="#1e2a3a"/>
+      <rect x="-18" y="68" width="36" height="6" fill="#1e2a3a"/>
+    </g>
+    <g transform="translate(250,420)">
+      <rect x="-20" y="0" width="40" height="8" rx="2" fill="#c8a04e"/>
+      <rect x="-4" y="8" width="8" height="60" fill="#1e2a3a"/>
+      <rect x="-18" y="68" width="36" height="6" fill="#1e2a3a"/>
+    </g>
+    <g transform="translate(560,420)">
+      <rect x="-20" y="0" width="40" height="8" rx="2" fill="#c8a04e"/>
+      <rect x="-4" y="8" width="8" height="60" fill="#1e2a3a"/>
+      <rect x="-18" y="68" width="36" height="6" fill="#1e2a3a"/>
+    </g>
+    <g transform="translate(690,420)">
+      <rect x="-20" y="0" width="40" height="8" rx="2" fill="#c8a04e"/>
+      <rect x="-4" y="8" width="8" height="60" fill="#1e2a3a"/>
+      <rect x="-18" y="68" width="36" height="6" fill="#1e2a3a"/>
+    </g>
+  </g>
+</svg>

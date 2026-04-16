@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-label="Stadium and event scene">
+  <defs>
+    <linearGradient id="s_sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e2a3a"/>
+      <stop offset="1" stop-color="#3a4e6a"/>
+    </linearGradient>
+    <linearGradient id="s_field" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a7e3a"/>
+      <stop offset="1" stop-color="#2e5624"/>
+    </linearGradient>
+    <radialGradient id="s_spot" cx="0.5" cy="0" r="0.8">
+      <stop offset="0" stop-color="#ffe9a0" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="800" height="520" fill="url(#s_sky)"/>
+
+  <!-- stadium bowl silhouette -->
+  <path d="M0,220 Q200,140 400,140 Q600,140 800,220 L800,340 L0,340 Z" fill="#14202e"/>
+
+  <!-- floodlights -->
+  <g>
+    <line x1="120" y1="140" x2="120" y2="30" stroke="#c8a04e" stroke-width="3"/>
+    <rect x="96" y="10" width="48" height="24" rx="3" fill="#c8a04e"/>
+    <ellipse cx="120" cy="100" rx="140" ry="80" fill="url(#s_spot)"/>
+    <line x1="680" y1="140" x2="680" y2="30" stroke="#c8a04e" stroke-width="3"/>
+    <rect x="656" y="10" width="48" height="24" rx="3" fill="#c8a04e"/>
+    <ellipse cx="680" cy="100" rx="140" ry="80" fill="url(#s_spot)"/>
+  </g>
+
+  <!-- crowd rows -->
+  <g>
+    <g fill="#2a3a4e">
+      <rect x="0" y="220" width="800" height="30"/>
+    </g>
+    <g fill="#c8a04e" opacity="0.35">
+      <circle cx="40" cy="210" r="6"/>
+      <circle cx="80" cy="212" r="6"/>
+      <circle cx="120" cy="210" r="6"/>
+      <circle cx="160" cy="214" r="6"/>
+      <circle cx="200" cy="210" r="6"/>
+      <circle cx="240" cy="212" r="6"/>
+      <circle cx="280" cy="210" r="6"/>
+      <circle cx="320" cy="214" r="6"/>
+      <circle cx="360" cy="210" r="6"/>
+      <circle cx="400" cy="212" r="6"/>
+      <circle cx="440" cy="210" r="6"/>
+      <circle cx="480" cy="214" r="6"/>
+      <circle cx="520" cy="210" r="6"/>
+      <circle cx="560" cy="212" r="6"/>
+      <circle cx="600" cy="210" r="6"/>
+      <circle cx="640" cy="214" r="6"/>
+      <circle cx="680" cy="210" r="6"/>
+      <circle cx="720" cy="212" r="6"/>
+      <circle cx="760" cy="210" r="6"/>
+    </g>
+    <g fill="#c8a04e" opacity="0.5">
+      <circle cx="20" cy="260" r="7"/>
+      <circle cx="60" cy="262" r="7"/>
+      <circle cx="100" cy="260" r="7"/>
+      <circle cx="140" cy="264" r="7"/>
+      <circle cx="180" cy="260" r="7"/>
+      <circle cx="220" cy="262" r="7"/>
+      <circle cx="260" cy="260" r="7"/>
+      <circle cx="300" cy="264" r="7"/>
+      <circle cx="340" cy="260" r="7"/>
+      <circle cx="380" cy="262" r="7"/>
+      <circle cx="420" cy="260" r="7"/>
+      <circle cx="460" cy="264" r="7"/>
+      <circle cx="500" cy="260" r="7"/>
+      <circle cx="540" cy="262" r="7"/>
+      <circle cx="580" cy="260" r="7"/>
+      <circle cx="620" cy="264" r="7"/>
+      <circle cx="660" cy="260" r="7"/>
+      <circle cx="700" cy="262" r="7"/>
+      <circle cx="740" cy="260" r="7"/>
+      <circle cx="780" cy="264" r="7"/>
+    </g>
+    <g fill="#f6e1a2">
+      <circle cx="40" cy="305" r="8"/>
+      <circle cx="85" cy="307" r="8"/>
+      <circle cx="130" cy="305" r="8"/>
+      <circle cx="175" cy="309" r="8"/>
+      <circle cx="220" cy="305" r="8"/>
+      <circle cx="265" cy="307" r="8"/>
+      <circle cx="310" cy="305" r="8"/>
+      <circle cx="355" cy="309" r="8"/>
+      <circle cx="400" cy="305" r="8"/>
+      <circle cx="445" cy="307" r="8"/>
+      <circle cx="490" cy="305" r="8"/>
+      <circle cx="535" cy="309" r="8"/>
+      <circle cx="580" cy="305" r="8"/>
+      <circle cx="625" cy="307" r="8"/>
+      <circle cx="670" cy="305" r="8"/>
+      <circle cx="715" cy="309" r="8"/>
+      <circle cx="760" cy="305" r="8"/>
+    </g>
+  </g>
+
+  <!-- field -->
+  <rect x="0" y="340" width="800" height="180" fill="url(#s_field)"/>
+  <!-- field lines -->
+  <g stroke="#ffffff" stroke-width="2" fill="none" opacity="0.7">
+    <line x1="0" y1="360" x2="800" y2="360"/>
+    <line x1="400" y1="340" x2="400" y2="520"/>
+    <circle cx="400" cy="420" r="50"/>
+    <rect x="0" y="380" width="120" height="120"/>
+    <rect x="680" y="380" width="120" height="120"/>
+  </g>
+
+  <!-- concession booth in foreground -->
+  <g transform="translate(540,360)">
+    <rect x="0" y="0" width="200" height="120" rx="4" fill="#c8a04e"/>
+    <rect x="0" y="0" width="200" height="24" fill="#1e2a3a"/>
+    <text x="100" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#c8a04e">CONCESSIONS</text>
+    <!-- window -->
+    <rect x="20" y="40" width="160" height="50" rx="3" fill="#1e2a3a"/>
+    <!-- counter items -->
+    <circle cx="50" cy="65" r="10" fill="#f6e1a2"/>
+    <circle cx="80" cy="65" r="10" fill="#c83a4e"/>
+    <circle cx="110" cy="65" r="10" fill="#f6e1a2"/>
+    <circle cx="140" cy="65" r="10" fill="#f6e1a2"/>
+    <!-- price board -->
+    <rect x="20" y="95" width="160" height="18" fill="#1e2a3a"/>
+    <line x1="40" y1="104" x2="160" y2="104" stroke="#c8a04e" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- queue silhouettes -->
+  <g fill="#1e2a3a">
+    <circle cx="60" cy="430" r="12"/>
+    <rect x="48" y="440" width="24" height="40" rx="4"/>
+    <circle cx="110" cy="432" r="12"/>
+    <rect x="98" y="442" width="24" height="40" rx="4"/>
+    <circle cx="160" cy="430" r="12"/>
+    <rect x="148" y="440" width="24" height="40" rx="4"/>
+    <circle cx="210" cy="432" r="12"/>
+    <rect x="198" y="442" width="24" height="40" rx="4"/>
+    <circle cx="260" cy="430" r="12"/>
+    <rect x="248" y="440" width="24" height="40" rx="4"/>
+    <circle cx="310" cy="432" r="12"/>
+    <rect x="298" y="442" width="24" height="40" rx="4"/>
+    <circle cx="360" cy="430" r="12"/>
+    <rect x="348" y="440" width="24" height="40" rx="4"/>
+  </g>
+</svg>

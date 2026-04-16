@@ -1,0 +1,5 @@
+.DS_Store
+*.zip
+*.webloc
+.vscode/
+node_modules/
