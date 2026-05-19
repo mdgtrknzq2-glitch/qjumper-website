@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About QJumper — Built from Real Hospitality Experience | NZ</title>
+    <meta name="description" content="QJumper was founded by Adam Brown and Shaun Squires after living the frustration of disconnected hospitality systems firsthand. A story that starts in Dunedin in 2010.">
+    <link rel="canonical" href="https://www.qjumper.com/about">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="About QJumper — Built from Real Hospitality Experience | NZ">
+    <meta property="og:description" content="QJumper was founded by Adam Brown and Shaun Squires after living the frustration of disconnected hospitality systems firsthand. Here's the story.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.qjumper.com/about">
+    <meta property="og:locale" content="en_NZ">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "QJumper",
+      "url": "https://www.qjumper.com",
+      "email": "hello@qjumper.com",
+      "description": "QJumper is a unified hospitality ordering platform built to make running hospitality businesses effortless — connecting POS, kiosk, mobile ordering, web ordering, QR table ordering, and reporting in one system.",
+      "foundingDate": "2010",
+      "areaServed": {"@type": "Country", "name": "New Zealand"},
+      "address": {"@type": "PostalAddress", "addressCountry": "NZ"},
+      "contactPoint": {"@type": "ContactPoint", "email": "hello@qjumper.com", "contactType": "customer support"},
+      "founders": [
+        {"@type": "Person", "name": "Adam Brown", "jobTitle": "Co-Founder"},
+        {"@type": "Person", "name": "Shaun Squires", "jobTitle": "Co-Founder"}
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qjumper-v4.css">
+
+    <style>
+    .nav-inner { max-width: 1240px; }
+    .nav-links li a { font-size: 0.72rem; padding: 5px 8px; }
+
+    .story-section { display: grid; grid-template-columns: 1fr 1.8fr; gap: 64px; align-items: start; padding: 72px 0; border-bottom: 1px solid var(--divider); }
+    .story-section:last-of-type { border-bottom: none; }
+    .story-label { position: sticky; top: 72px; }
+    .story-label .year { display: block; font-size: 2.4rem; font-weight: 800; color: var(--gold); letter-spacing: -0.05em; line-height: 1; margin-bottom: 10px; opacity: 0.35; }
+    .story-label h3 { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-3); line-height: 1.5; }
+    .story-content h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 700; color: var(--text); letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 20px; }
+    .story-content p { font-size: 0.95rem; color: var(--text-2); line-height: 1.8; margin-bottom: 16px; }
+    .story-content p:last-child { margin-bottom: 0; }
+    .story-content ul { margin: 18px 0; display: flex; flex-direction: column; gap: 10px; }
+    .story-content ul li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.9rem; color: var(--text-2); line-height: 1.6; }
+    .story-content ul li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 8px; opacity: 0.7; }
+
+    .story-image { margin-bottom: 28px; max-width: 360px; }
+    .story-image img { width: 100%; height: auto; display: block; border-radius: var(--radius-lg); border: 1px solid var(--divider); box-shadow: 0 8px 28px rgba(0,0,0,0.09); }
+    .story-panel-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+    .story-panel-row img { width: 100%; height: auto; display: block; border-radius: var(--radius-lg); border: 1px solid var(--divider); box-shadow: 0 8px 28px rgba(0,0,0,0.09); }
+    .story-image-full { margin-bottom: 28px; max-width: 400px; }
+    .story-image-full img { width: 100%; height: auto; display: block; border-radius: var(--radius-lg); border: 1px solid var(--divider); box-shadow: 0 8px 28px rgba(0,0,0,0.09); }
+
+    .pull-quote { border-left: 3px solid var(--gold); padding: 20px 28px; margin: 32px 0; background: var(--tile); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+    .pull-quote p { font-size: 1.1rem !important; font-weight: 600 !important; color: var(--text) !important; line-height: 1.55 !important; font-style: italic; margin: 0 !important; }
+
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .values-row-bottom { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 720px; margin: 20px auto 0; }
+    .value-card { background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--divider); padding: 32px; transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease); }
+    .value-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
+    .value-icon-wrap { width: 44px; height: 44px; border-radius: 10px; background: var(--gold-bg); border: 1px solid var(--gold-border); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .value-icon-wrap svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .value-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; margin-bottom: 10px; }
+    .value-card p { font-size: 0.84rem; color: var(--text-2); line-height: 1.7; }
+
+    .founders-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .founder-card { background: var(--white); border-radius: var(--radius-lg); border: 1px solid var(--divider); padding: 36px; }
+    .founder-card .founder-role { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; display: block; }
+    .founder-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--text); letter-spacing: -0.03em; margin-bottom: 14px; }
+    .founder-card p { font-size: 0.875rem; color: var(--text-2); line-height: 1.75; }
+
+    .story-bridge { text-align: center; padding: 64px 0; }
+    .story-bridge p { font-size: 1rem; color: var(--text-2); line-height: 1.65; max-width: 480px; margin: 0 auto 28px; }
+
+    .about-cta { text-align: center; padding: 96px 0; }
+    .about-cta h2 { font-size: clamp(1.8rem, 3.5vw, 3rem); font-weight: 700; color: var(--text); letter-spacing: -0.035em; line-height: 1.1; margin-bottom: 18px; }
+    .about-cta p { font-size: 1rem; color: var(--text-2); line-height: 1.65; margin-bottom: 36px; max-width: 420px; margin-left: auto; margin-right: auto; }
+
+    @media (max-width: 768px) {
+        .story-section { grid-template-columns: 1fr; gap: 28px; padding: 52px 0; }
+        .story-label { position: static; }
+        .story-label .year { font-size: 1.6rem; opacity: 0.25; }
+        .story-image, .story-image-full { max-width: 100%; }
+        .values-grid { grid-template-columns: 1fr 1fr; }
+        .values-row-bottom { grid-template-columns: 1fr 1fr; max-width: 100%; }
+        .founders-strip { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 540px) { .story-panel-row { grid-template-columns: 1fr; } }
+    @media (max-width: 480px) { .values-grid { grid-template-columns: 1fr; } .values-row-bottom { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pos.html">POS</a></li>
+                <li><a href="kiosks.html">Kiosks</a></li>
+                <li><a href="web-ordering.html">Web Ordering</a></li>
+                <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                <li><a href="reporting.html">Reporting</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="#contact" class="nav-cta-pill">Get a Demo</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ── Page Hero ── -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="page-hero-eyebrow">Our Story</span>
+            <h1>Built from real<br><span class="gold">hospitality frustration</span></h1>
+            <p class="page-hero-desc">QJumper didn't start as a software company. It started with a cold morning in Dunedin, a long queue for coffee, and a 15-minute break that was disappearing far too quickly.</p>
+            <div class="pill-row">
+                <a href="index.html" class="btn-pill">See our products</a>
+                <a href="#contact" class="btn-pill-outline">Get a demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── The Story ── -->
+    <section class="sec sec-white">
+        <div class="container">
+
+            <!-- 2010 -->
+            <div class="story-section reveal">
+                <div class="story-label">
+                    <span class="year">2010</span>
+                    <h3>The frustration<br>that started it all</h3>
+                </div>
+                <div class="story-content">
+                    <div class="story-image">
+                        <img src="About Us Image 1.png" alt="A cold morning in Dunedin, 2010 — Adam queueing outside a café thinking there has to be a better way to order coffee">
+                    </div>
+                    <h2>A better way to order a coffee</h2>
+                    <p>It was 2010 in Dunedin, and Adam Brown was working across the road from a busy café. Every day, he'd spend most of his short break standing outside in the cold, waiting just to order a coffee. It wasn't just uncomfortable. It felt like a waste.</p>
+                    <p>There had to be a better way. What if you could order and pay before you even left your desk?</p>
+                    <p>That thought wouldn't leave him. Smartphones were becoming part of everyday life. The technology to solve this was arriving. The idea was planted.</p>
+                </div>
+            </div>
+
+            <!-- 2014 -->
+            <div class="story-section reveal">
+                <div class="story-label">
+                    <span class="year">2014</span>
+                    <h3>The first idea<br>takes shape</h3>
+                </div>
+                <div class="story-content">
+                    <div class="story-image">
+                        <img src="About Us Image 2.png" alt="The first idea — Adam at his desk thinking 'What if I could order my coffee from my phone?' — QJumper App is born">
+                    </div>
+                    <h2>QJumper is born</h2>
+                    <p>By 2014, smartphones were part of everyday life in New Zealand but mobile ordering for hospitality didn't really exist. Adam saw the gap and built the first version of QJumper — a mobile app that let customers order and pay before they arrived, skipping the queue entirely.</p>
+                    <p>It was simple, focused, and solved a real problem. From that first version, the principle that still drives QJumper today was already clear: technology should make hospitality easier, not harder. Remove the friction. Give people their time back.</p>
+                </div>
+            </div>
+
+            <!-- 2016 -->
+            <div class="story-section reveal">
+                <div class="story-label">
+                    <span class="year">2016</span>
+                    <h3>The partnership<br>that made it real</h3>
+                </div>
+                <div class="story-content">
+                    <div class="story-image">
+                        <img src="About Us Image 3.png" alt="Meeting Shaun in 2016 — Adam and Shaun shaking hands, 'Let's build something great!'">
+                    </div>
+                    <h2>Vision and execution, in equal measure</h2>
+                    <p>Adam doesn't come from a traditional technology background. He's neuro-diverse, with a range of learning challenges. But what he has is a sharp instinct for solving real-world problems and a very low tolerance for unnecessary complexity.</p>
+                    <p>In 2016, that instinct led him to Shaun Squires. Like any great partnership, it works because of the balance. Adam brings the vision — shaped by real frustration and real experience. Shaun brings the execution — a gift for building software that actually holds up when it matters.</p>
+                    <p>Together, they set out to turn a mobile ordering app into something much bigger: a platform that could run an entire hospitality operation.</p>
+                </div>
+            </div>
+
+            <!-- 2021 -->
+            <div class="story-section reveal">
+                <div class="story-label">
+                    <span class="year">2021</span>
+                    <h3>Built in the real world,<br>not a boardroom</h3>
+                </div>
+                <div class="story-content">
+                    <div class="story-panel-row">
+                        <img src="About Us Image 5.png" alt="Adam running a busy Re:Burger restaurant in Auckland">
+                        <img src="About Us Image 4.png" alt="QJumper POS, orders, and reporting all working together in one system">
+                    </div>
+                    <h2>Running a real restaurant changes everything</h2>
+                    <p>In 2021, Adam opened the first Auckland location of Re:Burger, a nationwide restaurant franchise — with a clear goal: put QJumper to the test in a real, high-pressure hospitality environment.</p>
+                    <p>Running a busy restaurant quickly exposed exactly the friction most operators already know:</p>
+                    <ul>
+                        <li>Too many systems that don't talk to each other</li>
+                        <li>Too much time spent pulling reports together manually</li>
+                        <li>Constant staff training across disconnected tools</li>
+                        <li>Managing multiple ordering channels with no unified view</li>
+                        <li>Trying to keep service smooth when everything is happening at once</li>
+                    </ul>
+                    <p>Like many owners, Adam found himself spending more time managing systems than running the business. So he and Shaun doubled down. By bringing ordering, POS, and reporting into one connected system, QJumper removed a huge amount of the daily friction that slows hospitality teams down.</p>
+                    <p>That real-world experience is what shaped the platform QJumper is today.</p>
+                </div>
+            </div>
+
+            <!-- Today -->
+            <div class="story-section reveal">
+                <div class="story-label">
+                    <span class="year" style="font-size:1.6rem;opacity:0.35;">Today</span>
+                    <h3>Effortless hospitality,<br>in practice</h3>
+                </div>
+                <div class="story-content">
+                    <div class="story-image-full">
+                        <img src="About Us Image 6.png" alt="QJumper today — Adam Brown and Shaun Squires with the platform across kiosk, mobile, and POS">
+                    </div>
+                    <h2>QJumper today</h2>
+                    <p>QJumper is now a unified hospitality ordering platform — connecting POS, self-service kiosks, mobile ordering, web ordering, QR table ordering, and real-time reporting in one system. Built for New Zealand hospitality operators who want their venue running smoothly, not their time spent managing tools.</p>
+                    <p>From a single cold morning in Dunedin to a full platform used across New Zealand's hospitality industry, the mission has never changed: make hospitality effortless, for everyone in it.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Mid-page CTA bridge ── -->
+    <section class="sec sec-warm">
+        <div class="container">
+            <div class="story-bridge reveal">
+                <span class="sec-eyebrow">Built from experience</span>
+                <p>That real-world experience is baked into every part of QJumper. See how the platform works — or talk to Adam and Shaun directly.</p>
+                <div class="pill-row" style="justify-content:center;">
+                    <a href="index.html" class="btn-pill">See our products</a>
+                    <a href="#contact" class="btn-pill-outline">Get a demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Founders ── -->
+    <section class="sec sec-tile">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">The founders</span>
+                <h2 class="sec-title">A partnership built on vision and execution</h2>
+                <p class="sec-desc">Behind QJumper is a partnership that just works — practical thinking and robust engineering, shaped by real hospitality experience.</p>
+            </div>
+            <div class="founders-strip">
+                <div class="founder-card reveal">
+                    <span class="founder-role">Co-Founder</span>
+                    <h3>Adam Brown</h3>
+                    <p>Adam saw the problem early — cold mornings, wasted time, clunky systems. His sharp instinct for real-world problem solving, shaped by years of hands-on hospitality experience including running his own restaurant, drives QJumper's focus on simplicity above all else. Simple on the surface. Bulletproof underneath.</p>
+                </div>
+                <div class="founder-card reveal reveal-delay-1">
+                    <span class="founder-role">Co-Founder</span>
+                    <h3>Shaun Squires</h3>
+                    <p>Shaun knew how to build it. With a gift for creating software that holds up under pressure, Shaun has turned Adam's vision into a platform that operators trust at their busiest moments. Robust engineering, practical thinking, and a decade of refinement in real hospitality environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Why QJumper Exists ── -->
+    <section class="sec sec-white">
+        <div class="container-narrow">
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">Our purpose</span>
+                <h2 class="sec-title">Why QJumper exists</h2>
+            </div>
+            <div class="reveal">
+                <p style="font-size:1.05rem;color:var(--text-2);line-height:1.85;margin-bottom:20px;">Hospitality is hard enough. The systems behind it shouldn't make it harder. QJumper exists to simplify how hospitality businesses operate and sell, so owners and teams can focus on what actually matters: great service, great experiences, and running a sustainable business.</p>
+                <p style="font-size:1.05rem;color:var(--text-2);line-height:1.85;margin-bottom:20px;">Effortless Hospitality isn't about doing less. It's about removing everything that gets in the way. When ordering, POS, and reporting all work together in one system, hospitality becomes easier to run. Teams move faster. Decisions become clearer. Service becomes more consistent.</p>
+                <p style="font-size:1.05rem;color:var(--text-2);line-height:1.85;margin-bottom:20px;">But none of that matters if the system doesn't hold up when it counts. Anyone who's worked in hospitality knows the pressure of a busy Friday night service. When systems go down, everything stops. That's why QJumper is built to be bulletproof — not as a feature, but as a non-negotiable.</p>
+                <div class="pull-quote">
+                    <p>"And if something does go wrong, you won't be passed around a support queue. You'll be speaking directly to the people who built it."</p>
+                </div>
+                <p style="font-size:1.05rem;color:var(--text-2);line-height:1.85;">Adam or Shaun will pick up, understand the problem, and make it right. Because for them, this isn't just software. It's hospitality. Effortlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Values ── -->
+    <section class="sec sec-tile">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">What we stand for</span>
+                <h2 class="sec-title">Five values, every decision</h2>
+                <p class="sec-desc">These aren't brand words. They're the operating principles that guide how we build and how we support the businesses that run on QJumper.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card reveal">
+                    <div class="value-icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+                    <h3>Simple</h3>
+                    <p>Hospitality should feel natural and easy to run. Our platform simplifies daily operations so teams can work faster, think less, and focus on delivering great experiences.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>Bulletproof</h3>
+                    <p>Teams operate with certainty, knowing systems perform consistently across services, locations, and peak trading moments. When it matters most, QJumper doesn't let you down.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon-wrap"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <h3>Proven</h3>
+                    <p>Built and tested in real hospitality environments. QJumper has been shaped by operators running real businesses — not designed in a lab or a boardroom.</p>
+                </div>
+            </div>
+            <div class="values-row-bottom">
+                <div class="value-card reveal">
+                    <div class="value-icon-wrap"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                    <h3>Local</h3>
+                    <p>QJumper is a New Zealand business. We understand the local hospitality market and are here when you need us — not offshore, not automated, not hard to reach.</p>
+                </div>
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon-wrap"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+                    <h3>Future-ready</h3>
+                    <p>Businesses evolve, scale, and adapt without disruption, supported by technology designed to grow alongside them — from one venue to many.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="sec sec-warm">
+        <div class="container">
+            <div class="about-cta reveal">
+                <span class="sec-eyebrow">Get started</span>
+                <h2>Ready for effortless hospitality?</h2>
+                <p>Book a demo and see QJumper working in a venue like yours.</p>
+                <div class="pill-row" style="justify-content:center;">
+                    <a href="#contact" class="btn-pill">Get a Demo</a>
+                    <a href="index.html" class="btn-pill-outline">Explore products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+            <div class="contact-header reveal">
+                <span class="sec-eyebrow">Get started</span>
+                <h2>Ready for effortless hospitality?</h2>
+                <p>Book a demo and see QJumper working in a venue like yours. No obligation.</p>
+            </div>
+            <div class="contact-form-wrap reveal">
+                <div class="form-row">
+                    <div class="form-field"><label>First name</label><input type="text" placeholder="Jane"></div>
+                    <div class="form-field"><label>Last name</label><input type="text" placeholder="Smith"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field"><label>Email</label><input type="email" placeholder="jane@venue.co.nz"></div>
+                    <div class="form-field"><label>Phone</label><input type="tel" placeholder="+64 21 000 0000"></div>
+                </div>
+                <div class="form-field"><label>Venue / Business name</label><input type="text" placeholder="Your venue name"></div>
+                <div class="form-field">
+                    <label>Venue type</label>
+                    <select>
+                        <option value="">Select your venue type...</option>
+                        <option>Quick Service Restaurant</option>
+                        <option>Café</option>
+                        <option>Multi-site / Franchise Group</option>
+                        <option>Stadium / Events Venue</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-field"><label>Message (optional)</label><textarea placeholder="Tell us about your venue..."></textarea></div>
+                <button class="btn-pill" type="button">Book a demo</button>
+                <p class="form-footnote">We'll be in touch within one business day. No obligation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></div>
+                    <p>Making hospitality effortless so owners and teams can focus on great service, happy customers, and sustainable growth.</p>
+                    <a href="mailto:hello@qjumper.com" class="footer-email">hello@qjumper.com</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="pos.html">Point of Sale</a></li>
+                        <li><a href="kiosks.html">Kiosks</a></li>
+                        <li><a href="web-ordering.html">Web Ordering</a></li>
+                        <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                        <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                        <li><a href="reporting.html">Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="platform.html">Platform Overview</a></li>
+                        <li><a href="hospitality.html">Hospitality Types</a></li>
+                        <li><a href="bundles.html">Bundles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get started</h4>
+                    <ul>
+                        <li><a href="#contact">Get a Demo</a></li>
+                        <li><a href="mailto:hello@qjumper.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 QJumper. All rights reserved. New Zealand.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); });
+    document.getElementById('hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.reveal').forEach(el => {
+        new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.07 }).observe(el);
+    });
+    </script>
+</body>
+</html>

@@ -1,470 +1,878 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QJumper — Effortless Hospitality</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>QJumper | Hospitality Ordering Platform — POS, Kiosks, Web & Mobile | New Zealand</title>
+    <meta name="description" content="QJumper unifies POS, kiosks, web ordering, QR table ordering and mobile into one platform. Built for NZ hospitality. Go live in 5 days. No commission.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="QJumper">
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
+    <link rel="canonical" href="https://www.qjumper.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="QJumper | Hospitality Ordering Platform — POS, Kiosks, Web & Mobile | NZ">
+    <meta property="og:description" content="One platform connecting every ordering channel — POS, kiosk, web, QR, and mobile — so hospitality teams can focus on great service, not managing systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.qjumper.com/">
+    <meta property="og:locale" content="en_NZ">
+    <meta property="og:image" content="https://www.qjumper.com/hero-dining.jpg">
+    <meta property="og:image:width" content="1400">
+    <meta property="og:image:height" content="560">
+    <meta property="og:site_name" content="QJumper">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QJumper | Hospitality Ordering Platform | New Zealand">
+    <meta name="twitter:description" content="POS, kiosks, web ordering, QR table ordering and mobile — unified in one platform. Built for NZ hospitality.">
+    <meta name="twitter:image" content="https://www.qjumper.com/hero-dining.jpg">
+
+    <!-- Preload hero image for LCP performance -->
+    <link rel="preload" as="image" href="hero-dining.jpg.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "QJumper",
+      "url": "https://www.qjumper.com",
+      "logo": "https://www.qjumper.com/Qjumper Logo.jpeg",
+      "description": "QJumper is a New Zealand hospitality technology company providing a unified ordering platform that connects POS, self-service kiosks, web ordering, QR table ordering, and mobile ordering apps into a single integrated system.",
+      "email": "hello@qjumper.com",
+      "foundingDate": "2010",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NZ",
+        "addressLocality": "New Zealand"
+      },
+      "areaServed": {"@type": "Country", "name": "New Zealand"},
+      "contactPoint": {"@type": "ContactPoint", "email": "hello@qjumper.com", "contactType": "sales", "areaServed": "NZ"},
+      "knowsAbout": ["Hospitality technology","Restaurant POS systems","Self-service kiosk ordering","Web ordering platforms","QR code table ordering","Mobile ordering apps","Hospitality reporting and analytics"]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "QJumper",
+      "url": "https://www.qjumper.com",
+      "description": "QJumper — unified hospitality ordering platform for New Zealand restaurants, cafés, and multi-site groups."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "QJumper Hospitality Ordering Platform",
+      "url": "https://www.qjumper.com",
+      "description": "QJumper is a unified hospitality ordering platform connecting POS, self-service kiosks, web ordering, QR table ordering, mobile ordering, and real-time reporting — all in one system. Built for New Zealand restaurants, cafés, and multi-site groups. Go live in an average of 5 days. No commission on web orders.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "audience": {"@type": "Audience", "audienceType": "Hospitality operators, restaurant owners, café owners, multi-site venue groups, franchise operators"},
+      "offers": {"@type": "Offer", "priceCurrency": "NZD", "availability": "https://schema.org/InStock"},
+      "provider": {
+        "@type": "Organization",
+        "name": "QJumper",
+        "url": "https://www.qjumper.com",
+        "address": {"@type": "PostalAddress", "addressCountry": "NZ"},
+        "areaServed": {"@type": "Country", "name": "New Zealand"}
+      },
+      "featureList": [
+        "Hospitality POS (Point of Sale)",
+        "Self-service kiosk ordering",
+        "Web ordering with 0% commission",
+        "QR code table ordering",
+        "Mobile ordering app with loyalty",
+        "Real-time reporting across all channels",
+        "Multi-site and franchise management",
+        "Unified menu management",
+        "Go live in 5 days average"
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is QJumper?",
+          "acceptedAnswer": {"@type": "Answer", "text": "QJumper is a unified hospitality ordering platform that connects POS, self-service kiosks, web ordering, QR table ordering, and mobile ordering into a single system. It is designed for New Zealand restaurants, cafés, and multi-site groups who want simpler operations and better performance across every ordering channel."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which ordering channels does QJumper support?",
+          "acceptedAnswer": {"@type": "Answer", "text": "QJumper supports five ordering channels: Point of Sale (POS), self-service kiosks, web ordering, QR code table ordering, and mobile ordering (branded app). All channels feed into the same system with unified reporting and menu management."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to use all of QJumper's products?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. Each QJumper product can be deployed on a standalone basis. Many operators start with one solution — often POS or kiosks — and add channels over time as their business grows."}
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can QJumper be set up?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Most venues are live within five days on average. You provide your menu and branding; we configure the platform, set up payments, and have you ready to go."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is QJumper a New Zealand business?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. QJumper is built and supported in New Zealand. When you need help, you speak directly to the people who built the platform — not an offshore support queue."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does QJumper charge commission on web orders?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. QJumper charges zero commission on web orders. Unlike third-party delivery platforms that take a percentage of every transaction, QJumper's web ordering keeps all the margin in your business. You pay a platform fee, not a cut of your revenue."}
+        },
+        {
+          "@type": "Question",
+          "name": "What types of hospitality venues does QJumper support?",
+          "acceptedAnswer": {"@type": "Answer", "text": "QJumper is used across quick service restaurants, cafés, multi-site and franchise groups, stadiums and events venues, and institutional hospitality operations. The platform is flexible enough to work for a single-venue café and complex enough to scale across dozens of locations."}
+        },
+        {
+          "@type": "Question",
+          "name": "How is QJumper different from other hospitality POS systems?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Most POS systems are exactly that — just a POS. QJumper is a unified ordering platform where POS is one of six connected channels alongside kiosks, web ordering, QR table ordering, mobile ordering, and reporting. Updating your menu pushes it to every channel at once. Reporting captures every transaction across every channel automatically."}
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qjumper-v4.css">
+
+    <style>
+    /* V2 nav — wider container for more links */
+    .nav-inner { max-width: 1240px; }
+    .nav-links li a { font-size: 0.72rem; padding: 5px 8px; }
+
+    /* ── Hero ── */
+    .hero {
+        background: var(--tile);
+        padding: 120px 0 80px;
+        text-align: center;
+        border-bottom: 1px solid var(--divider);
+        position: relative;
+        overflow: hidden;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        width: 700px; height: 700px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(184,137,58,0.07) 0%, transparent 65%);
+        top: -200px; right: -150px;
+        pointer-events: none;
+    }
+    .hero-eyebrow {
+        display: inline-block;
+        font-size: 0.7rem; font-weight: 600;
+        letter-spacing: 0.14em; text-transform: uppercase;
+        color: var(--gold); margin-bottom: 20px;
+    }
+    .hero h1 {
+        font-size: clamp(2.6rem, 6.5vw, 5.5rem);
+        font-weight: 700; color: var(--text);
+        letter-spacing: -0.04em; line-height: 1.05;
+        margin-bottom: 22px;
+    }
+    .hero h1 .gold { color: var(--gold); }
+    .hero-sub {
+        font-size: clamp(1rem, 1.8vw, 1.18rem);
+        color: var(--text-2); max-width: 640px;
+        margin: 0 auto 36px; line-height: 1.65;
+    }
+    .hero-visual {
+        margin: 52px auto 0;
+        max-width: 960px;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: 0 32px 80px rgba(0,0,0,0.14), 0 0 0 1px var(--divider);
+        position: relative;
+    }
+    .hero-visual img {
+        width: 100%;
+        height: 460px;
+        object-fit: cover;
+        object-position: center 40%;
+        display: block;
+    }
+    .hero-visual-caption {
+        position: absolute;
+        bottom: 0; left: 0; right: 0;
+        padding: 48px 24px 20px;
+        background: linear-gradient(to top, rgba(0,0,0,0.42) 0%, transparent 100%);
+        display: flex; align-items: flex-end; justify-content: flex-end;
+    }
+    .hero-visual-tag {
+        font-size: 0.68rem; font-weight: 600;
+        letter-spacing: 0.08em; text-transform: uppercase;
+        color: rgba(255,255,255,0.72);
+        background: rgba(255,255,255,0.1);
+        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 100px; padding: 4px 12px;
+    }
+
+    /* ── Stats bar footnote ── */
+    .stats-footnote {
+        text-align: center; font-size: 0.72rem; color: var(--text-3);
+        padding: 9px 24px 14px;
+        background: var(--white); border-bottom: 1px solid var(--divider);
+    }
+
+    /* ── Products grid ── */
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    .product-tile {
+        background: var(--white);
+        border: 1px solid var(--divider);
+        border-radius: var(--radius-lg);
+        padding: 28px 24px;
+        transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+        text-decoration: none;
+        display: block;
+    }
+    .product-tile:hover {
+        box-shadow: 0 10px 32px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+        border-color: var(--gold-border);
+    }
+    .prod-icon-wrap {
+        width: 48px; height: 48px;
+        border-radius: 12px;
+        background: var(--gold-bg);
+        border: 1px solid var(--gold-border);
+        display: flex; align-items: center; justify-content: center;
+        margin-bottom: 16px;
+    }
+    .prod-icon {
+        width: 22px; height: 22px;
+        stroke: var(--gold); fill: none;
+        stroke-width: 1.6;
+        stroke-linecap: round; stroke-linejoin: round;
+    }
+    .product-tile h3 {
+        font-size: 0.95rem; font-weight: 700;
+        color: var(--text); margin-bottom: 7px; letter-spacing: -0.01em;
+    }
+    .product-tile p {
+        font-size: 0.82rem; color: var(--text-2); line-height: 1.6; margin-bottom: 14px;
+    }
+    .tile-link {
+        font-size: 0.78rem; font-weight: 600; color: var(--gold);
+        display: inline-flex; align-items: center; gap: 4px;
+    }
+
+    /* ── Problem / solution ── */
+    .problem-solution-grid {
+        display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;
+    }
+    .problem-col h2, .solution-col h2 {
+        font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+        font-weight: 700; color: var(--text);
+        letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 20px;
+    }
+    .problem-col p, .solution-col p {
+        font-size: 0.95rem; color: var(--text-2); line-height: 1.75; margin-bottom: 16px;
+    }
+    .solution-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
+    .solution-list-item {
+        display: flex; align-items: center; gap: 10px;
+        font-size: 0.875rem; color: var(--text); font-weight: 500;
+    }
+
+    /* ── Testimonial ── */
+    .testimonial-section {
+        background: var(--tile-warm); padding: 72px 0;
+        border-bottom: 1px solid var(--divider);
+    }
+    .testimonial-wrap { max-width: 740px; margin: 0 auto; text-align: center; padding: 0 24px; }
+    .testimonial-quote {
+        font-size: clamp(1.05rem, 1.8vw, 1.25rem); font-style: italic;
+        color: var(--text); line-height: 1.7; margin-bottom: 24px;
+        font-weight: 400; position: relative; padding: 0 24px;
+    }
+    .testimonial-quote::before {
+        content: '\201C'; font-size: 4rem; line-height: 1;
+        color: var(--gold); opacity: 0.3;
+        position: absolute; left: -8px; top: -10px; font-style: normal;
+    }
+    .testimonial-source { font-size: 0.82rem; color: var(--text-3); font-weight: 500; letter-spacing: 0.04em; }
+
+    /* ── Benefits grid ── */
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .benefit-card {
+        background: var(--white); border-radius: var(--radius-lg);
+        padding: 36px 28px; border: 1px solid var(--divider);
+        transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
+    }
+    .benefit-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .benefit-icon {
+        width: 44px; height: 44px; border-radius: 10px;
+        background: var(--gold-bg); border: 1px solid var(--gold-border);
+        display: flex; align-items: center; justify-content: center; margin-bottom: 16px;
+    }
+    .benefit-icon svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .benefit-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 10px; letter-spacing: -0.01em; }
+    .benefit-card p { font-size: 0.875rem; color: var(--text-2); line-height: 1.65; margin-bottom: 14px; }
+    .benefit-checks { display: flex; flex-direction: column; gap: 7px; }
+    .benefit-check { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; color: var(--text-2); }
+    .benefit-check-dot {
+        width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0;
+        background: var(--gold-bg); border: 1px solid var(--gold-border);
+        display: flex; align-items: center; justify-content: center;
+    }
+    .benefit-check-dot::after {
+        content: ''; display: block; width: 6px; height: 4px;
+        border-left: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold);
+        transform: rotate(-45deg) translateY(-1px);
+    }
+
+    /* ── Data strip ── */
+    .data-strip { background: var(--tile-warm); border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); }
+    .data-strip-header { text-align: center; padding: 52px 24px 40px; }
+    .data-strip-header h2 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 700; color: var(--text); letter-spacing: -0.03em; line-height: 1.15; margin-top: 10px; }
+    .data-strip-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--divider); }
+    .data-stat-item { padding: 36px 28px; text-align: center; border-right: 1px solid var(--divider); }
+    .data-stat-item:last-child { border-right: none; }
+    .data-stat-num { font-size: 2rem; font-weight: 800; color: var(--gold); letter-spacing: -0.04em; line-height: 1; margin-bottom: 10px; }
+    .data-stat-label { font-size: 0.82rem; color: var(--text-2); line-height: 1.5; }
+    .data-stat-source { font-size: 0.68rem; color: var(--text-3); margin-top: 6px; font-style: italic; }
+    .data-stat-source a { color: var(--text-3); text-decoration: underline; }
+
+    /* ── Differentiators ── */
+    .diff-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; border: 1px solid var(--divider); border-radius: var(--radius-lg); overflow: hidden; }
+    .diff-item { background: var(--white); padding: 40px 36px; border-bottom: 1px solid var(--divider); border-right: 1px solid var(--divider); }
+    .diff-item:nth-child(2n) { border-right: none; }
+    .diff-item:nth-last-child(-n+2) { border-bottom: none; }
+    .diff-item h3 { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 10px; letter-spacing: -0.01em; }
+    .diff-item p { font-size: 0.875rem; color: var(--text-2); line-height: 1.7; }
+    .diff-num { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+
+    /* ── FAQ ── */
+    .faq-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--divider); border-radius: var(--radius-lg); overflow: hidden; }
+    .faq-item { border-bottom: 1px solid var(--divider); background: var(--white); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { width: 100%; text-align: left; padding: 20px 28px; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 0.95rem; font-weight: 600; color: var(--text); font-family: inherit; transition: background 0.15s; }
+    .faq-q:hover { background: var(--tile); }
+    .faq-icon { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--gold-bg); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.1rem; font-weight: 300; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s var(--ease); }
+    .faq-item.open .faq-a { max-height: 280px; }
+    .faq-a-inner { padding: 0 28px 20px; font-size: 0.9rem; color: var(--text-2); line-height: 1.7; }
+    .faq-a-inner a { color: var(--gold); }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+        .problem-solution-grid { grid-template-columns: 1fr; gap: 48px; }
+        .benefits-grid { grid-template-columns: 1fr 1fr; }
+        .diff-grid { grid-template-columns: 1fr; }
+        .diff-item { border-right: none; }
+        .diff-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--divider); }
+        .diff-item:last-child { border-bottom: none; }
+        .products-grid { grid-template-columns: 1fr 1fr; }
+        .data-strip-grid { grid-template-columns: 1fr 1fr; }
+        .data-stat-item:nth-child(2) { border-right: none; }
+        .data-stat-item:nth-child(3) { border-right: 1px solid var(--divider); border-top: 1px solid var(--divider); }
+        .data-stat-item:nth-child(4) { border-top: 1px solid var(--divider); border-right: none; }
+    }
+    @media (max-width: 600px) {
+        .hero { padding: 100px 0 60px; }
+        .hero-visual img { height: 220px; }
+        .benefits-grid { grid-template-columns: 1fr; }
+        .products-grid { grid-template-columns: 1fr; }
+        .data-strip-grid { grid-template-columns: 1fr; }
+        .data-stat-item { border-right: none !important; border-top: 1px solid var(--divider); }
+        .data-stat-item:first-child { border-top: none; }
+    }
+    </style>
 </head>
 <body>
 
-    <!-- ==================== NAVIGATION ==================== -->
+    <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="Qjumper Logo.jpeg" alt="QJumper">
+            </a>
             <ul class="nav-links" id="navLinks">
-                <li class="nav-logo-item">
-                    <a href="index.html" class="nav-logo">
-                        <img src="IMG_3941.jpeg" alt="QJumper Logo">
-                    </a>
-                </li>
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="platform.html">Platform</a></li>
-                <li><a href="solutions.html">Solutions</a></li>
-                <li><a href="hospitality.html">Hospitality</a></li>
-                <li><a href="bundles.html">Bundles</a></li>
-                <li><a href="#contact" class="btn-gold nav-cta">Book a Demo</a></li>
+                <li><a href="pos.html">POS</a></li>
+                <li><a href="kiosks.html">Kiosks</a></li>
+                <li><a href="web-ordering.html">Web Ordering</a></li>
+                <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                <li><a href="reporting.html">Reporting</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" class="nav-cta-pill">Get a Demo</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- ==================== HERO ==================== -->
+    <!-- ── Hero ── -->
     <section class="hero" id="home">
-        <div class="hero-bg" id="heroBg"></div>
-        <div class="container">
-            <div class="hero-content reveal">
-                <h1>Effortless<br><span>Hospitality</span></h1>
-                <p>One unified platform delivering better customer experiences.</p>
-                <div class="hero-actions">
-                    <a href="#contact" class="btn-gold">
-                        Book a Demo
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                    </a>
-                    <a href="#platform" class="btn-outline">Learn More</a>
-                </div>
-                <img src="IMG_3941.jpeg" alt="QJumper" class="hero-logo hero-logo-below">
+        <div class="container" style="position:relative;z-index:1;">
+            <span class="hero-eyebrow reveal">Every ordering channel · One platform · Built in New Zealand</span>
+            <h1 class="reveal reveal-delay-1">The ordering platform<br>built for <span class="gold">hospitality</span></h1>
+            <p class="hero-sub reveal reveal-delay-2">POS, kiosks, web ordering, QR table ordering, and mobile — all connected in one platform. One menu to manage. One system to learn. Every channel, unified.</p>
+            <div class="pill-row reveal reveal-delay-3">
+                <a href="#contact" class="btn-pill">Book a free demo</a>
+                <a href="#products" class="btn-pill-outline">Explore all products</a>
             </div>
-        </div>
-    </section>
-
-    <!-- ==================== PROBLEM / SOLUTION ==================== -->
-    <section class="section problem-solution" id="problem-solution">
-        <div class="container">
-            <div class="reveal">
-                <h2 class="section-heading section-heading-center">Hospitality is hard enough without fighting your systems</h2>
-            </div>
-            <div class="ps-grid" style="margin-top: 48px;">
-                <div class="ps-problem reveal">
-                    <h3>The Problem</h3>
-                    <p>Restaurants and hospitality venues rely on multiple tools to run their business: POS, ordering apps, kiosks, reporting systems, and delivery integrations. When these tools don't work together, staff training becomes harder, operations slow down, and owners spend more time managing systems than running their business.</p>
-                </div>
-                <div class="ps-solution reveal reveal-delay-2">
-                    <h3>The Solution</h3>
-                    <p class="ps-bold">One platform. Everything working together.</p>
-                    <p>QJumper connects every part of your hospitality operation into a single platform. Orders, payments, reporting, and customer interactions flow through one unified system.</p>
-                </div>
-            </div>
-            <div class="ps-tagline reveal">Simple to launch. Smart to run. Solid under pressure.</div>
-            <div class="benefit-grid">
-                <div class="benefit-card reveal">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    </div>
-                    <h4>Faster staff training</h4>
-                </div>
-                <div class="benefit-card reveal reveal-delay-1">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
-                    </div>
-                    <h4>Simplified operations</h4>
-                </div>
-                <div class="benefit-card reveal reveal-delay-2">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                    </div>
-                    <h4>Clear business insights</h4>
-                </div>
-                <div class="benefit-card reveal reveal-delay-3">
-                    <div class="benefit-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-                    </div>
-                    <h4>Better customer experiences</h4>
+            <p class="reveal reveal-delay-3" style="font-size:0.74rem;color:var(--text-3);margin-top:18px;letter-spacing:0.02em;">Built and supported in New Zealand &nbsp;·&nbsp; Go live in as little as 5 days &nbsp;·&nbsp; No lock-in</p>
+            <div class="hero-visual reveal reveal-delay-3">
+                <img
+                    src="hero-dining.jpg.png"
+                    alt="Guests enjoying food and drinks at a busy hospitality venue"
+                    loading="eager"
+                >
+                <div class="hero-visual-caption">
+                    <span class="hero-visual-tag">Effortless hospitality, in practice</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== KEY BENEFITS ==================== -->
-    <section class="section" id="key-benefits">
+    <!-- ── Stats bar ── -->
+    <div class="stats-bar reveal">
+        <div class="stats-inner container">
+            <div class="stat-item"><span class="stat-num">6</span><span class="stat-label">Ordering products</span></div>
+            <div class="stat-item"><span class="stat-num">1</span><span class="stat-label">Unified platform</span></div>
+            <div class="stat-item"><span class="stat-num">5*</span><span class="stat-label">Days to go live</span></div>
+            <div class="stat-item"><span class="stat-num">NZ</span><span class="stat-label">Built &amp; supported locally</span></div>
+        </div>
+    </div>
+    <p class="stats-footnote">* Based on average go-live times — actual times may vary by venue size and configuration.</p>
+
+    <!-- ── Problem / Solution ── -->
+    <section class="sec sec-tile">
         <div class="container">
-            <div class="reveal" style="text-align: center;">
-                <h2 class="section-heading section-heading-center">Why QJumper</h2>
-                <p class="section-subheading section-subheading-center" style="margin-top: 16px;">Designed to make every service run smoother, faster, and more profitably.</p>
-            </div>
-            <div class="key-benefits-grid">
-                <div class="kb-card reveal">
-                    <div class="kb-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                    </div>
-                    <h3>Built for "busy"</h3>
-                    <ul>
-                        <li>Handles high transaction volumes</li>
-                        <li>Reliable performance during peak service</li>
-                        <li>Designed for multi-site operations</li>
-                    </ul>
+            <div class="problem-solution-grid">
+                <div class="problem-col reveal">
+                    <span class="sec-eyebrow">The challenge</span>
+                    <h2>Hospitality is hard enough without fighting your systems</h2>
+                    <p>Most venues run their ordering channels through separate tools — a POS here, a kiosk app there, a web ordering platform somewhere else. Each needs its own login, menu update, and end-of-day report.</p>
+                    <p>The result: staff doing double the work, managers getting half the picture, and a customer experience that's inconsistent across every touchpoint.</p>
                 </div>
-                <div class="kb-card reveal reveal-delay-1">
-                    <div class="kb-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                <div class="solution-col reveal reveal-delay-1">
+                    <span class="sec-eyebrow">The solution</span>
+                    <h2>One platform. Every channel. Zero patchwork.</h2>
+                    <p>QJumper connects every ordering channel — POS, kiosk, web, QR, and mobile — into one unified system. Update your menu once and it flows everywhere. Reporting captures every channel automatically.</p>
+                    <div class="solution-list">
+                        <div class="solution-list-item"><div class="check-dot"></div>One menu to manage across all channels</div>
+                        <div class="solution-list-item"><div class="check-dot"></div>Faster staff training — one system to learn</div>
+                        <div class="solution-list-item"><div class="check-dot"></div>Reporting that captures every channel automatically</div>
+                        <div class="solution-list-item"><div class="check-dot"></div>Consistent customer experience everywhere</div>
                     </div>
-                    <h3>Faster service, happier customers</h3>
-                    <ul>
-                        <li>Shorter queues during busy periods</li>
-                        <li>Faster ordering and payment</li>
-                        <li>Smooth customer experiences</li>
-                    </ul>
-                </div>
-                <div class="kb-card reveal reveal-delay-2">
-                    <div class="kb-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-                    </div>
-                    <h3>Higher order values</h3>
-                    <ul>
-                        <li>Smart upselling prompts</li>
-                        <li>Menu visuals that drive appetite</li>
-                        <li>Easy add-ons and extras</li>
-                    </ul>
+                    <a href="#products" class="apple-link">Explore our products ›</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== PLATFORM ==================== -->
-    <section class="section platform" id="platform">
+    <!-- ── Testimonial ── -->
+    <section class="testimonial-section reveal">
+        <div class="testimonial-wrap">
+            <p class="testimonial-quote">Providing diners with a first-class experience — from the moment they walk in the door, to how they order, to the food and drink they consume — should be the number one priority. QJumper's unified platform works simply and reliably and gives me the headspace to focus on making that true.</p>
+            <span class="testimonial-source">Adam Brown &nbsp;·&nbsp; Re:Burger Franchise Owner</span>
+        </div>
+    </section>
+
+    <!-- ── Products overview ── -->
+    <section class="sec sec-white" id="products">
         <div class="container">
-            <div class="reveal" style="text-align: center;">
-                <h2 class="section-heading section-heading-center">The Platform Behind Effortless Hospitality</h2>
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">QJumper products</span>
+                <h2 class="sec-title">Every way your customers want to order — handled</h2>
+                <p class="sec-desc">Start with the product your business needs most. Add more as you grow. Everything connects.</p>
             </div>
-            <p class="platform-intro reveal">QJumper is designed to simplify hospitality operations. Instead of juggling multiple systems, venues run everything through one unified platform.</p>
-            <div class="platform-grid">
-                <div class="platform-card reveal">
-                    <div class="platform-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div class="products-grid">
+
+                <a href="pos.html" class="product-tile reveal">
+                    <div class="prod-icon-wrap">
+                        <svg class="prod-icon" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
-                    <h3>Unified Operations</h3>
-                    <p>All orders, payments, reporting, and insights come together in one place. No more switching between disconnected tools.</p>
-                </div>
-                <div class="platform-card reveal reveal-delay-1">
-                    <div class="platform-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                    </div>
-                    <h3>Operational Clarity</h3>
-                    <p>Managers gain a real-time view of performance across every channel. Make informed decisions, quickly.</p>
-                </div>
-                <div class="platform-card reveal reveal-delay-2">
-                    <div class="platform-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                    </div>
-                    <h3>Scalable Architecture</h3>
-                    <p>Start with the tools you need and expand as your business grows. QJumper scales with you, from one site to many.</p>
-                </div>
-                <div class="platform-card reveal reveal-delay-3">
-                    <div class="platform-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                    </div>
-                    <h3>Integrations</h3>
-                    <p>Connect with major delivery platforms and hospitality tools. QJumper plays well with the systems you already use.</p>
-                </div>
-            </div>
-            <div class="platform-cta reveal">
-                <a href="#contact" class="btn-gold">
-                    Book a Live Demo
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    <h3>Point of Sale</h3>
+                    <p>The operational core of your venue. Fast, reliable, and connected to every ordering channel in real time.</p>
+                    <span class="tile-link">Learn more ›</span>
                 </a>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== SOLUTIONS ==================== -->
-    <section class="section" id="solutions">
-        <div class="container">
-            <div class="reveal" style="text-align: center;">
-                <h2 class="section-heading section-heading-center">The Solution Range for Effortless Hospitality</h2>
-                <p class="section-subheading section-subheading-center" style="margin-top: 16px;">Use just one, or bundle for greater benefits.</p>
-            </div>
-            <div class="solutions-grid">
-                <div class="solution-card reveal">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+                <a href="kiosks.html" class="product-tile reveal reveal-delay-1">
+                    <div class="prod-icon-wrap">
+                        <svg class="prod-icon" viewBox="0 0 24 24"><rect x="7" y="1" width="10" height="18" rx="2"/><line x1="9" y1="22" x2="15" y2="22"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="9" y1="5" x2="15" y2="5"/></svg>
                     </div>
-                    <h3>Kiosk</h3>
-                    <p>Self-service ordering that reduces queues and increases order value. Let customers browse, customise, and pay at their own pace.</p>
-                </div>
-                <div class="solution-card reveal reveal-delay-1">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-                    </div>
-                    <h3>Mobile App</h3>
-                    <p>Custom branded app for direct customer relationships. Build loyalty, drive repeat visits, and own your customer experience.</p>
-                </div>
-                <div class="solution-card reveal reveal-delay-2">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <h3>Self-Service Kiosks</h3>
+                    <p>Reduce wait times, lift average order values by 10–30%, and let your team focus on food and service — not the queue.</p>
+                    <span class="tile-link">Learn more ›</span>
+                </a>
+
+                <a href="web-ordering.html" class="product-tile reveal reveal-delay-2">
+                    <div class="prod-icon-wrap">
+                        <svg class="prod-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     </div>
                     <h3>Web Ordering</h3>
-                    <p>Capture online orders through your own channels. No commissions, no middlemen, full control over the customer journey.</p>
-                </div>
-                <div class="solution-card reveal reveal-delay-1">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    <p>Bring online orders directly into your system. Keep the margin. Skip the commission. Branded to match your business.</p>
+                    <span class="tile-link">Learn more ›</span>
+                </a>
+
+                <a href="qr-ordering.html" class="product-tile reveal">
+                    <div class="prod-icon-wrap">
+                        <svg class="prod-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM17 17h3M20 14v6"/></svg>
                     </div>
-                    <h3>Table Ordering (QR)</h3>
-                    <p>Faster ordering without queues using QR codes. Customers scan, order, and pay from their table. Simple and efficient.</p>
-                </div>
-                <div class="solution-card reveal reveal-delay-2">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/><path d="M2 20h20"/></svg>
+                    <h3>QR Code Ordering</h3>
+                    <p>Customers scan, browse, and pay from their own phone. Faster table turns, fewer errors, and staff free to focus on hospitality.</p>
+                    <span class="tile-link">Learn more ›</span>
+                </a>
+
+                <a href="mobile-ordering.html" class="product-tile reveal reveal-delay-1">
+                    <div class="prod-icon-wrap">
+                        <svg class="prod-icon" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="18" x2="15" y2="18"/><line x1="12" y1="6" x2="12" y2="10"/><line x1="10" y1="8" x2="14" y2="8"/></svg>
                     </div>
-                    <h3>Reports &amp; Dashboards</h3>
-                    <p>Operational data at your fingertips. Real-time sales, order trends, and performance metrics to help you make smarter decisions.</p>
-                </div>
-                <div class="solution-card reveal reveal-delay-3">
-                    <div class="solution-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><path d="M7 15h3"/></svg>
+                    <h3>Mobile Ordering</h3>
+                    <p>A branded mobile app that builds direct relationships with your customers — loyalty, push notifications, and repeat orders.</p>
+                    <span class="tile-link">Learn more ›</span>
+                </a>
+
+                <a href="reporting.html" class="product-tile reveal reveal-delay-2">
+                    <div class="prod-icon-wrap">
+                        <svg class="prod-icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
                     </div>
-                    <h3>POS</h3>
-                    <p>Purpose-built point of sale for hospitality. Fast, reliable at peak, and fully connected to every other QJumper channel in real time.</p>
-                </div>
+                    <h3>Reporting</h3>
+                    <p>Real-time visibility across every channel and location. The data you need to make decisions, without the manual reconciliation.</p>
+                    <span class="tile-link">Learn more ›</span>
+                </a>
+
             </div>
         </div>
     </section>
 
-    <!-- ==================== HOSPITALITY TYPES ==================== -->
-    <section class="section hospitality" id="hospitality">
+    <!-- ── Why QJumper ── -->
+    <section class="sec sec-tile">
         <div class="container">
-            <div class="reveal" style="text-align: center;">
-                <h2 class="section-heading section-heading-center">Built for a Range of Hospitality Venues</h2>
-                <p class="section-subheading section-subheading-center" style="margin-top: 16px;">Is QJumper right for your hospitality business?</p>
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">Why QJumper</span>
+                <h2 class="sec-title">Why hospitality teams choose QJumper</h2>
+                <p class="sec-desc">One platform that simplifies operations, improves service, and helps your business grow.</p>
             </div>
-            <div class="hospitality-grid">
-                <div class="hospitality-card reveal">
-                    <div class="hospitality-card-scene">
-                        <img src="images/scene-multisite.svg" alt="Multi-site network illustration">
+            <div class="benefits-grid">
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                    <h3>Effortless for staff</h3>
+                    <p>One platform means one set of logins, one place for menus, and one way of working — so teams move faster with less training.</p>
+                    <div class="benefit-checks">
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Faster staff onboarding</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Less switching between systems</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Simpler day-to-day operations</div>
                     </div>
-                    <div class="hospitality-card-number">01</div>
-                    <h3>Multi-site / Franchise Restaurants</h3>
-                    <p>Maintain consistent menus, service standards, and customer experience across every location. QJumper simplifies multi-site operations by connecting ordering, payments, and reporting into one unified platform.</p>
                 </div>
-                <div class="hospitality-card reveal reveal-delay-1">
-                    <div class="hospitality-card-scene">
-                        <img src="images/scene-quickservice.svg" alt="Quick service counter illustration">
+                <div class="benefit-card reveal reveal-delay-1">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div>
+                    <h3>Smarter operations</h3>
+                    <p>Managers get clear visibility across their entire operation — every channel, every location — without manually compiling reports.</p>
+                    <div class="benefit-checks">
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Unified reporting across every channel</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Real-time data, not end-of-month surprises</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Less manual reconciliation</div>
                     </div>
-                    <div class="hospitality-card-number">02</div>
-                    <h3>Quick Service Venues</h3>
-                    <p>Speed and efficiency matter most. QJumper tools help manage high-volume ordering environments, reducing wait times and keeping service flowing during your busiest periods.</p>
                 </div>
-                <div class="hospitality-card reveal reveal-delay-2">
-                    <div class="hospitality-card-scene">
-                        <img src="images/scene-stadium.svg" alt="Stadium and events illustration">
+                <div class="benefit-card reveal reveal-delay-2">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                    <h3>Bulletproof under pressure</h3>
+                    <p>Hospitality systems must perform when it matters most — at peak service, at high volume, across multiple locations, without fail.</p>
+                    <div class="benefit-checks">
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Handles high transaction volumes</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Reliable during peak service</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Designed for multi-site operations</div>
                     </div>
-                    <div class="hospitality-card-number">03</div>
-                    <h3>Stadiums &amp; Events</h3>
-                    <p>High-volume, time-pressured environments need systems that perform under extreme demand. QJumper is built to handle peak surges without missing a beat.</p>
+                </div>
+                <div class="benefit-card reveal">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                    <h3>Faster service, happier guests</h3>
+                    <p>Customers can order and pay quickly across every channel, reducing queues and keeping service moving on the busiest days.</p>
+                    <div class="benefit-checks">
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Shorter queues during busy periods</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Faster ordering and payment</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Consistent experience every time</div>
+                    </div>
+                </div>
+                <div class="benefit-card reveal reveal-delay-1">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+                    <h3>Higher order values</h3>
+                    <p>Kiosk and digital ordering consistently increases average order value, driven by upsell prompts and the removal of counter pressure.</p>
+                    <div class="benefit-checks">
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>10–30% AOV uplift with kiosk ordering</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Smart, contextual upsell prompts</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Menu visuals that drive appetite</div>
+                    </div>
+                </div>
+                <div class="benefit-card reveal reveal-delay-2">
+                    <div class="benefit-icon"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+                    <h3>Flexible payments</h3>
+                    <p>Customers order and pay however they prefer — in-venue, online, or via your app — all flowing into one unified platform.</p>
+                    <div class="benefit-checks">
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Card, mobile wallets, and more</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>In-venue and online ordering</div>
+                        <div class="benefit-check"><div class="benefit-check-dot"></div>Every channel, one platform</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== BUNDLES ==================== -->
-    <section class="section" id="bundles">
+    <!-- ── Mid-page CTA ── -->
+    <section class="sec sec-warm" style="padding:64px 0;">
         <div class="container">
-            <div class="reveal" style="text-align: center;">
-                <h2 class="section-heading section-heading-center">Find the Right Bundle for Effortless Hospitality</h2>
-                <p class="section-subheading section-subheading-center" style="margin-top: 16px;">Use just one, or bundle for greater benefits.</p>
-            </div>
-            <div class="bundles-grid">
-                <div class="bundle-card reveal">
-                    <h3>Let's Get Started</h3>
-                    <p class="bundle-desc">A simple way to begin digital ordering and connect with your customers through your own channels.</p>
-                    <ul class="bundle-features">
-                        <li>QJumper Mobile App OR Web Ordering</li>
-                        <li>Basic sales and order reporting</li>
-                        <li>Customer-facing digital ordering</li>
-                        <li>Simple setup and onboarding</li>
-                    </ul>
-                    <a href="#contact" class="btn-outline">Request a Quote</a>
+            <div class="reveal" style="display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+                <div>
+                    <h2 style="font-size:clamp(1.4rem,2.4vw,1.9rem);font-weight:700;color:var(--text);letter-spacing:-0.03em;line-height:1.2;margin-bottom:8px;">See it running in a venue like yours</h2>
+                    <p style="font-size:0.9rem;color:var(--text-2);margin:0;">Book a 30-minute demo — no slides, just the real platform.</p>
                 </div>
-                <div class="bundle-card featured reveal reveal-delay-1">
-                    <h3>Ready for Effortless</h3>
-                    <p class="bundle-desc">A unified setup designed to simplify ordering and operations across all customer touchpoints.</p>
-                    <ul class="bundle-features">
-                        <li>Full QJumper platform access</li>
-                        <li>POS integration</li>
-                        <li>Digital ordering channels</li>
-                        <li>Kiosk integration</li>
-                        <li>Advanced reporting and insights</li>
-                    </ul>
-                    <a href="#contact" class="btn-gold">Request a Quote</a>
-                </div>
-                <div class="bundle-card reveal reveal-delay-2">
-                    <h3>Multi-Site Efficiency</h3>
-                    <p class="bundle-desc">Built for hospitality groups needing consistency, speed, and visibility across multiple venues.</p>
-                    <ul class="bundle-features">
-                        <li>POS across all locations</li>
-                        <li>Digital Kiosks</li>
-                        <li>QR Table Ordering</li>
-                        <li>Web Ordering</li>
-                        <li>Centralised reporting dashboards</li>
-                    </ul>
-                    <a href="#contact" class="btn-outline">Request a Quote</a>
+                <div style="display:flex;gap:12px;flex-shrink:0;flex-wrap:wrap;">
+                    <a href="#contact" class="btn-pill">Book a free demo</a>
+                    <a href="resources.html" class="btn-pill-outline">Read our guides</a>
                 </div>
             </div>
-            <p class="bundles-note reveal">For events, institutional hospitality, or to build your own bundle: <a href="#contact">enquire here</a>.</p>
         </div>
     </section>
 
-    <!-- ==================== DIFFERENTIATORS ==================== -->
-    <section class="section differentiators" id="differentiators">
+    <!-- ── Data strip ── -->
+    <section class="data-strip">
         <div class="container">
-            <div class="reveal" style="text-align: center;">
-                <h2 class="section-heading section-heading-center">What Makes QJumper Different?</h2>
+            <div class="data-strip-header reveal">
+                <span class="sec-eyebrow">The impact</span>
+                <h2>What unified ordering technology delivers</h2>
             </div>
-            <div class="diff-grid">
-                <div class="diff-col reveal">
-                    <h4>Built where it matters</h4>
-                    <p>Not in a boardroom. In a real restaurant, under real pressure.</p>
+        </div>
+        <div class="data-strip-grid reveal">
+            <div class="data-stat-item">
+                <div class="data-stat-num">10–30%</div>
+                <div class="data-stat-label">Average order value increase with kiosk ordering</div>
+                <div class="data-stat-source"><a href="resources.html">Industry research — see our article</a></div>
+            </div>
+            <div class="data-stat-item">
+                <div class="data-stat-num">4.8×</div>
+                <div class="data-stat-label">Average ROI reported by operators running loyalty programmes</div>
+                <div class="data-stat-source">Paytronix loyalty research</div>
+            </div>
+            <div class="data-stat-item">
+                <div class="data-stat-num">6</div>
+                <div class="data-stat-label">Ordering channels unified in one platform</div>
+                <div class="data-stat-source">QJumper platform</div>
+            </div>
+            <div class="data-stat-item">
+                <div class="data-stat-num">5 days*</div>
+                <div class="data-stat-label">Typical time from sign-up to live venue</div>
+                <div class="data-stat-source">* Based on average — times may vary</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── What makes QJumper different ── -->
+    <section class="sec sec-white">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">The QJumper difference</span>
+                <h2 class="sec-title">Built for hospitality. Not adapted for it.</h2>
+            </div>
+            <div class="diff-grid reveal">
+                <div class="diff-item">
+                    <span class="diff-num">01</span>
+                    <h3>Built where it matters</h3>
+                    <p>Not in a boardroom — in a real restaurant, under real pressure. Every part of QJumper is shaped by what actually works during service.</p>
                 </div>
-                <div class="diff-col reveal reveal-delay-1">
-                    <h4>One platform. No compromises.</h4>
-                    <p>Ordering, POS, reporting. One system. No patchwork.</p>
+                <div class="diff-item">
+                    <span class="diff-num">02</span>
+                    <h3>One platform. No compromises.</h3>
+                    <p>Ordering, POS, reporting — one system. No patchwork. No workarounds. No stitching data together at the end of the day.</p>
                 </div>
-                <div class="diff-col reveal reveal-delay-2">
-                    <h4>Simple on the surface. Powerful underneath.</h4>
-                    <p>Teams pick it up quickly. Operators get depth.</p>
+                <div class="diff-item">
+                    <span class="diff-num">03</span>
+                    <h3>Simple on the surface. Powerful underneath.</h3>
+                    <p>Teams pick it up quickly. Operators get the depth they need to run, optimise, and grow the business.</p>
                 </div>
-                <div class="diff-col reveal reveal-delay-3">
-                    <h4>Built to perform</h4>
-                    <p>When it's busy, it just works. Consistently. Reliably.</p>
-                </div>
-                <div class="diff-col reveal reveal-delay-4">
-                    <h4>Real people. Real accountability.</h4>
-                    <p>No layers of support. If something needs fixing, the people who built it fix it.</p>
+                <div class="diff-item">
+                    <span class="diff-num">04</span>
+                    <h3>Real people. Real accountability.</h3>
+                    <p>No offshore queues. No layers of support. If something needs fixing, the people who built it will make it right — directly.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== FOOTER CTA ==================== -->
-    <section class="footer-cta" id="contact">
-        <div class="container reveal">
-            <h2>Ready for Effortless Hospitality?</h2>
-            <p>Tell us a little about your venue and we'll set up a short demo tailored to your operation.</p>
-            <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <!-- ── FAQ ── -->
+    <section class="sec sec-tile">
+        <div class="container-narrow">
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">FAQ</span>
+                <h2 class="sec-title">Common questions</h2>
+            </div>
+            <div class="faq-list reveal" id="faqList">
+                <div class="faq-item">
+                    <button class="faq-q">What is QJumper? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">QJumper is a unified hospitality ordering platform that connects POS, self-service kiosks, web ordering, QR table ordering, and mobile ordering into one system. Built in New Zealand for restaurants, cafés, and multi-site groups who want simpler operations and consistent performance across every channel.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Which ordering channels does QJumper support? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">QJumper supports five ordering channels: <a href="pos.html">Point of Sale (POS)</a>, <a href="kiosks.html">self-service kiosks</a>, <a href="web-ordering.html">web ordering</a>, <a href="qr-ordering.html">QR code table ordering</a>, and <a href="mobile-ordering.html">mobile ordering (branded app)</a>. All channels feed into the same system with unified <a href="reporting.html">reporting</a> and menu management.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Do I need to use all of QJumper's products? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">No. Each QJumper product can be deployed on a standalone basis. Many operators start with one solution — often POS or kiosks — and add channels over time. Everything integrates seamlessly when you're ready to expand.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">How quickly can QJumper be set up? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">Most venues are live within five days on average. You provide your menu and branding; we configure the platform, set up payments, and have you ready to go. Actual times may vary by venue size and configuration.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Is QJumper a New Zealand business? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">Yes. QJumper is built and supported in New Zealand. When you need help, you speak directly to the people who built the platform — not an offshore support queue.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Does QJumper charge commission on web orders? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">No. QJumper charges zero commission on web orders. Unlike third-party delivery and ordering platforms that take a percentage of every transaction, QJumper's web ordering keeps all the margin in your business. You pay a platform fee, not a cut of your revenue.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What types of hospitality venues does QJumper support? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">QJumper is used across quick service restaurants, cafés, multi-site and franchise groups, stadiums and events venues, and institutional hospitality operations. The platform is flexible enough to work for a single-venue café and complex enough to scale across dozens of locations with centralised menu and reporting management.</div></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">How is QJumper different from other hospitality POS systems? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">Most POS systems are exactly that — just a POS. QJumper is a unified ordering platform where POS is one of six connected channels (alongside kiosks, web ordering, QR table ordering, mobile ordering, and reporting). Updating your menu in QJumper pushes it to every channel at once. Reporting captures every transaction across every channel automatically. There's no need to stitch together multiple systems or reconcile data from separate platforms.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+            <div class="contact-header reveal">
+                <span class="sec-eyebrow">Get started</span>
+                <h2>Ready for effortless hospitality?</h2>
+                <p>Book a demo and see QJumper working in a venue like yours. No obligation, no pressure — just the platform in action.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:24px;justify-content:center;">
+                    <span style="font-size:0.78rem;color:var(--text-3);display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Response within one business day</span>
+                    <span style="font-size:0.78rem;color:var(--text-3);display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>30-minute demo, tailored to your venue type</span>
+                    <span style="font-size:0.78rem;color:var(--text-3);display:flex;align-items:center;gap:6px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>NZ-based team, no offshore handoffs</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap reveal">
                 <div class="form-row">
-                    <div class="form-field">
-                        <label for="cf-name">Name</label>
-                        <input type="text" id="cf-name" name="name" required autocomplete="name">
-                    </div>
-                    <div class="form-field">
-                        <label for="cf-venue">Venue / Company</label>
-                        <input type="text" id="cf-venue" name="venue" required autocomplete="organization">
-                    </div>
+                    <div class="form-field"><label>First name</label><input type="text" placeholder="Jane"></div>
+                    <div class="form-field"><label>Last name</label><input type="text" placeholder="Smith"></div>
                 </div>
                 <div class="form-row">
-                    <div class="form-field">
-                        <label for="cf-email">Email</label>
-                        <input type="email" id="cf-email" name="email" required autocomplete="email">
-                    </div>
-                    <div class="form-field">
-                        <label for="cf-type">Type of venue</label>
-                        <select id="cf-type" name="venue_type" required>
-                            <option value="">Please choose…</option>
-                            <option>Multi-site / Franchise</option>
-                            <option>Quick Service</option>
-                            <option>Stadium / Events</option>
-                            <option>Café / Restaurant</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
+                    <div class="form-field"><label>Email</label><input type="email" placeholder="jane@venue.co.nz"></div>
+                    <div class="form-field"><label>Phone</label><input type="tel" placeholder="+64 21 000 0000"></div>
                 </div>
+                <div class="form-field"><label>Venue / Business name</label><input type="text" placeholder="Your venue name"></div>
                 <div class="form-field">
-                    <label for="cf-message">What are you hoping to improve? (optional)</label>
-                    <textarea id="cf-message" name="message" placeholder="e.g. reducing queues, rolling out kiosks, unifying reporting across sites"></textarea>
+                    <label>Venue type</label>
+                    <select>
+                        <option value="">Select your venue type...</option>
+                        <option>Quick Service Restaurant</option>
+                        <option>Café</option>
+                        <option>Multi-site / Franchise Group</option>
+                        <option>Stadium / Events Venue</option>
+                        <option>Institutional Hospitality</option>
+                        <option>Other</option>
+                    </select>
                 </div>
-                <button type="submit" class="btn-gold">
-                    Book a Demo
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-                </button>
-                <div class="form-success" id="formSuccess">Thanks — we'll be in touch within one business day.</div>
-                <div class="form-error" id="formError">Something went wrong. Please try again, or email hello@qjumper.com.</div>
-                <p class="form-footnote">We'll only use your details to follow up about QJumper.</p>
-            </form>
+                <div class="form-field"><label>Message (optional)</label><textarea placeholder="Tell us about your venue and what you're looking for..."></textarea></div>
+                <button class="btn-pill" type="button">Book a demo</button>
+                <p class="form-footnote">We'll be in touch within one business day. No obligation.</p>
+            </div>
         </div>
     </section>
 
-    <!-- ==================== FOOTER ==================== -->
+    <!-- ── Footer ── -->
     <footer class="footer">
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-brand">
-                    <img src="IMG_3941.jpeg" alt="QJumper" class="footer-brand-logo">
-                    <div class="nav-logo-text">Q<span style="color: var(--gold);">Jumper</span></div>
-                    <p>One unified platform for effortless hospitality. Simplify operations, delight customers.</p>
+                    <div class="footer-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></div>
+                    <p>Making hospitality effortless so owners and teams can focus on great service, happy customers, and sustainable growth.</p>
+                    <a href="mailto:hello@qjumper.com" class="footer-email">hello@qjumper.com</a>
                 </div>
-                <div class="footer-links-group">
-                    <h4>Platform</h4>
+                <div class="footer-col">
+                    <h4>Products</h4>
                     <ul>
-                        <li><a href="platform.html">Overview</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="pos.html">Point of Sale</a></li>
+                        <li><a href="kiosks.html">Kiosks</a></li>
+                        <li><a href="web-ordering.html">Web Ordering</a></li>
+                        <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                        <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                        <li><a href="reporting.html">Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="platform.html">Platform Overview</a></li>
+                        <li><a href="hospitality.html">Hospitality Types</a></li>
                         <li><a href="bundles.html">Bundles</a></li>
                     </ul>
                 </div>
-                <div class="footer-links-group">
-                    <h4>Solutions</h4>
+                <div class="footer-col">
+                    <h4>Get started</h4>
                     <ul>
-                        <li><a href="solutions.html#kiosk">Kiosk</a></li>
-                        <li><a href="solutions.html#mobile-app">Mobile App</a></li>
-                        <li><a href="solutions.html#web-ordering">Web Ordering</a></li>
-                        <li><a href="solutions.html#table-ordering">Table Ordering</a></li>
-                        <li><a href="solutions.html#pos">POS</a></li>
-                        <li><a href="solutions.html#reports">Reports</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links-group">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="hospitality.html">Venues</a></li>
-                        <li><a href="index.html#differentiators">About</a></li>
-                        <li><a href="index.html#contact">Contact</a></li>
-                        <li><a href="index.html#contact">Book a Demo</a></li>
+                        <li><a href="#contact">Get a Demo</a></li>
+                        <li><a href="mailto:hello@qjumper.com">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 QJumper. All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="#" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    </a>
-                    <a href="#" aria-label="Twitter / X">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                    </a>
+                <p>© 2026 QJumper. All rights reserved. New Zealand.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- ==================== SCRIPTS ==================== -->
-    <script src="main.js" defer></script>
+    <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); });
+    document.getElementById('hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.reveal').forEach(el => {
+        new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.07 }).observe(el);
+    });
+    document.querySelectorAll('.faq-q').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const item = this.closest('.faq-item');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(el => { el.classList.remove('open'); });
+            if (!isOpen) item.classList.add('open');
+        });
+    });
+    </script>
 </body>
 </html>
