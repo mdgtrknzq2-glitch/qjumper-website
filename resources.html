@@ -5,13 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QJumper Resources — Hospitality Technology Insights & Guides | NZ</title>
     <meta name="description" content="Practical guides and insights for hospitality operators. Learn how to simplify operations, increase order value, and grow your business with the right technology.">
+    <meta name="keywords" content="hospitality technology guides, hospitality operations NZ, restaurant technology insights, self-service kiosk ROI, hospitality reporting, QJumper resources">
+    <meta name="author" content="QJumper">
     <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="NZ">
+    <meta name="geo.placename" content="New Zealand">
     <link rel="canonical" href="https://www.qjumper.com/resources">
     <meta property="og:title" content="QJumper Resources — Hospitality Technology Insights & Guides | NZ">
     <meta property="og:description" content="Practical thinking on technology, operations, and growth — for hospitality operators who want to run a better business.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.qjumper.com/resources">
     <meta property="og:locale" content="en_NZ">
+    <meta property="og:image" content="https://www.qjumper.com/images/qjumper-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QJumper Resources — Hospitality Technology Insights & Guides | NZ">
+    <meta name="twitter:description" content="Practical thinking on technology, operations, and growth — for hospitality operators who want to run a better business.">
+    <meta name="twitter:image" content="https://www.qjumper.com/images/qjumper-og.jpg">
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.qjumper.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.qjumper.com/resources"}
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "QJumper Resources — Hospitality Technology Insights & Guides",
+        "description": "Practical guides and insights for hospitality operators in New Zealand. Learn how to simplify operations, increase order value, and grow your business with the right technology.",
+        "url": "https://www.qjumper.com/resources",
+        "publisher": {
+          "@type": "Organization",
+          "name": "QJumper",
+          "url": "https://www.qjumper.com"
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "The hidden cost of running multiple hospitality systems, and how to fix it",
+              "description": "Most hospitality businesses don't choose complexity. They accumulate it. Here's how to simplify your hospitality technology stack."
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Why self-service kiosks increase average order value — and how to maximise the effect",
+              "description": "The data is consistent: guests who order at kiosks spend more. Here's why that happens and how to set your kiosk up for upsell success."
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Should your venue have its own branded app? A practical guide",
+              "description": "Branded apps aren't just for big chains. We look at when a mobile app makes commercial sense and what results to expect."
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Scaling from one venue to many: what changes, what breaks, and how to prepare",
+              "description": "The jump from single-site to multi-site is where many operators find their systems start to struggle."
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "The 5 metrics every hospitality operator should be tracking in real time",
+              "description": "Most operators look at sales. The best operators look at four other numbers that tell a more actionable story."
+            }
+          ]
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "QJumper",
+        "url": "https://www.qjumper.com",
+        "email": "hello@qjumper.com",
+        "description": "QJumper is a unified hospitality ordering platform built to make running hospitality businesses effortless — connecting POS, kiosk, mobile ordering, web ordering, QR table ordering, and reporting in one system.",
+        "areaServed": {"@type": "Country", "name": "New Zealand"},
+        "address": {"@type": "PostalAddress", "addressCountry": "NZ"}
+      }
+    ]
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,13 +119,24 @@
     }
     .featured-article:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
     .featured-article-visual {
-        background: linear-gradient(135deg, var(--tile) 0%, #ede8e0 100%);
+        background: linear-gradient(150deg, #1c1a16 0%, #2a2218 100%);
         display: flex; align-items: center; justify-content: center;
-        padding: 48px; min-height: 340px;
+        padding: 52px 44px; min-height: 340px; position: relative; overflow: hidden;
     }
-    .featured-visual-inner { text-align: center; }
-    .featured-visual-icon { margin-bottom: 16px; opacity: 0.5; }
-    .featured-visual-inner p { font-size: 0.75rem; color: var(--text-3); letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; }
+    .featured-article-visual::before {
+        content: ''; position: absolute; width: 360px; height: 360px; border-radius: 50%;
+        background: radial-gradient(circle, rgba(184,137,58,0.12) 0%, transparent 70%);
+        top: -80px; right: -80px; pointer-events: none;
+    }
+    .featured-visual-inner { text-align: left; position: relative; z-index: 1; }
+    .featured-visual-quote {
+        font-size: clamp(1.05rem, 1.8vw, 1.25rem); font-weight: 600; color: rgba(255,255,255,0.92);
+        line-height: 1.55; letter-spacing: -0.02em; margin-bottom: 24px;
+        border-left: 3px solid var(--gold); padding-left: 20px;
+    }
+    .featured-visual-stat { display: flex; gap: 32px; flex-wrap: wrap; }
+    .featured-stat-item .num { font-size: 1.9rem; font-weight: 800; color: var(--gold); letter-spacing: -0.05em; line-height: 1; }
+    .featured-stat-item .lbl { font-size: 0.7rem; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
     .featured-article-body { padding: 44px; display: flex; flex-direction: column; justify-content: center; }
     .featured-article-body h2 { font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 700; color: var(--text); letter-spacing: -0.025em; line-height: 1.25; margin-bottom: 16px; }
     .featured-article-body p { font-size: 0.875rem; color: var(--text-2); line-height: 1.75; margin-bottom: 20px; }
@@ -60,6 +152,19 @@
     .article-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: -0.02em; line-height: 1.35; margin-bottom: 12px; }
     .article-card p { font-size: 0.84rem; color: var(--text-2); line-height: 1.7; margin-bottom: 20px; }
     .article-card .read-more { font-size: 0.82rem; font-weight: 600; color: var(--gold); }
+    .article-card .article-meta { font-size: 0.74rem; color: var(--text-3); margin-bottom: 16px; }
+
+    /* FAQ accordion */
+    .faq-list { display: flex; flex-direction: column; border: 1px solid var(--divider); border-radius: var(--radius-lg); overflow: hidden; background: var(--white); }
+    .faq-item { border-bottom: 1px solid var(--divider); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { width: 100%; text-align: left; padding: 20px 28px; background: none; border: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 0.95rem; font-weight: 600; color: var(--text); font-family: inherit; line-height: 1.4; transition: background 0.15s; }
+    .faq-q:hover { background: var(--tile); }
+    .faq-icon { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--gold-bg); border: 1px solid var(--gold-border); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.1rem; font-weight: 300; line-height: 1; transition: transform 0.25s var(--ease); }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s var(--ease); }
+    .faq-item.open .faq-a { max-height: 500px; }
+    .faq-a-inner { padding: 4px 28px 22px; font-size: 0.9rem; color: var(--text-2); line-height: 1.75; }
 
     .resources-cta { text-align: center; padding: 96px 0; }
     .resources-cta h2 { font-size: clamp(1.7rem, 3.2vw, 2.6rem); font-weight: 700; color: var(--text); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
@@ -100,6 +205,7 @@
             <span class="page-hero-eyebrow">Resources</span>
             <h1>Insights for hospitality operators</h1>
             <p class="page-hero-desc">Practical thinking on technology, operations, and growth — from people who understand what it takes to run a busy venue.</p>
+            <p style="font-size:0.78rem;color:var(--text-3);margin-top:28px;">Written by operators, for operators &nbsp;·&nbsp; QJumper, New Zealand</p>
         </div>
     </section>
 
@@ -109,13 +215,20 @@
             <div class="sec-header reveal" style="text-align:left;margin-bottom:32px;">
                 <span class="sec-eyebrow">Featured</span>
             </div>
-            <a href="#" class="featured-article reveal">
+            <a href="article-hidden-cost.html" class="featured-article reveal">
                 <div class="featured-article-visual">
                     <div class="featured-visual-inner">
-                        <div class="featured-visual-icon">
-                            <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--gold)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                        <p class="featured-visual-quote">"Most hospitality businesses don't choose complexity. They accumulate it."</p>
+                        <div class="featured-visual-stat">
+                            <div class="featured-stat-item">
+                                <div class="num">4+</div>
+                                <div class="lbl">Disconnected systems<br>on average</div>
+                            </div>
+                            <div class="featured-stat-item">
+                                <div class="num">8 min</div>
+                                <div class="lbl">Read time</div>
+                            </div>
                         </div>
-                        <p>Operations &amp; Technology</p>
                     </div>
                 </div>
                 <div class="featured-article-body">
@@ -134,35 +247,39 @@
         <div class="container">
             <div class="sec-header reveal" style="text-align:left;margin-bottom:32px;">
                 <span class="sec-eyebrow">More articles</span>
-                <h2 class="sec-title" style="font-size:clamp(1.4rem,2.4vw,1.8rem);">More thinking for hospitality operators</h2>
+                <h2 class="sec-title" style="font-size:clamp(1.4rem,2.4vw,1.8rem);">Practical thinking for hospitality operators</h2>
             </div>
             <div class="articles-grid">
 
-                <a href="#" class="article-card reveal">
+                <a href="article-kiosk-aov.html" class="article-card reveal">
                     <span class="article-tag">Kiosks</span>
                     <h3>Why self-service kiosks increase average order value — and how to maximise the effect</h3>
                     <p>The data is consistent: guests who order at kiosks spend more. Here's why that happens and how to set your kiosk up for upsell success.</p>
+                    <p class="article-meta">QJumper Team &nbsp;·&nbsp; 7 min read</p>
                     <span class="read-more">Read article ›</span>
                 </a>
 
-                <a href="#" class="article-card reveal reveal-delay-1">
+                <a href="article-branded-app.html" class="article-card reveal reveal-delay-1">
                     <span class="article-tag">Mobile &amp; Loyalty</span>
                     <h3>Should your venue have its own branded app? A practical guide</h3>
                     <p>Branded apps aren't just for big chains. We look at when a mobile app makes commercial sense, what it actually delivers, and what results to expect.</p>
+                    <p class="article-meta">QJumper Team &nbsp;·&nbsp; 9 min read</p>
                     <span class="read-more">Read article ›</span>
                 </a>
 
-                <a href="#" class="article-card reveal">
+                <a href="article-multi-site.html" class="article-card reveal">
                     <span class="article-tag">Multi-Site</span>
                     <h3>Scaling from one venue to many: what changes, what breaks, and how to prepare</h3>
                     <p>The jump from single-site to multi-site is where many operators find their systems start to struggle. Here's how to build a foundation that scales.</p>
+                    <p class="article-meta">QJumper Team &nbsp;·&nbsp; 8 min read</p>
                     <span class="read-more">Read article ›</span>
                 </a>
 
-                <a href="#" class="article-card reveal reveal-delay-1">
+                <a href="article-metrics.html" class="article-card reveal reveal-delay-1">
                     <span class="article-tag">Reporting</span>
                     <h3>The 5 metrics every hospitality operator should be tracking in real time</h3>
                     <p>Most operators look at sales. The best operators look at four other numbers that tell a more complete — and more actionable — story.</p>
+                    <p class="article-meta">QJumper Team &nbsp;·&nbsp; 6 min read</p>
                     <span class="read-more">Read article ›</span>
                 </a>
 
@@ -170,14 +287,86 @@
         </div>
     </section>
 
-    <!-- ── CTA Strip ── -->
-    <section class="sec sec-warm">
-        <div class="container">
-            <div class="resources-cta reveal">
-                <span class="sec-eyebrow">Get started</span>
-                <h2>See QJumper in action</h2>
-                <p>Book a demo and see the platform running in a venue like yours. No obligation, no pressure.</p>
-                <a href="#contact" class="btn-pill">Get a demo</a>
+    <!-- ── FAQ ── -->
+    <section class="sec sec-white">
+        <div class="container-narrow">
+            <div class="sec-header reveal">
+                <span class="sec-eyebrow">Common questions</span>
+                <h2 class="sec-title">Questions about hospitality technology</h2>
+                <p class="sec-desc">Questions we hear from operators thinking about improving how they run their venue.</p>
+            </div>
+            <div class="faq-list reveal">
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        What's the biggest technology mistake hospitality operators make?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        The most common mistake is solving problems one at a time with separate tools — a standalone POS, a third-party online ordering platform, a separate loyalty system, a different reporting tool. Each addition makes sense individually, but together they create disconnected systems that don't share data, require constant manual reconciliation, and slow teams down. The hidden cost of fragmented technology is significant, and it only grows as the business does.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        How much do self-service kiosks actually increase average order value?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Research consistently shows that guests who order at kiosks spend 15–30% more than those ordering at a counter. The reasons are behavioural: no social pressure from a waiting queue, unlimited time to consider upsells, and algorithmically placed suggestions that appear at exactly the right moment in the order flow. With QJumper kiosks, venues configure upsells and modifiers specifically to take advantage of this dynamic — and the impact on revenue is measurable from day one.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        Does every venue need a mobile ordering app?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Not every venue, no. A branded mobile app makes the most sense for businesses where repeat visits drive revenue — cafés, quick service restaurants, and venues with loyalty programmes or subscription offers. For hospitality operators where guests visit infrequently or the primary order channel is in-venue, a mobile app may not deliver sufficient return on investment. QR ordering and web ordering often make more commercial sense for those operators. Our resources guide walks through how to evaluate which channels fit your venue type.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        What metrics should hospitality operators be tracking in real time?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        Most operators track total sales. The most useful metrics to add are: average order value by channel (which reveals where upselling is working and where it isn't), order volume by time period (to identify your true peak trading windows), item-level performance (so you know which menu items drive margin vs. which ones slow service), and channel mix (the proportion of revenue coming from each ordering channel). QJumper's reporting dashboard surfaces all of these in real time without any manual exports.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        At what point should a hospitality business start thinking about scaling to multiple sites?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        The time to think about multi-site capability is before you need it, not after. Operators who build on single-site-only systems often hit a wall when they open a second location — menu management becomes a manual duplication exercise, reporting can't consolidate across sites, and staff training has to happen twice. A platform that supports multi-site from day one means the jump from one venue to two (or ten) doesn't require a system change. QJumper is built for this: single menu management, consolidated reporting, and consistent ordering experiences across every location.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        How long does it take to switch to a new hospitality technology platform?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        The timeline depends on the complexity of your menu and the channels you're activating, but most QJumper implementations go live within a matter of days. Menu setup, hardware configuration, and staff training are all handled with direct support from the QJumper team — not a remote helpdesk or offshore support queue. Because QJumper replaces multiple tools with one unified system, the transition also eliminates the ongoing overhead of managing several separate platforms.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-q" aria-expanded="false">
+                        Is QJumper suitable for small venues, or is it built for large operators?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a"><div class="faq-a-inner">
+                        QJumper works for both. The platform is modular — a single-site café might run POS, QR table ordering, and reporting without any other channels. A multi-site franchise group might run the full stack across kiosks, web ordering, mobile ordering, and a consolidated reporting dashboard. You only use what your venue needs, and you can add channels as the business grows. Pricing is structured to make the platform viable at any scale.
+                    </div></div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -189,6 +378,12 @@
                 <span class="sec-eyebrow">Get started</span>
                 <h2>Ready for effortless hospitality?</h2>
                 <p>Book a demo and see QJumper working in a venue like yours. No obligation.</p>
+                <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px;">
+                    <span style="display:inline-flex;align-items:center;gap:6px;background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:500;color:var(--text-2);"><span style="color:var(--gold);font-weight:700;">✓</span> NZ-built &amp; supported</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:500;color:var(--text-2);"><span style="color:var(--gold);font-weight:700;">✓</span> No obligation</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:500;color:var(--text-2);"><span style="color:var(--gold);font-weight:700;">✓</span> Reply within one business day</span>
+                    <span style="display:inline-flex;align-items:center;gap:6px;background:var(--gold-bg);border:1px solid var(--gold-border);border-radius:100px;padding:6px 16px;font-size:0.78rem;font-weight:500;color:var(--text-2);"><span style="color:var(--gold);font-weight:700;">✓</span> Talk directly to the founders</span>
+                </div>
             </div>
             <div class="contact-form-wrap reveal">
                 <div class="form-row">
@@ -246,14 +441,6 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>More</h4>
-                    <ul>
-                        <li><a href="platform.html">Platform Overview</a></li>
-                        <li><a href="hospitality.html">Hospitality Types</a></li>
-                        <li><a href="bundles.html">Bundles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
                     <h4>Get started</h4>
                     <ul>
                         <li><a href="#contact">Get a Demo</a></li>
@@ -268,6 +455,50 @@
         </div>
     </footer>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What's the biggest technology mistake hospitality operators make?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The most common mistake is solving problems one at a time with separate tools — a standalone POS, a third-party online ordering platform, a separate loyalty system, a different reporting tool. Together they create disconnected systems that don't share data, require constant manual reconciliation, and slow teams down."}
+        },
+        {
+          "@type": "Question",
+          "name": "How much do self-service kiosks actually increase average order value?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Research consistently shows that guests who order at kiosks spend 15–30% more than those ordering at a counter. The reasons are behavioural: no social pressure from a waiting queue, unlimited time to consider upsells, and algorithmically placed suggestions that appear at exactly the right moment in the order flow."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does every venue need a mobile ordering app?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Not every venue. A branded mobile app makes the most sense for businesses where repeat visits drive revenue — cafés, quick service restaurants, and venues with loyalty programmes. For hospitality operators where guests visit infrequently, QR ordering and web ordering often make more commercial sense."}
+        },
+        {
+          "@type": "Question",
+          "name": "What metrics should hospitality operators be tracking in real time?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Beyond total sales: average order value by channel, order volume by time period, item-level performance, and channel mix. QJumper's reporting dashboard surfaces all of these in real time without any manual exports."}
+        },
+        {
+          "@type": "Question",
+          "name": "At what point should a hospitality business start thinking about scaling to multiple sites?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The time to think about multi-site capability is before you need it. Operators who build on single-site-only systems often hit a wall when they open a second location. A platform that supports multi-site from day one means the jump from one venue to two (or ten) doesn't require a system change."}
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to switch to a new hospitality technology platform?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Most QJumper implementations go live within a matter of days. Menu setup, hardware configuration, and staff training are all handled with direct support from the QJumper team. Because QJumper replaces multiple tools with one unified system, the transition also eliminates the ongoing overhead of managing several separate platforms."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is QJumper suitable for small venues, or is it built for large operators?",
+          "acceptedAnswer": {"@type": "Answer", "text": "QJumper works for both. The platform is modular — a single-site café might run POS, QR table ordering, and reporting. A multi-site franchise group might run the full stack across kiosks, web ordering, mobile ordering, and consolidated reporting. You only use what your venue needs."}
+        }
+      ]
+    }
+    </script>
+
     <script>
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); });
@@ -279,6 +510,14 @@
         new IntersectionObserver((entries) => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
         }, { threshold: 0.07 }).observe(el);
+    });
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-q').addEventListener('click', function() {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+            this.setAttribute('aria-expanded', !isOpen);
+        });
     });
     </script>
 </body>

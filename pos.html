@@ -173,144 +173,46 @@
     }
     .product-hero-visual img { width: 100%; height: 360px; object-fit: cover; display: block; }
 
-    /* ── Media placeholder ── */
-    .media-placeholder {
-        background: var(--tile);
-        border: 1.5px dashed var(--divider);
-        border-radius: var(--radius-lg);
-        display: flex; align-items: center; justify-content: center;
-        min-height: 280px;
-        position: relative;
-    }
-    .media-placeholder-inner {
-        text-align: center; padding: 40px 28px;
-    }
-    .media-placeholder-inner svg { stroke: var(--gold); opacity: 0.6; margin-bottom: 16px; }
-    .media-placeholder-inner strong { display: block; font-size: 0.9rem; color: var(--text-2); margin-bottom: 6px; }
-    .media-placeholder-inner span { font-size: 0.78rem; color: var(--text-3); line-height: 1.5; display: block; }
-    .media-placeholder-badge {
-        position: absolute; top: 14px; right: 14px;
-        font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-        background: var(--gold-bg); border: 1px solid var(--gold-border);
-        color: var(--gold); border-radius: 100px; padding: 3px 10px;
-    }
+    /* ── Demo video — portrait layout ── */
+    .demo-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .demo-text .sec-eyebrow { display: block; margin-bottom: 12px; }
+    .demo-text h2 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 700; color: var(--text); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
+    .demo-text p { font-size: 0.95rem; color: var(--text-2); line-height: 1.75; margin-bottom: 20px; }
+    .demo-text ul { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+    .demo-text ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: var(--text-2); line-height: 1.55; }
+    .demo-text ul li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; opacity: 0.8; }
+    .demo-screen { display: flex; justify-content: center; }
+    .kiosk-frame-wrap { position: relative; width: 100%; }
+    .kiosk-frame-outer { background: #1c1c1e; border-radius: 18px; padding: 12px; box-shadow: 0 32px 80px rgba(0,0,0,0.22), 0 0 0 1px rgba(255,255,255,0.06); }
+    .kiosk-frame-inner { border-radius: 10px; overflow: hidden; aspect-ratio: 16/9; background: #111; position: relative; cursor: pointer; }
+    .kiosk-play-poster { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 100%); }
+    .kiosk-play-circle { width: 68px; height: 68px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(184,137,58,0.45); transition: transform 0.2s var(--ease), box-shadow 0.2s; }
+    .kiosk-frame-inner:hover .kiosk-play-circle { transform: scale(1.1); box-shadow: 0 12px 40px rgba(184,137,58,0.6); }
+    .kiosk-play-circle svg { margin-left: 4px; }
+    .kiosk-play-label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); letter-spacing: 0.08em; text-transform: uppercase; }
 
-    /* ── Video grid ── */
-    .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .video-card {
-        border-radius: var(--radius-lg); overflow: hidden;
-        border: 1px solid var(--divider);
-        background: var(--tile);
-        cursor: pointer; position: relative;
-        transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
-    }
-    .video-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.12); transform: translateY(-3px); }
-    .video-thumb {
-        width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;
-        background: var(--tile);
-    }
-    .video-thumb-placeholder {
-        width: 100%; aspect-ratio: 16/9;
-        background: linear-gradient(135deg, var(--tile) 0%, #e8e3da 100%);
-        display: flex; align-items: center; justify-content: center;
-    }
-    .video-play-btn {
-        position: absolute; inset: 0;
-        display: flex; flex-direction: column; align-items: center; justify-content: center;
-        gap: 10px;
-    }
-    .video-play-circle {
-        width: 52px; height: 52px; border-radius: 50%;
-        background: rgba(255,255,255,0.92);
-        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-        display: flex; align-items: center; justify-content: center;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.18);
-        transition: transform 0.2s var(--ease), background 0.2s;
-    }
-    .video-card:hover .video-play-circle { transform: scale(1.1); background: white; }
-    .video-play-circle svg { margin-left: 3px; }
-    .video-label {
-        font-size: 0.78rem; font-weight: 600; color: white;
-        background: rgba(0,0,0,0.45); backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        border-radius: 100px; padding: 4px 14px;
-        letter-spacing: 0.02em;
-    }
-
-    /* ── Video lightbox modal ── */
-    .video-modal {
-        display: none; position: fixed; inset: 0; z-index: 9999;
-        align-items: center; justify-content: center;
-    }
-    .video-modal.open { display: flex; }
-    .video-modal-backdrop {
-        position: absolute; inset: 0;
-        background: rgba(0,0,0,0.82);
-        backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-        animation: fadeIn 0.2s ease;
-    }
-    .video-modal-box {
-        position: relative; z-index: 1;
-        width: 70vw; max-width: 1100px;
-        background: #000; border-radius: var(--radius-lg);
-        overflow: hidden;
-        box-shadow: 0 40px 120px rgba(0,0,0,0.5);
-        animation: scaleIn 0.25s var(--ease);
-    }
-    .video-modal-box iframe {
-        display: block; width: 100%;
-        aspect-ratio: 16/9; border: none;
-    }
-    .video-modal-close {
-        position: absolute; top: -44px; right: 0;
-        width: 36px; height: 36px; border-radius: 50%;
-        background: rgba(255,255,255,0.15);
-        border: 1px solid rgba(255,255,255,0.25);
-        color: white; font-size: 1.1rem; line-height: 1;
-        cursor: pointer; display: flex; align-items: center; justify-content: center;
-        transition: background 0.15s;
-    }
-    .video-modal-close:hover { background: rgba(255,255,255,0.28); }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes scaleIn { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
+    /* ── Portrait video modal ── */
+    .portrait-modal { display: none; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center; background: rgba(0,0,0,0.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .portrait-modal.open { display: flex; }
+    .portrait-modal-inner { position: relative; }
+    .portrait-modal-box { width: min(860px, 92vw); aspect-ratio: 16/9; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,0.7); animation: scaleIn 0.25s var(--ease); }
+    .portrait-modal-box iframe { display: block; width: 100%; height: 100%; border: none; }
+    .portrait-modal-close { position: absolute; top: -48px; right: 0; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; font-family: inherit; }
+    .portrait-modal-close:hover { background: rgba(255,255,255,0.28); }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
 
     /* ── Photo carousel ── */
-    .photo-carousel {
-        position: relative; border-radius: var(--radius-lg);
-        overflow: hidden; background: var(--tile);
-        border: 1px solid var(--divider);
-        box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    }
+    .photo-carousel { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: var(--tile); border: 1px solid var(--divider); box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
     .carousel-track { position: relative; aspect-ratio: 16/9; }
-    .carousel-slide {
-        position: absolute; inset: 0;
-        opacity: 0; transition: opacity 0.5s ease;
-        pointer-events: none;
-    }
+    .carousel-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.5s ease; pointer-events: none; }
     .carousel-slide.active { opacity: 1; pointer-events: auto; }
     .carousel-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .carousel-btn {
-        position: absolute; top: 50%; transform: translateY(-50%);
-        width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer;
-        background: rgba(255,255,255,0.9); backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-        display: flex; align-items: center; justify-content: center;
-        transition: background 0.2s, transform 0.2s; z-index: 2;
-    }
+    .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: none; cursor: pointer; background: rgba(255,255,255,0.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: 0 2px 16px rgba(0,0,0,0.18); display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; z-index: 2; }
     .carousel-btn:hover { background: white; transform: translateY(-50%) scale(1.08); }
-    .carousel-btn svg { stroke: var(--text); }
     #carouselPrev { left: 16px; }
     #carouselNext { right: 16px; }
-    .carousel-dots {
-        display: flex; justify-content: center; gap: 8px;
-        padding: 16px 0 18px;
-    }
-    .carousel-dot {
-        width: 7px; height: 7px; border-radius: 50%; border: none; cursor: pointer;
-        background: var(--divider); transition: background 0.2s, transform 0.2s;
-        padding: 0;
-    }
+    .carousel-dots { display: flex; justify-content: center; gap: 8px; padding: 16px 0 18px; }
+    .carousel-dot { width: 7px; height: 7px; border-radius: 50%; border: none; cursor: pointer; background: var(--divider); transition: background 0.2s, transform 0.2s; padding: 0; }
     .carousel-dot.active { background: var(--gold); transform: scale(1.3); }
 
     /* ── Feature grid ── */
@@ -371,13 +273,11 @@
         .product-hero-inner { grid-template-columns: 1fr; gap: 40px; }
         .product-hero-visual { display: none; }
         .feature-grid { grid-template-columns: 1fr 1fr; }
-        .video-grid { grid-template-columns: 1fr; }
-        .photo-grid { grid-template-columns: 1fr 1fr; }
         .steps-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+        .demo-layout { grid-template-columns: 1fr; gap: 40px; }
     }
     @media (max-width: 600px) {
         .feature-grid { grid-template-columns: 1fr; }
-        .photo-grid { grid-template-columns: 1fr; }
         .steps-grid { grid-template-columns: 1fr; }
         .product-hero-stats { flex-wrap: wrap; gap: 20px; }
     }
@@ -445,80 +345,74 @@
         </div>
     </section>
 
-    <!-- ── Demo Videos ── -->
+    <!-- ── Demo Video ── -->
     <section class="sec sec-white">
         <div class="container">
-            <div class="sec-header reveal">
-                <span class="sec-eyebrow">See it in action</span>
-                <h2 class="sec-title">QJumper POS — live demos</h2>
-                <p class="sec-desc">Watch the POS in action across menu browsing, page navigation, and order processing.</p>
-            </div>
-
-            <div class="video-grid reveal">
-                <div class="video-card" data-video="https://drive.google.com/file/d/1LeHBNrpSLmGwMaWDIO0NX-1qYAksUy6-/preview" data-title="Menu Demo">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                        </div>
-                        <span class="video-label">Menu Demo</span>
-                    </div>
+            <div class="demo-layout reveal">
+                <div class="demo-text">
+                    <span class="sec-eyebrow">See it in action</span>
+                    <h2>The full POS experience, start to finish</h2>
+                    <p>Watch QJumper POS in action — menu navigation, order processing, modifiers, and payment. Fast, intuitive, and built to hold up during the busiest service.</p>
+                    <ul>
+                        <li>Instant menu navigation with no lag under pressure</li>
+                        <li>Clean modifier and customisation flow</li>
+                        <li>Orders firing direct to the kitchen in real time</li>
+                        <li>Fast contactless checkout, no separate terminal</li>
+                    </ul>
                 </div>
-                <div class="video-card" data-video="https://drive.google.com/file/d/1WlwQfRkEI-yjnXBViJz21G88arPRPR-C/preview" data-title="Page Demo">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <div class="demo-screen">
+                    <div class="kiosk-frame-wrap">
+                        <div class="kiosk-frame-outer">
+                            <div class="kiosk-frame-inner" id="posPlayBtn" role="button" aria-label="Play POS demo video" tabindex="0">
+                                <div class="kiosk-play-poster">
+                                    <div class="kiosk-play-circle">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="white" stroke="none"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                                    </div>
+                                    <span class="kiosk-play-label">Watch demo</span>
+                                </div>
+                            </div>
                         </div>
-                        <span class="video-label">Page Demo</span>
-                    </div>
-                </div>
-                <div class="video-card" data-video="https://drive.google.com/file/d/1CRVpQwlLXKDsabrBV6hC7QlDPEs-EM4L/preview" data-title="Order Demo">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                        </div>
-                        <span class="video-label">Order Demo</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── Video lightbox modal ── -->
-    <div class="video-modal" id="videoModal">
-        <div class="video-modal-backdrop" id="videoBackdrop"></div>
-        <div class="video-modal-box">
-            <button class="video-modal-close" id="videoClose" aria-label="Close video">✕</button>
-            <iframe id="videoFrame" src="" allow="autoplay" allowfullscreen title="Demo video"></iframe>
+    <!-- ── Portrait video modal ── -->
+    <div class="portrait-modal" id="portraitModal">
+        <div class="portrait-modal-inner">
+            <button class="portrait-modal-close" id="portraitClose" aria-label="Close video">✕</button>
+            <div class="portrait-modal-box">
+                <iframe id="portraitFrame" src="" allow="autoplay; fullscreen" allowfullscreen title="QJumper POS demo"></iframe>
+            </div>
         </div>
     </div>
 
-    <!-- ── Photo Gallery ── -->
+    <!-- ── Photo Carousel ── -->
     <section class="sec sec-tile">
         <div class="container">
             <div class="sec-header reveal">
-                <span class="sec-eyebrow">In-venue photography</span>
-                <h2 class="sec-title">QJumper POS in the real world</h2>
+                <span class="sec-eyebrow">A closer look</span>
+                <h2 class="sec-title">Every screen, in detail</h2>
+                <p class="sec-desc" style="max-width: 580px; margin: 0 auto;">The demo video shows the full flow — these screenshots let you slow down and see exactly what the experience looks like at each step, from menu navigation through to payment and reporting.</p>
             </div>
             <div class="photo-carousel reveal">
                 <div class="carousel-track">
-                    <div class="carousel-slide active"><img src="https://lh3.googleusercontent.com/d/13iifaHfOt3sj0iNeR0o9bJZob7TvhoLr" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/14mqRZbdzDz6KoYG9zrP8nEunXC7xnp6I" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1A1FCjW3nTJx_P-P74EWpkAJPL9dO9dP0" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1Bz0XS_drC_V-L40YWfezWXtWm9tjMX-l" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1Ds6I7fvbqu2ALKJCIcMljHYG57QwoZVB" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1Hzh08R8aBHD7KIajWZEsI6ZWmCkVhY-U" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1_AJm3Pcee4fdMBGEiW9DKIpwAQQyBzcR" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1_w4d3xaconvrHXnG9aJvJ4PwveZbnu4o" alt="QJumper POS in venue" loading="lazy"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1eI3e07WCVhxiHH2dneg5h2vN8OBbLJ7o" alt="QJumper POS in venue" loading="lazy"></div>
+                    <div class="carousel-slide active"><img src="pos-screenshots/ps_01.jpg" alt="QJumper POS dashboard — revenue, items sold, orders and weekly chart" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_02.jpg" alt="QJumper POS order screen — menu categories and empty cart" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_03.jpg" alt="QJumper POS — Signature Stacks menu with items and prices" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_04.jpg" alt="QJumper POS — product detail panel with modifier options" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_05.jpg" alt="QJumper POS — cart with item added and Pay button ready" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_06.jpg" alt="QJumper POS — payment type selection: Cash, Card, Split" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_07.jpg" alt="QJumper POS — terminal payment processing screen" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_08.jpg" alt="QJumper POS — orders view showing POS and kiosk orders together" loading="lazy"></div>
+                    <div class="carousel-slide"><img src="pos-screenshots/ps_09.jpg" alt="QJumper POS — reporting dashboard with weekly revenue chart" loading="lazy"></div>
                 </div>
                 <button class="carousel-btn" id="carouselPrev" aria-label="Previous photo">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
                 </button>
                 <button class="carousel-btn" id="carouselNext" aria-label="Next photo">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                 </button>
                 <div class="carousel-dots">
                     <button class="carousel-dot active" aria-label="Photo 1"></button>
@@ -745,14 +639,6 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>More</h4>
-                    <ul>
-                        <li><a href="platform.html">Platform Overview</a></li>
-                        <li><a href="hospitality.html">Hospitality Types</a></li>
-                        <li><a href="bundles.html">Bundles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
                     <h4>Get started</h4>
                     <ul>
                         <li><a href="#contact">Get a Demo</a></li>
@@ -788,28 +674,20 @@
         });
     });
 
-    // ── Video lightbox ──
-    const modal = document.getElementById('videoModal');
-    const frame = document.getElementById('videoFrame');
-    function openVideo(src) {
-        // Append autoplay so video plays immediately on open
-        const autoSrc = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
-        frame.src = autoSrc;
-        modal.classList.add('open');
+    // ── Portrait video modal ──
+    const portraitModal = document.getElementById('portraitModal');
+    const portraitFrame = document.getElementById('portraitFrame');
+    const videoSrc = 'https://drive.google.com/file/d/1T5y9eGhvay5l9PaUibFfAV39cNWlUM2D/preview';
+    function openPortrait() {
+        portraitFrame.src = videoSrc + '?autoplay=1';
+        portraitModal.classList.add('open');
         document.body.style.overflow = 'hidden';
     }
-    function closeVideo() {
-        modal.classList.remove('open');
-        frame.src = '';
+    function closePortrait() {
+        portraitModal.classList.remove('open');
+        portraitFrame.src = '';
         document.body.style.overflow = '';
     }
-    document.querySelectorAll('.video-card').forEach(card => {
-        card.addEventListener('click', () => openVideo(card.dataset.video));
-    });
-    document.getElementById('videoClose').addEventListener('click', closeVideo);
-    document.getElementById('videoBackdrop').addEventListener('click', closeVideo);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeVideo(); });
-
     // ── Photo carousel ──
     const slides = document.querySelectorAll('.carousel-slide');
     const dots = document.querySelectorAll('.carousel-dot');
@@ -824,12 +702,17 @@
     document.getElementById('carouselPrev').addEventListener('click', () => goTo(current - 1));
     document.getElementById('carouselNext').addEventListener('click', () => goTo(current + 1));
     dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-    // Auto-advance every 5 seconds
     let autoTimer = setInterval(() => goTo(current + 1), 5000);
     document.querySelector('.photo-carousel').addEventListener('mouseenter', () => clearInterval(autoTimer));
     document.querySelector('.photo-carousel').addEventListener('mouseleave', () => {
         autoTimer = setInterval(() => goTo(current + 1), 5000);
     });
+
+    document.getElementById('posPlayBtn').addEventListener('click', openPortrait);
+    document.getElementById('posPlayBtn').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openPortrait(); });
+    document.getElementById('portraitClose').addEventListener('click', closePortrait);
+    portraitModal.addEventListener('click', e => { if (e.target === portraitModal) closePortrait(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePortrait(); });
     </script>
 </body>
 </html>

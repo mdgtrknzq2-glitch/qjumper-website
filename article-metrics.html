@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 5 metrics every hospitality operator should be tracking in real time | QJumper</title>
+    <meta name="description" content="Most operators look at sales. The best operators look at four other numbers that tell a more complete — and more actionable — story.">
+    <meta name="author" content="QJumper">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.qjumper.com/article-metrics">
+    <meta property="og:title" content="The 5 metrics every hospitality operator should be tracking in real time | QJumper">
+    <meta property="og:description" content="Most operators look at sales. The best operators look at four other numbers that tell a more complete — and more actionable — story.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.qjumper.com/article-metrics">
+    <meta property="og:locale" content="en_NZ">
+    <meta property="og:image" content="https://www.qjumper.com/images/qjumper-og.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The 5 metrics every hospitality operator should be tracking in real time",
+      "description": "Most operators look at sales. The best operators look at four other numbers that tell a more complete — and more actionable — story.",
+      "author": { "@type": "Organization", "name": "QJumper" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "QJumper",
+        "url": "https://www.qjumper.com"
+      },
+      "url": "https://www.qjumper.com/article-metrics",
+      "mainEntityOfPage": "https://www.qjumper.com/article-metrics"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qjumper-v4.css">
+
+    <style>
+    .nav-inner { max-width: 1240px; }
+    .nav-links li a { font-size: 0.72rem; padding: 5px 8px; }
+
+    .article-hero {
+        padding: 140px 0 56px;
+        background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+        border-bottom: 1px solid var(--divider);
+    }
+    .article-hero .container-narrow { max-width: 780px; }
+    .article-hero h1 {
+        font-size: clamp(2rem, 4.4vw, 3.4rem);
+        line-height: 1.12; letter-spacing: -0.02em;
+        margin: 18px 0 22px; font-weight: 700;
+    }
+    .article-meta-row {
+        font-size: 0.82rem; color: var(--text-soft);
+        letter-spacing: 0.02em; margin-top: 4px;
+    }
+    .article-body { padding: 64px 0 88px; background: var(--white); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+        font-size: 1.06rem; line-height: 1.78; color: var(--text);
+        margin: 0 0 22px; font-weight: 400;
+    }
+    .article-h2 {
+        font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+        font-weight: 600; letter-spacing: -0.01em;
+        margin: 48px 0 18px; color: var(--text);
+        line-height: 1.25;
+    }
+    .article-list {
+        margin: 0 0 28px; padding-left: 22px; list-style: none;
+    }
+    .article-list li {
+        position: relative; padding: 8px 0 8px 20px;
+        font-size: 1.04rem; line-height: 1.72; color: var(--text);
+        border-bottom: 1px solid var(--divider);
+    }
+    .article-list li:last-child { border-bottom: 0; }
+    .article-list li::before {
+        content: ''; position: absolute; left: 0; top: 19px;
+        width: 6px; height: 6px; border-radius: 50%;
+        background: var(--gold);
+    }
+    .article-quote {
+        margin: 36px 0; padding: 30px 34px;
+        background: var(--gold-bg);
+        border-left: 3px solid var(--gold);
+        border-radius: 8px;
+    }
+    .article-quote p {
+        font-size: 1.16rem; line-height: 1.6;
+        font-style: italic; color: var(--text);
+        margin: 0 0 12px; font-weight: 500;
+    }
+    .article-quote cite {
+        font-size: 0.82rem; font-style: normal;
+        letter-spacing: 0.06em; color: var(--text-soft);
+        font-weight: 500;
+    }
+    .article-callout {
+        display: inline-block;
+        font-size: 0.72rem; font-weight: 700;
+        letter-spacing: 0.16em; text-transform: uppercase;
+        color: var(--gold); background: var(--gold-bg);
+        border: 1px solid var(--gold-border);
+        padding: 8px 16px; border-radius: 4px;
+        margin: 14px 0 22px;
+    }
+    .article-faq { margin-top: 16px; }
+    .article-faq .faq-q {
+        font-size: 1.08rem; font-weight: 600;
+        margin: 28px 0 10px; color: var(--text);
+        line-height: 1.4;
+    }
+    .article-faq .faq-a {
+        font-size: 1rem; line-height: 1.72;
+        margin: 0 0 18px; color: var(--text);
+    }
+    .article-tag {
+        display: inline-block; font-size: 0.65rem; font-weight: 600;
+        letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--gold); background: var(--gold-bg);
+        border: 1px solid var(--gold-border); border-radius: 100px;
+        padding: 4px 12px;
+    }
+    .article-cta {
+        background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+        padding: 72px 0; text-align: center;
+        border-top: 1px solid var(--divider);
+    }
+    .article-cta h3 {
+        font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+        font-weight: 600; margin-bottom: 14px;
+        letter-spacing: -0.01em;
+    }
+    .article-cta p {
+        font-size: 1.04rem; color: var(--text-soft);
+        max-width: 540px; margin: 0 auto 28px; line-height: 1.6;
+    }
+    .article-related {
+        padding: 64px 0; background: var(--white);
+        border-top: 1px solid var(--divider);
+    }
+    .article-related h3 {
+        font-size: 1.25rem; font-weight: 600;
+        margin-bottom: 28px; letter-spacing: -0.01em;
+    }
+    .related-grid {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .related-card {
+        display: block; padding: 24px;
+        border: 1px solid var(--divider); border-radius: 12px;
+        text-decoration: none; color: inherit; background: var(--white);
+        transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+    }
+    .related-card:hover {
+        box-shadow: var(--shadow-hover); transform: translateY(-2px);
+    }
+    .related-card .article-tag { margin-bottom: 12px; }
+    .related-card h4 {
+        font-size: 1rem; font-weight: 600;
+        line-height: 1.35; color: var(--text);
+    }
+    .article-back {
+        font-size: 0.82rem; color: var(--text-soft);
+        text-decoration: none; letter-spacing: 0.02em;
+        display: inline-flex; align-items: center; gap: 6px;
+    }
+    .article-back:hover { color: var(--gold); }
+    @media (max-width: 720px) {
+        .related-grid { grid-template-columns: 1fr; }
+        .article-hero { padding: 110px 0 40px; }
+        .article-body { padding: 44px 0 64px; }
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pos.html">POS</a></li>
+                <li><a href="kiosks.html">Kiosks</a></li>
+                <li><a href="web-ordering.html">Web Ordering</a></li>
+                <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                <li><a href="reporting.html">Reporting</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" class="nav-cta-pill">Get a Demo</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ── Article Hero ── -->
+    <section class="article-hero">
+        <div class="container-narrow">
+            <a href="resources.html" class="article-back">‹ Back to Resources</a>
+            <div style="margin-top:18px;">
+                <span class="article-tag">REPORTING &amp; INSIGHTS</span>
+            </div>
+            <h1>The 5 metrics every hospitality operator should be tracking in real time</h1>
+            <p class="article-meta-row">QJumper Team  ·  8 min read  ·  Reporting &amp; Insights</p>
+        </div>
+    </section>
+
+    <!-- ── Article Body ── -->
+    <section class="article-body">
+        <div class="container-narrow">
+            <p>Sales is the metric everyone watches. But sales alone tells you very little about whether your business is healthy, efficient, or profitable. The operators who consistently outperform — who maintain margins under pressure and make better decisions faster — are tracking a small set of numbers that tell a far more complete story.</p>
+            <h2 class="article-h2">Why real-time matters</h2>
+            <p>The hospitality industry operates on tight margins. NetSuite&#x27;s analysis of restaurant industry benchmarks puts average restaurant profit margins at 3-5%. At those margins, small inefficiencies have an outsized effect. A food cost percentage that drifts two points above target. A labour cost that runs high on slow trading days because scheduling was not adjusted quickly enough.</p>
+            <p>The critical issue is timing. Many operators still rely on end-of-month profit and loss statements to understand how they are performing. By the time those numbers arrive, it is too late to fix what went wrong. A week of high food waste, a fortnight of over-staffing, two weeks of low average transaction values — these are correctable problems in real time, and expensive ones if discovered a month later.</p>
+            <p>Real-time reporting does not mean obsessively watching a dashboard every five minutes. It means having the data available to act on it during service, at the end of each day, and when making scheduling and ordering decisions for the week ahead — rather than after the month has closed.</p>
+            <blockquote class="article-quote">
+              <p>“By the time the end-of-month P&amp;L arrives, it is too late to fix what went wrong. These problems are correctable in real time — and expensive when discovered a month later.”</p>
+              <cite>— QJumper</cite>
+            </blockquote>
+            <h2 class="article-h2">The five numbers that matter most</h2>
+            <h2 class="article-h2">1. Food cost percentage</h2>
+            <div class="article-callout">INDUSTRY BENCHMARK: 28-35% OF REVENUE</div>
+            <p>Food cost percentage is the ratio of your total food and beverage spend to your total revenue, expressed as a percentage. The typical range is 28-35% of revenue, with the right target varying by concept — quick service typically runs lower, fine dining higher. The number itself matters less than the trend: is your food cost percentage stable, drifting up, or coming down? A spike before the end of the month usually signals a specific problem — supplier price increase, portion drift, waste, or theft — that can be investigated and addressed if caught early.</p>
+            <h2 class="article-h2">2. Labour cost percentage</h2>
+            <div class="article-callout">INDUSTRY BENCHMARK: 25-35% OF REVENUE</div>
+            <p>Labour cost percentage measures your total staffing spend as a proportion of revenue. The target range is 25-35% across most hospitality concepts, with quick service restaurants typically at the lower end. The challenge with labour cost is that it is partially fixed — you need a minimum staffing level regardless of how busy you are — but partially flexible through scheduling. Tracking this number daily makes it possible to identify whether you are over-staffed on slower trading periods and adjust rosters proactively.</p>
+            <h2 class="article-h2">3. Prime cost</h2>
+            <div class="article-callout">INDUSTRY BENCHMARK: 55-65% OF REVENUE</div>
+            <p>Prime cost is the sum of food cost percentage and labour cost percentage — the two largest variable expenses in any hospitality business. The target prime cost range for most hospitality operations is 55-65% of revenue. It is the single most important number for understanding whether a venue is profitable at its current trading level. A business with excellent sales but a prime cost above 70% will struggle to generate profit regardless of how busy it is.</p>
+            <h2 class="article-h2">4. Average transaction value (ATV)</h2>
+            <div class="article-callout">TRACK AGAINST YOUR OWN BASELINE; AIM TO GROW IT</div>
+            <p>Average transaction value is total revenue divided by the number of transactions over any given period. It is one of the most direct levers a hospitality operator can pull — because it responds to what you do, not just to how busy you are. ATV reflects the combined effect of menu design, pricing, upsell behaviour, and ordering channel mix. A kiosk ordering environment consistently drives higher ATV than counter service — and that difference should show up in your channel-level reporting.</p>
+            <h2 class="article-h2">5. Order throughput and service speed</h2>
+            <div class="article-callout">TRACK PEAK-PERIOD THROUGHPUT; IDENTIFY BOTTLENECKS FAST</div>
+            <p>Throughput — the number of orders processed per hour during peak service — is where operational efficiency becomes directly visible in your numbers. A venue that is frequently turning customers away at peak periods, or losing them to long queues, is leaving revenue on the table. Service speed and order accuracy are among the top drivers of guest satisfaction scores — and guest satisfaction directly predicts return visits.</p>
+            <h2 class="article-h2">Why these five, and not others</h2>
+            <p>There are dozens of metrics a hospitality operator could theoretically track. The five above were chosen because they are universally applicable, actionable in real time, and directly connected to profitability. Food cost, labour cost, and prime cost tell you whether your margins are healthy. Average transaction value tells you whether you are maximising revenue from the customers you have. Order throughput tells you whether your operations are performing under pressure.</p>
+            <p>The practical advice from industry analysts is consistent: choose a small number of core KPIs — five to ten is a sensible range — and automate their collection wherever possible. The goal is to spend less time producing reporting and more time acting on it.</p>
+            <h2 class="article-h2">The reporting infrastructure question</h2>
+            <p>These five metrics are only useful if you can see them without significant manual effort. A reporting environment where food cost requires a manual spreadsheet reconciliation, or where average transaction value by channel has to be exported and calculated, is a reporting environment that most operators will not use consistently — not because they do not care, but because the friction is too high.</p>
+            <p>When ordering, payments, and POS data all flow through a unified platform, these numbers become available automatically. Food cost percentage can be tracked daily against ingredient purchase data. Average transaction value is available by channel and by shift without any manual compilation. That accessibility converts data from a monthly backward-looking exercise into a forward-looking operational tool.</p>
+            <h2 class="article-h2">Frequently Asked Questions</h2>
+            <div class="article-faq">
+              <h3 class="faq-q">How often should I review these metrics?</h3>
+              <p class="faq-a">Daily, at minimum, for food cost, labour cost, and average transaction value. Prime cost can be reviewed weekly as a check on the combined position. Order throughput is most useful when reviewed at the end of peak service periods. Monthly reviews remain valuable for trend analysis — but daily visibility is what makes the metrics actionable.</p>
+              <h3 class="faq-q">What is a good food cost percentage for a restaurant?</h3>
+              <p class="faq-a">The industry benchmark range is 28-35% of revenue, but the right target depends on your concept. Quick service restaurants with simpler menus typically aim for the lower end. Fine dining venues using premium ingredients can operate at the higher end and still be profitable, provided their pricing reflects it.</p>
+              <h3 class="faq-q">How do I improve average transaction value?</h3>
+              <p class="faq-a">The most effective levers are menu design, upsell training, ordering channel mix, and promotional mechanics. Kiosk and digital ordering consistently drive higher ATV than counter service. Staff-driven upselling also makes a measurable difference. The key is tracking ATV by channel so you can see which interventions are working.</p>
+              <h3 class="faq-q">What does prime cost tell me that food cost and labour cost don&#x27;t?</h3>
+              <p class="faq-a">Prime cost gives you a single number for your two largest variable expenses combined, making it the most direct indicator of whether your venue can be profitable at its current trading level. It is possible to have an acceptable food cost and an acceptable labour cost individually but still have a prime cost that leaves too little margin to cover fixed overheads.</p>
+              <h3 class="faq-q">Do I need specialist software to track these metrics?</h3>
+              <p class="faq-a">You need a system that captures the underlying transaction, labour, and purchase data accurately — and ideally one that calculates and surfaces these metrics automatically. A unified hospitality platform that connects your POS, ordering channels, and reporting in one place makes this straightforward.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="article-cta">
+        <div class="container-narrow">
+            <h3>Run your venue on one platform</h3>
+            <p>See how QJumper brings POS, ordering, kiosks, and reporting together — and what that looks like for your venue.</p>
+            <a href="index.html#contact" class="btn btn-primary">Get a Demo</a>
+        </div>
+    </section>
+
+    <!-- ── Related ── -->
+    <section class="article-related">
+        <div class="container">
+            <h3>More articles</h3>
+            <div class="related-grid">
+        <a href="article-hidden-cost.html" class="related-card">
+          <span class="article-tag">Operations &amp; Technology</span>
+          <h4>The hidden cost of running multiple hospitality systems</h4>
+        </a>
+        <a href="article-multi-site.html" class="related-card">
+          <span class="article-tag">Multi-Site</span>
+          <h4>Scaling from one venue to many</h4>
+        </a>
+        <a href="article-kiosk-aov.html" class="related-card">
+          <span class="article-tag">Kiosks</span>
+          <h4>Why self-service kiosks increase average order value</h4>
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></div>
+                    <p>Making hospitality effortless so owners and teams can focus on great service, happy customers, and sustainable growth.</p>
+                    <a href="mailto:hello@qjumper.com" class="footer-email">hello@qjumper.com</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="pos.html">Point of Sale</a></li>
+                        <li><a href="kiosks.html">Kiosks</a></li>
+                        <li><a href="web-ordering.html">Web Ordering</a></li>
+                        <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                        <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                        <li><a href="reporting.html">Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get started</h4>
+                    <ul>
+                        <li><a href="#contact">Get a Demo</a></li>
+                        <li><a href="mailto:hello@qjumper.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 QJumper. All rights reserved. New Zealand.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); });
+    document.getElementById('hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.reveal').forEach(el => {
+        new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.07 }).observe(el);
+    });
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-q').addEventListener('click', function() {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+            this.setAttribute('aria-expanded', !isOpen);
+        });
+    });
+    </script>
+</body>
+</html>

@@ -140,30 +140,33 @@
     .product-hero-visual { border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 24px 64px rgba(0,0,0,0.12), 0 0 0 1px var(--divider); }
     .product-hero-visual img { width: 100%; height: 360px; object-fit: cover; display: block; }
 
-    .media-placeholder { background: var(--tile); border: 1.5px dashed var(--divider); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; min-height: 260px; position: relative; }
-    .media-placeholder-inner { text-align: center; padding: 36px 24px; }
-    .media-placeholder-inner strong { display: block; font-size: 0.9rem; color: var(--text-2); margin-bottom: 6px; margin-top: 14px; }
-    .media-placeholder-inner span { font-size: 0.78rem; color: var(--text-3); line-height: 1.5; display: block; }
-    .media-placeholder-badge { position: absolute; top: 14px; right: 14px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; background: var(--gold-bg); border: 1px solid var(--gold-border); color: var(--gold); border-radius: 100px; padding: 3px 10px; }
+    /* Demo video — portrait layout */
+    .demo-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .demo-text .sec-eyebrow { display: block; margin-bottom: 12px; }
+    .demo-text h2 { font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 700; color: var(--text); letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 16px; }
+    .demo-text p { font-size: 0.95rem; color: var(--text-2); line-height: 1.75; margin-bottom: 20px; }
+    .demo-text ul { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
+    .demo-text ul li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: var(--text-2); line-height: 1.55; }
+    .demo-text ul li::before { content: ''; display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 6px; opacity: 0.8; }
+    .demo-screen { display: flex; justify-content: center; }
+    .kiosk-frame-wrap { position: relative; width: 300px; }
+    .kiosk-frame-outer { background: #1c1c1e; border-radius: 32px; padding: 14px; box-shadow: 0 32px 80px rgba(0,0,0,0.22), 0 0 0 1px rgba(255,255,255,0.06); }
+    .kiosk-frame-inner { border-radius: 20px; overflow: hidden; aspect-ratio: 9/16; background: #111; position: relative; cursor: pointer; }
+    .kiosk-play-poster { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 100%); }
+    .kiosk-play-circle { width: 68px; height: 68px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(184,137,58,0.45); transition: transform 0.2s var(--ease), box-shadow 0.2s; }
+    .kiosk-frame-inner:hover .kiosk-play-circle { transform: scale(1.1); box-shadow: 0 12px 40px rgba(184,137,58,0.6); }
+    .kiosk-play-circle svg { margin-left: 4px; }
+    .kiosk-play-label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); letter-spacing: 0.08em; text-transform: uppercase; }
 
-    .video-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    .video-card { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--divider); background: var(--tile); cursor: pointer; position: relative; transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease); }
-    .video-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.12); transform: translateY(-3px); }
-    .video-thumb-placeholder { width: 100%; aspect-ratio: 16/9; background: linear-gradient(135deg, var(--tile) 0%, #e8e3da 100%); display: flex; align-items: center; justify-content: center; }
-    .video-play-btn { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; }
-    .video-play-circle { width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.18); transition: transform 0.2s var(--ease), background 0.2s; }
-    .video-card:hover .video-play-circle { transform: scale(1.1); background: white; }
-    .video-play-circle svg { margin-left: 3px; }
-    .video-label { font-size: 0.78rem; font-weight: 600; color: white; background: rgba(0,0,0,0.45); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-radius: 100px; padding: 4px 14px; letter-spacing: 0.02em; }
-    .video-modal { display: none; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center; }
-    .video-modal.open { display: flex; }
-    .video-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.82); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); animation: fadeIn 0.2s ease; }
-    .video-modal-box { position: relative; z-index: 1; width: 70vw; max-width: 1100px; background: #000; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,0.5); animation: scaleIn 0.25s var(--ease); }
-    .video-modal-box iframe { display: block; width: 100%; aspect-ratio: 16/9; border: none; }
-    .video-modal-close { position: absolute; top: -44px; right: 0; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
-    .video-modal-close:hover { background: rgba(255,255,255,0.28); }
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes scaleIn { from { opacity: 0; transform: scale(0.94); } to { opacity: 1; transform: scale(1); } }
+    /* Portrait video modal */
+    .portrait-modal { display: none; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center; background: rgba(0,0,0,0.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    .portrait-modal.open { display: flex; }
+    .portrait-modal-inner { position: relative; }
+    .portrait-modal-box { width: min(360px, 88vw); aspect-ratio: 9/16; background: #000; border-radius: 20px; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,0.7); animation: scaleIn 0.25s var(--ease); }
+    .portrait-modal-box iframe { display: block; width: 100%; height: 100%; border: none; }
+    .portrait-modal-close { position: absolute; top: -48px; right: 0; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; font-family: inherit; }
+    .portrait-modal-close:hover { background: rgba(255,255,255,0.28); }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
 
     .stat-callout { background: var(--gold-bg); border: 1px solid var(--gold-border); border-radius: var(--radius-lg); padding: 36px 40px; display: flex; align-items: center; gap: 40px; margin-top: 0; }
     .stat-callout-num { font-size: 3rem; font-weight: 800; color: var(--gold); letter-spacing: -0.05em; line-height: 1; white-space: nowrap; }
@@ -201,33 +204,20 @@
     .faq-a-inner { padding: 0 28px 20px; font-size: 0.9rem; color: var(--text-2); line-height: 1.7; }
     .faq-a-inner a { color: var(--gold); }
 
-    /* Photo carousel */
-    .photo-carousel { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: var(--tile); border: 1px solid var(--divider); }
-    .carousel-track { position: relative; height: 520px; background: #f5f3ef; }
-    .carousel-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s var(--ease); display: flex; align-items: center; justify-content: center; }
-    .carousel-slide.active { opacity: 1; }
-    .carousel-slide img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
-    .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.9); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 2; box-shadow: 0 2px 12px rgba(0,0,0,0.15); transition: background 0.15s, transform 0.15s; }
-    .carousel-btn:hover { background: white; transform: translateY(-50%) scale(1.08); }
-    #carouselPrev { left: 14px; }
-    #carouselNext { right: 14px; }
-    .carousel-dots { display: flex; justify-content: center; gap: 7px; padding: 14px 0 16px; background: var(--tile); }
-    .carousel-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--divider); border: none; cursor: pointer; padding: 0; transition: background 0.2s, transform 0.2s; }
-    .carousel-dot.active { background: var(--gold); transform: scale(1.3); }
-
     @media (max-width: 900px) {
         .product-hero-inner { grid-template-columns: 1fr; gap: 40px; }
         .product-hero-visual { display: none; }
         .feature-grid { grid-template-columns: 1fr 1fr; }
-        .video-grid { grid-template-columns: 1fr; }
         .steps-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
         .stat-callout { flex-direction: column; gap: 20px; text-align: center; }
-        .carousel-track { height: 320px; }
+        .demo-layout { grid-template-columns: 1fr; gap: 40px; }
+        .kiosk-frame-wrap { width: 260px; }
     }
     @media (max-width: 600px) {
         .feature-grid { grid-template-columns: 1fr; }
         .steps-grid { grid-template-columns: 1fr; }
         .product-hero-stats { flex-wrap: wrap; gap: 20px; }
+        .kiosk-frame-wrap { width: 220px; }
     }
     </style>
 </head>
@@ -299,100 +289,54 @@
                 <div class="stat-callout-num">10–30%</div>
                 <div class="stat-callout-body">
                     <h3>Kiosk ordering consistently lifts average order value</h3>
-                    <p>Research consistently shows that customers ordering via kiosk spend more than those ordering at the counter — driven by the time to browse, visual menu presentation, and the removal of social pressure. <a href="#">Read the research ›</a></p>
+                    <p>Research consistently shows that customers ordering via kiosk spend more than those ordering at the counter — driven by the time to browse, visual menu presentation, and the removal of social pressure. <a href="article-kiosk-aov.html">Read the research ›</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── Demo Videos ── -->
+    <!-- ── Demo Video ── -->
     <section class="sec sec-tile">
         <div class="container">
-            <div class="sec-header reveal">
-                <span class="sec-eyebrow">See it in action</span>
-                <h2 class="sec-title">QJumper Kiosks — live demos</h2>
-                <p class="sec-desc">See both the menu browsing and ordering flows across fast and scroll-style demo formats.</p>
-            </div>
-            <div class="video-grid reveal">
-                <div class="video-card" data-video="https://drive.google.com/file/d/1EO9zm6eTTQ329ka3CwjLv_24VpRW-Sua/preview">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                        <span class="video-label">Menu Demo — Fast</span>
-                    </div>
+            <div class="demo-layout reveal">
+                <div class="demo-text">
+                    <span class="sec-eyebrow">See it in action</span>
+                    <h2>The full kiosk experience, start to finish</h2>
+                    <p>Watch a real QJumper kiosk in action — from the idle screen through menu browsing, item customisation, upsell prompts, and checkout. Exactly as your customers would experience it.</p>
+                    <ul>
+                        <li>Fully branded idle screen and menu presentation</li>
+                        <li>Contextual upsell prompts placed at the right moment</li>
+                        <li>Smooth item customisation and modifier flow</li>
+                        <li>Fast, contactless checkout with instant kitchen firing</li>
+                    </ul>
                 </div>
-                <div class="video-card" data-video="https://drive.google.com/file/d/1_-UldO8repYooVlSebm2ZorCMoPMWX1M/preview">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                        <span class="video-label">Menu Demo — Scroll</span>
-                    </div>
-                </div>
-                <div class="video-card" data-video="https://drive.google.com/file/d/10RXLHRXlbNRAkEgRNGVnuDHvV2N5Bznz/preview">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                        <span class="video-label">Order Demo — Fast</span>
-                    </div>
-                </div>
-                <div class="video-card" data-video="https://drive.google.com/file/d/1HAWx2ILJXHB2zlq_Fg6Tqn-jVKqfai3Z/preview">
-                    <div class="video-thumb-placeholder"></div>
-                    <div class="video-play-btn">
-                        <div class="video-play-circle"><svg width="18" height="18" viewBox="0 0 24 24" fill="var(--gold)" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
-                        <span class="video-label">Order Demo</span>
+                <div class="demo-screen">
+                    <div class="kiosk-frame-wrap">
+                        <div class="kiosk-frame-outer">
+                            <div class="kiosk-frame-inner" id="kioskPlayBtn" role="button" aria-label="Play kiosk demo video" tabindex="0">
+                                <div class="kiosk-play-poster">
+                                    <div class="kiosk-play-circle">
+                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="white" stroke="none"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                                    </div>
+                                    <span class="kiosk-play-label">Watch demo</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── Video lightbox modal ── -->
-    <div class="video-modal" id="videoModal">
-        <div class="video-modal-backdrop" id="videoBackdrop"></div>
-        <div class="video-modal-box">
-            <button class="video-modal-close" id="videoClose" aria-label="Close video">✕</button>
-            <iframe id="videoFrame" src="" allow="autoplay" allowfullscreen title="Kiosk demo video"></iframe>
+    <!-- ── Portrait video modal ── -->
+    <div class="portrait-modal" id="portraitModal">
+        <div class="portrait-modal-inner">
+            <button class="portrait-modal-close" id="portraitClose" aria-label="Close video">✕</button>
+            <div class="portrait-modal-box">
+                <iframe id="portraitFrame" src="" allow="autoplay; fullscreen" allowfullscreen title="QJumper kiosk demo"></iframe>
+            </div>
         </div>
     </div>
-
-    <!-- ── Photo Carousel ── -->
-    <section class="sec sec-white">
-        <div class="container">
-            <div class="sec-header reveal">
-                <span class="sec-eyebrow">QJumper Kiosks in the wild</span>
-                <h2 class="sec-title">Real venues. Real results.</h2>
-                <p class="sec-desc">QJumper kiosks installed and running across New Zealand hospitality venues.</p>
-            </div>
-            <div class="photo-carousel reveal">
-                <div class="carousel-track">
-                    <div class="carousel-slide active"><img src="https://lh3.googleusercontent.com/d/10Jh6OR-KAeD1g-LHGCuq3qt7VBs5CIl7" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1BCGn_Ts3jj3MD1fwuAll65qlvKGrJGVU" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1E-PgpmhTzi0tokkhSI7KYe27gyr-F99H" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1bNw7ggdO16vda4RlKi8DU9rh2BLrQQFn" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1fT0x8GvJkgtphL99Y321mfmUxEwvvzGU" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1g0K1yR268mATvzoITPCR4F0HaMqEofs6" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1i3wpos_9-_oEkmIC9tC4iyKakk05ezku" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1lybAzRJwZqTPRtisVPGSZVjq2OFP-nfa" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1tgFVqRbl0hj0FxZLYyG2oCDv6USgeho0" alt="QJumper kiosk in venue"></div>
-                    <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/d/1vfXZxyObgR2Q2sLz45meWNaGggQuClzo" alt="QJumper kiosk in venue"></div>
-                </div>
-                <button class="carousel-btn" id="carouselPrev" aria-label="Previous photo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
-                <button class="carousel-btn" id="carouselNext" aria-label="Next photo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
-                <div class="carousel-dots">
-                    <button class="carousel-dot active" aria-label="Photo 1"></button>
-                    <button class="carousel-dot" aria-label="Photo 2"></button>
-                    <button class="carousel-dot" aria-label="Photo 3"></button>
-                    <button class="carousel-dot" aria-label="Photo 4"></button>
-                    <button class="carousel-dot" aria-label="Photo 5"></button>
-                    <button class="carousel-dot" aria-label="Photo 6"></button>
-                    <button class="carousel-dot" aria-label="Photo 7"></button>
-                    <button class="carousel-dot" aria-label="Photo 8"></button>
-                    <button class="carousel-dot" aria-label="Photo 9"></button>
-                    <button class="carousel-dot" aria-label="Photo 10"></button>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- ── Features ── -->
     <section class="sec sec-white" id="features">
@@ -491,7 +435,7 @@
             <div class="faq-list reveal">
                 <div class="faq-item">
                     <button class="faq-q">Why do kiosks increase average order value? <span class="faq-icon">+</span></button>
-                    <div class="faq-a"><div class="faq-a-inner">Research consistently shows that removing counter pressure, giving customers time to browse, and presenting food visually all lead to higher spend. Smart upsell prompts — shown at the right moment in the ordering flow — add further to average order value. <a href="#">Read the research ›</a></div></div>
+                    <div class="faq-a"><div class="faq-a-inner">Research consistently shows that removing counter pressure, giving customers time to browse, and presenting food visually all lead to higher spend. Smart upsell prompts — shown at the right moment in the ordering flow — add further to average order value. <a href="article-kiosk-aov.html">Read the research ›</a></div></div>
                 </div>
                 <div class="faq-item">
                     <button class="faq-q">How do kiosks connect to the kitchen? <span class="faq-icon">+</span></button>
@@ -590,14 +534,6 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>More</h4>
-                    <ul>
-                        <li><a href="platform.html">Platform Overview</a></li>
-                        <li><a href="hospitality.html">Hospitality Types</a></li>
-                        <li><a href="bundles.html">Bundles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
                     <h4>Get started</h4>
                     <ul>
                         <li><a href="#contact">Get a Demo</a></li>
@@ -624,6 +560,26 @@
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
         }, { threshold: 0.07 }).observe(el);
     });
+    // ── Portrait video modal ──
+    const portraitModal = document.getElementById('portraitModal');
+    const portraitFrame = document.getElementById('portraitFrame');
+    const videoSrc = 'https://drive.google.com/file/d/14wXxZVeEY_e-3AABXnlBF0Qj0U-l_Bw8/preview';
+    function openPortrait() {
+        portraitFrame.src = videoSrc + '?autoplay=1';
+        portraitModal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+    function closePortrait() {
+        portraitModal.classList.remove('open');
+        portraitFrame.src = '';
+        document.body.style.overflow = '';
+    }
+    document.getElementById('kioskPlayBtn').addEventListener('click', openPortrait);
+    document.getElementById('kioskPlayBtn').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openPortrait(); });
+    document.getElementById('portraitClose').addEventListener('click', closePortrait);
+    portraitModal.addEventListener('click', e => { if (e.target === portraitModal) closePortrait(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closePortrait(); });
+
     document.querySelectorAll('.faq-q').forEach(btn => {
         btn.addEventListener('click', function() {
             const item = this.closest('.faq-item');
@@ -632,45 +588,6 @@
             if (!isOpen) item.classList.add('open');
         });
     });
-    // ── Photo carousel ──
-    const slides = document.querySelectorAll('.carousel-slide');
-    const dots = document.querySelectorAll('.carousel-dot');
-    let current = 0;
-    function goTo(n) {
-        slides[current].classList.remove('active');
-        dots[current].classList.remove('active');
-        current = (n + slides.length) % slides.length;
-        slides[current].classList.add('active');
-        dots[current].classList.add('active');
-    }
-    document.getElementById('carouselPrev').addEventListener('click', () => goTo(current - 1));
-    document.getElementById('carouselNext').addEventListener('click', () => goTo(current + 1));
-    dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-    let autoTimer = setInterval(() => goTo(current + 1), 5000);
-    document.querySelector('.photo-carousel').addEventListener('mouseenter', () => clearInterval(autoTimer));
-    document.querySelector('.photo-carousel').addEventListener('mouseleave', () => {
-        autoTimer = setInterval(() => goTo(current + 1), 5000);
-    });
-
-    // ── Video lightbox ──
-    const modal = document.getElementById('videoModal');
-    const frame = document.getElementById('videoFrame');
-    function openVideo(src) {
-        frame.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
-        modal.classList.add('open');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeVideo() {
-        modal.classList.remove('open');
-        frame.src = '';
-        document.body.style.overflow = '';
-    }
-    document.querySelectorAll('.video-card').forEach(card => {
-        card.addEventListener('click', () => openVideo(card.dataset.video));
-    });
-    document.getElementById('videoClose').addEventListener('click', closeVideo);
-    document.getElementById('videoBackdrop').addEventListener('click', closeVideo);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeVideo(); });
     </script>
 </body>
 </html>

@@ -3,3 +3,16 @@
 *.webloc
 .vscode/
 node_modules/
+
+# Working files — kept locally, not deployed to Pages
+CLAUDE.md
+memory/
+Trudi-website-brief.md
+trudi-cowork-setup.md
+Deploy V1.command
+*.command
+
+# Snapshot / source / archive folders
+_archive_pre_v2_20260526/
+Qjumper Website V2 May 2026/
+Qjumper Website_V1_200526/

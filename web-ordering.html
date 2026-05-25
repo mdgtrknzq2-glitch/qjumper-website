@@ -123,17 +123,42 @@
     .product-hero-visual img { width: 100%; height: 360px; object-fit: cover; display: block; }
     .hero-trust-line { font-size: 0.78rem; color: var(--text-3); margin-top: 18px; letter-spacing: 0.01em; }
 
-    .video-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-    .video-card { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--divider); cursor: pointer; transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease); }
-    .video-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.13); transform: translateY(-2px); }
+    /* Demo video layout */
+    .demo-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .demo-text h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: var(--text); letter-spacing: -0.03em; margin-bottom: 14px; }
+    .demo-text p { font-size: 0.95rem; color: var(--text-2); line-height: 1.7; margin-bottom: 20px; }
+    .demo-text ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .demo-text ul li { font-size: 0.9rem; color: var(--text-2); display: flex; align-items: flex-start; gap: 10px; }
+    .demo-text ul li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-top: 7px; flex-shrink: 0; }
+    .web-frame-wrap { width: 100%; }
+    .web-frame-outer { background: #1c1c1e; border-radius: 18px; padding: 12px; box-shadow: 0 32px 80px rgba(0,0,0,0.22), 0 0 0 1px rgba(255,255,255,0.06); }
+    .web-frame-inner { border-radius: 10px; aspect-ratio: 16/9; background: #111; position: relative; cursor: pointer; overflow: hidden; }
+    .web-play-poster { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background: linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 100%); }
+    .web-play-circle { width: 68px; height: 68px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 32px rgba(184,137,58,0.45); }
+    .web-play-label { font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.7); letter-spacing: 0.08em; text-transform: uppercase; }
+    .web-modal { display: none; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center; background: rgba(0,0,0,0.9); backdrop-filter: blur(8px); }
+    .web-modal.open { display: flex; }
+    .web-modal-inner { position: relative; }
+    .web-modal-box { width: min(860px, 92vw); aspect-ratio: 16/9; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 40px 120px rgba(0,0,0,0.7); animation: scaleIn 0.25s var(--ease); }
+    .web-modal-box iframe { display: block; width: 100%; height: 100%; border: none; }
+    .web-modal-close { position: absolute; top: -48px; right: 0; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.25); color: white; font-size: 1.1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
+    .web-modal-close:hover { background: rgba(255,255,255,0.3); }
+    @keyframes scaleIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
 
-    /* Video lightbox modal */
-    .video-modal-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 9999; align-items: center; justify-content: center; }
-    .video-modal-backdrop.open { display: flex; }
-    .video-modal-box { position: relative; width: 70vw; max-width: 1000px; background: #000; border-radius: 16px; overflow: hidden; box-shadow: 0 32px 80px rgba(0,0,0,0.5); }
-    .video-modal-frame { width: 100%; aspect-ratio: 16/9; border: none; display: block; }
-    .video-modal-close { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.15); border: none; color: #fff; font-size: 1rem; cursor: pointer; z-index: 1; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
-    .video-modal-close:hover { background: rgba(255,255,255,0.3); }
+    /* Screenshot carousel */
+    .ws-carousel-section { background: var(--tile); border-top: 1px solid var(--divider); border-bottom: 1px solid var(--divider); padding: 52px 0; }
+    .ws-carousel-wrap { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.12); aspect-ratio: 16/9; background: #111; }
+    .ws-carousel-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 0.6s ease; }
+    .ws-carousel-slide.active { opacity: 1; }
+    .ws-carousel-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ws-carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.2); color: white; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; z-index: 2; }
+    .ws-carousel-btn:hover { background: rgba(0,0,0,0.8); }
+    .ws-carousel-prev { left: 14px; }
+    .ws-carousel-next { right: 14px; }
+    .ws-carousel-dots { display: flex; justify-content: center; gap: 7px; margin-top: 18px; }
+    .ws-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--divider); border: none; cursor: pointer; padding: 0; transition: background 0.2s; }
+    .ws-dot.active { background: var(--gold); }
+    .ws-carousel-caption { text-align: center; margin-top: 10px; font-size: 0.78rem; color: var(--text-3); letter-spacing: 0.02em; min-height: 1.2em; }
 
     .stat-callout { background: var(--gold-bg); border: 1px solid var(--gold-border); border-radius: var(--radius-lg); padding: 36px 40px; display: flex; align-items: center; gap: 40px; }
     .stat-callout-num { font-size: 3rem; font-weight: 800; color: var(--gold); letter-spacing: -0.05em; line-height: 1; white-space: nowrap; }
@@ -168,9 +193,9 @@
         .product-hero-inner { grid-template-columns: 1fr; gap: 40px; }
         .product-hero-visual { display: none; }
         .feature-grid { grid-template-columns: 1fr 1fr; }
-        .video-grid-2 { grid-template-columns: 1fr; }
+        .demo-layout { grid-template-columns: 1fr; gap: 40px; }
         .stat-callout { flex-direction: column; gap: 20px; text-align: center; }
-        .video-modal-box { width: 92vw; }
+        .ws-carousel-btn { width: 32px; height: 32px; font-size: 0.85rem; }
     }
     @media (max-width: 600px) { .feature-grid { grid-template-columns: 1fr; } }
     </style>
@@ -249,66 +274,62 @@
         </div>
     </section>
 
-    <!-- ── Demo Videos ── -->
+    <!-- ── Demo Video ── -->
     <section class="sec sec-tile">
         <div class="container">
-            <div class="sec-header reveal">
-                <span class="sec-eyebrow">See it in action</span>
-                <h2 class="sec-title">QJumper Web Ordering — live demos</h2>
-                <p class="sec-desc">Watch the web ordering flow across menu browsing and checkout — exactly what your customers will experience.</p>
-            </div>
-            <div class="video-grid-2 reveal">
-                <!-- WMenu Demo V1 -->
-                <div class="video-card" data-video="https://drive.google.com/file/d/1PBnd2sEUhwqMwa38HTPo9Knmw-30-aFd/preview">
-                    <div style="position:relative;padding-bottom:62.5%;background:linear-gradient(135deg,#1c1c1e 0%,#2c2c2e 100%);">
-                        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;">
-                            <div style="width:64px;height:64px;border-radius:50%;background:rgba(184,137,58,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(184,137,58,0.4);">
-                                <svg viewBox="0 0 24 24" width="26" height="26" fill="white"><polygon points="10 8 16 12 10 16"/></svg>
-                            </div>
-                            <span style="color:rgba(255,255,255,0.9);font-size:0.88rem;font-weight:600;letter-spacing:0.01em;">Web Menu Demo V1</span>
-                            <span style="color:rgba(255,255,255,0.45);font-size:0.75rem;">Click to play</span>
-                        </div>
-                    </div>
+            <div class="demo-layout reveal">
+                <div class="demo-text">
+                    <span class="sec-eyebrow">See it in action</span>
+                    <h2>The full web ordering experience, start to finish</h2>
+                    <p>Watch a customer journey through the branded storefront — menu browsing, item customisation, and checkout — exactly what your customers will see.</p>
+                    <ul>
+                        <li>Branded menu browsing on any device</li>
+                        <li>Modifier and customisation flow</li>
+                        <li>Fast, integrated checkout</li>
+                        <li>Order confirmed and firing to the kitchen</li>
+                    </ul>
                 </div>
-                <!-- WMenu Demo V2 -->
-                <div class="video-card" data-video="https://drive.google.com/file/d/1fpxcRXxbpIKVeBKm-780e1R-4hycy6IM/preview">
-                    <div style="position:relative;padding-bottom:62.5%;background:linear-gradient(135deg,#1c1c1e 0%,#2c2c2e 100%);">
-                        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;">
-                            <div style="width:64px;height:64px;border-radius:50%;background:rgba(184,137,58,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(184,137,58,0.4);">
-                                <svg viewBox="0 0 24 24" width="26" height="26" fill="white"><polygon points="10 8 16 12 10 16"/></svg>
+                <div class="web-frame-wrap">
+                    <div class="web-frame-outer">
+                        <div class="web-frame-inner" id="webPlayBtn" role="button" aria-label="Play web ordering demo video" tabindex="0">
+                            <div class="web-play-poster">
+                                <div class="web-play-circle">
+                                    <svg width="26" height="26" viewBox="0 0 24 24" fill="white" stroke="none"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                                </div>
+                                <span class="web-play-label">Watch demo</span>
                             </div>
-                            <span style="color:rgba(255,255,255,0.9);font-size:0.88rem;font-weight:600;letter-spacing:0.01em;">Web Menu Demo V2</span>
-                            <span style="color:rgba(255,255,255,0.45);font-size:0.75rem;">Click to play</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- WOrder Demo V2 -->
-                <div class="video-card" data-video="https://drive.google.com/file/d/1ivDBrAEB6y7kEbroLJzvDMlfhCDXDYMM/preview">
-                    <div style="position:relative;padding-bottom:62.5%;background:linear-gradient(135deg,#1c1c1e 0%,#2c2c2e 100%);">
-                        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;">
-                            <div style="width:64px;height:64px;border-radius:50%;background:rgba(184,137,58,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(184,137,58,0.4);">
-                                <svg viewBox="0 0 24 24" width="26" height="26" fill="white"><polygon points="10 8 16 12 10 16"/></svg>
-                            </div>
-                            <span style="color:rgba(255,255,255,0.9);font-size:0.88rem;font-weight:600;letter-spacing:0.01em;">Web Order Demo V2</span>
-                            <span style="color:rgba(255,255,255,0.45);font-size:0.75rem;">Click to play</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- WOrder Demo V3 -->
-                <div class="video-card" data-video="https://drive.google.com/file/d/1QYmLjy_c4K0eDZTKzJf2VPTUY5_qOtad/preview">
-                    <div style="position:relative;padding-bottom:62.5%;background:linear-gradient(135deg,#1c1c1e 0%,#2c2c2e 100%);">
-                        <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;">
-                            <div style="width:64px;height:64px;border-radius:50%;background:rgba(184,137,58,0.9);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(184,137,58,0.4);">
-                                <svg viewBox="0 0 24 24" width="26" height="26" fill="white"><polygon points="10 8 16 12 10 16"/></svg>
-                            </div>
-                            <span style="color:rgba(255,255,255,0.9);font-size:0.88rem;font-weight:600;letter-spacing:0.01em;">Web Order Demo V3</span>
-                            <span style="color:rgba(255,255,255,0.45);font-size:0.75rem;">Click to play</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ── Screenshot carousel ── -->
+    <div class="ws-carousel-section">
+        <div class="container">
+            <div class="sec-header reveal" style="margin-bottom: 36px;">
+                <span class="sec-eyebrow">A closer look</span>
+                <h2 class="sec-title">Every screen, in detail</h2>
+                <p class="sec-desc" style="max-width: 580px; margin: 0 auto;">The demo video shows the full flow — these screenshots let you slow down and see exactly what the experience looks like at each step, from store selection through to checkout.</p>
+            </div>
+            <div class="ws-carousel-wrap reveal">
+                <div class="ws-carousel-slide active"><img src="web-screenshots/ws_01.jpg" alt="Select your store — QJumper web ordering" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_02.jpg" alt="Choose your region — multi-site store selector" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_03.jpg" alt="Branded homepage with menu categories" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_04.jpg" alt="Store info — hours and address" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_05.jpg" alt="Full menu grid with item photos and prices" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_06.jpg" alt="Item detail panel with Add to Order" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_07.jpg" alt="Item customisation — modifiers and dietary options" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_08.jpg" alt="Cart summary with subtotal and Checkout" loading="lazy"></div>
+                <div class="ws-carousel-slide"><img src="web-screenshots/ws_09.jpg" alt="Checkout — contact details and pickup time" loading="lazy"></div>
+                <button class="ws-carousel-btn ws-carousel-prev" aria-label="Previous">&#8249;</button>
+                <button class="ws-carousel-btn ws-carousel-next" aria-label="Next">&#8250;</button>
+            </div>
+            <div class="ws-carousel-dots" id="wsDots"></div>
+            <p class="ws-carousel-caption" id="wsCaption"></p>
+        </div>
+    </div>
 
     <!-- ── Features ── -->
     <section class="sec sec-white" id="features">
@@ -474,14 +495,6 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>More</h4>
-                    <ul>
-                        <li><a href="platform.html">Platform Overview</a></li>
-                        <li><a href="hospitality.html">Hospitality Types</a></li>
-                        <li><a href="bundles.html">Bundles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
                     <h4>Get started</h4>
                     <ul>
                         <li><a href="#contact">Get a Demo</a></li>
@@ -496,11 +509,13 @@
         </div>
     </footer>
 
-    <!-- ── Video lightbox modal ── -->
-    <div id="videoBackdrop" class="video-modal-backdrop">
-        <div class="video-modal-box">
-            <button id="videoClose" class="video-modal-close" aria-label="Close video">✕</button>
-            <iframe id="videoFrame" class="video-modal-frame" allowfullscreen allow="autoplay"></iframe>
+    <!-- ── Web ordering video modal ── -->
+    <div class="web-modal" id="webModal">
+        <div class="web-modal-inner">
+            <button class="web-modal-close" id="webClose" aria-label="Close video">✕</button>
+            <div class="web-modal-box">
+                <iframe id="webFrame" src="" allow="autoplay; fullscreen" allowfullscreen title="QJumper web ordering demo"></iframe>
+            </div>
         </div>
     </div>
 
@@ -525,27 +540,74 @@
         });
     });
 
-    // Video lightbox
-    const modal = document.getElementById('videoBackdrop');
-    const frame = document.getElementById('videoFrame');
-    function openVideo(src) {
-        frame.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
-        modal.classList.add('open');
+    // Screenshot carousel
+    (function() {
+        const slides = document.querySelectorAll('.ws-carousel-slide');
+        const dotsWrap = document.getElementById('wsDots');
+        const caption = document.getElementById('wsCaption');
+        const captions = [
+            'Store landing — choose your location',
+            'Multi-site store selector — all NZ regions',
+            'Branded homepage with full menu categories',
+            'Store info — hours and directions',
+            'Menu grid — item photos, names and prices',
+            'Item detail panel with modifiers',
+            'Customisation flow — add, remove, dietary',
+            'Cart summary with subtotal and checkout',
+            'Checkout — contact details and pickup time'
+        ];
+        let current = 0, timer;
+
+        slides.forEach((_, i) => {
+            const d = document.createElement('button');
+            d.className = 'ws-dot' + (i === 0 ? ' active' : '');
+            d.setAttribute('aria-label', 'Slide ' + (i + 1));
+            d.addEventListener('click', () => goTo(i));
+            dotsWrap.appendChild(d);
+        });
+
+        function goTo(n) {
+            slides[current].classList.remove('active');
+            dotsWrap.children[current].classList.remove('active');
+            current = (n + slides.length) % slides.length;
+            slides[current].classList.add('active');
+            dotsWrap.children[current].classList.add('active');
+            caption.textContent = captions[current];
+            resetTimer();
+        }
+
+        function resetTimer() {
+            clearInterval(timer);
+            timer = setInterval(() => goTo(current + 1), 5000);
+        }
+
+        caption.textContent = captions[0];
+        document.querySelector('.ws-carousel-prev').addEventListener('click', () => goTo(current - 1));
+        document.querySelector('.ws-carousel-next').addEventListener('click', () => goTo(current + 1));
+        document.querySelector('.ws-carousel-wrap').addEventListener('mouseenter', () => clearInterval(timer));
+        document.querySelector('.ws-carousel-wrap').addEventListener('mouseleave', resetTimer);
+        resetTimer();
+    })();
+
+    // Web ordering demo video
+    const webModal = document.getElementById('webModal');
+    const webFrame = document.getElementById('webFrame');
+    const webVideoSrc = 'https://drive.google.com/file/d/1F6tk5lLnQlq3njGsHMd4ElIc4aW6jzJA/preview';
+    function openWebVideo() {
+        webFrame.src = webVideoSrc + '?autoplay=1';
+        webModal.classList.add('open');
         document.body.style.overflow = 'hidden';
     }
-    function closeVideo() {
-        modal.classList.remove('open');
-        frame.src = '';
+    function closeWebVideo() {
+        webModal.classList.remove('open');
+        webFrame.src = '';
         document.body.style.overflow = '';
     }
-    document.querySelectorAll('.video-card').forEach(card => {
-        card.addEventListener('click', () => openVideo(card.dataset.video));
-    });
-    document.getElementById('videoClose').addEventListener('click', closeVideo);
-    document.getElementById('videoBackdrop').addEventListener('click', function(e) {
-        if (e.target === this) closeVideo();
-    });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeVideo(); });
+    document.getElementById('webPlayBtn').addEventListener('click', openWebVideo);
+    document.getElementById('webPlayBtn').addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') openWebVideo(); });
+    document.getElementById('webClose').addEventListener('click', closeWebVideo);
+    webModal.addEventListener('click', e => { if (e.target === webModal) closeWebVideo(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeWebVideo(); });
     </script>
 </body>
 </html>

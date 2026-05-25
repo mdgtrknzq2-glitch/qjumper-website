@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Should your venue have its own branded app? A practical guide | QJumper</title>
+    <meta name="description" content="Branded apps aren&#x27;t just for big chains. We look at when a mobile app makes commercial sense, what it actually delivers, and what results to expect.">
+    <meta name="author" content="QJumper">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.qjumper.com/article-branded-app">
+    <meta property="og:title" content="Should your venue have its own branded app? A practical guide | QJumper">
+    <meta property="og:description" content="Branded apps aren&#x27;t just for big chains. We look at when a mobile app makes commercial sense, what it actually delivers, and what results to expect.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.qjumper.com/article-branded-app">
+    <meta property="og:locale" content="en_NZ">
+    <meta property="og:image" content="https://www.qjumper.com/images/qjumper-og.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Should your venue have its own branded app? A practical guide",
+      "description": "Branded apps aren&#x27;t just for big chains. We look at when a mobile app makes commercial sense, what it actually delivers, and what results to expect.",
+      "author": { "@type": "Organization", "name": "QJumper" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "QJumper",
+        "url": "https://www.qjumper.com"
+      },
+      "url": "https://www.qjumper.com/article-branded-app",
+      "mainEntityOfPage": "https://www.qjumper.com/article-branded-app"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qjumper-v4.css">
+
+    <style>
+    .nav-inner { max-width: 1240px; }
+    .nav-links li a { font-size: 0.72rem; padding: 5px 8px; }
+
+    .article-hero {
+        padding: 140px 0 56px;
+        background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+        border-bottom: 1px solid var(--divider);
+    }
+    .article-hero .container-narrow { max-width: 780px; }
+    .article-hero h1 {
+        font-size: clamp(2rem, 4.4vw, 3.4rem);
+        line-height: 1.12; letter-spacing: -0.02em;
+        margin: 18px 0 22px; font-weight: 700;
+    }
+    .article-meta-row {
+        font-size: 0.82rem; color: var(--text-soft);
+        letter-spacing: 0.02em; margin-top: 4px;
+    }
+    .article-body { padding: 64px 0 88px; background: var(--white); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+        font-size: 1.06rem; line-height: 1.78; color: var(--text);
+        margin: 0 0 22px; font-weight: 400;
+    }
+    .article-h2 {
+        font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+        font-weight: 600; letter-spacing: -0.01em;
+        margin: 48px 0 18px; color: var(--text);
+        line-height: 1.25;
+    }
+    .article-list {
+        margin: 0 0 28px; padding-left: 22px; list-style: none;
+    }
+    .article-list li {
+        position: relative; padding: 8px 0 8px 20px;
+        font-size: 1.04rem; line-height: 1.72; color: var(--text);
+        border-bottom: 1px solid var(--divider);
+    }
+    .article-list li:last-child { border-bottom: 0; }
+    .article-list li::before {
+        content: ''; position: absolute; left: 0; top: 19px;
+        width: 6px; height: 6px; border-radius: 50%;
+        background: var(--gold);
+    }
+    .article-quote {
+        margin: 36px 0; padding: 30px 34px;
+        background: var(--gold-bg);
+        border-left: 3px solid var(--gold);
+        border-radius: 8px;
+    }
+    .article-quote p {
+        font-size: 1.16rem; line-height: 1.6;
+        font-style: italic; color: var(--text);
+        margin: 0 0 12px; font-weight: 500;
+    }
+    .article-quote cite {
+        font-size: 0.82rem; font-style: normal;
+        letter-spacing: 0.06em; color: var(--text-soft);
+        font-weight: 500;
+    }
+    .article-callout {
+        display: inline-block;
+        font-size: 0.72rem; font-weight: 700;
+        letter-spacing: 0.16em; text-transform: uppercase;
+        color: var(--gold); background: var(--gold-bg);
+        border: 1px solid var(--gold-border);
+        padding: 8px 16px; border-radius: 4px;
+        margin: 14px 0 22px;
+    }
+    .article-faq { margin-top: 16px; }
+    .article-faq .faq-q {
+        font-size: 1.08rem; font-weight: 600;
+        margin: 28px 0 10px; color: var(--text);
+        line-height: 1.4;
+    }
+    .article-faq .faq-a {
+        font-size: 1rem; line-height: 1.72;
+        margin: 0 0 18px; color: var(--text);
+    }
+    .article-tag {
+        display: inline-block; font-size: 0.65rem; font-weight: 600;
+        letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--gold); background: var(--gold-bg);
+        border: 1px solid var(--gold-border); border-radius: 100px;
+        padding: 4px 12px;
+    }
+    .article-cta {
+        background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+        padding: 72px 0; text-align: center;
+        border-top: 1px solid var(--divider);
+    }
+    .article-cta h3 {
+        font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+        font-weight: 600; margin-bottom: 14px;
+        letter-spacing: -0.01em;
+    }
+    .article-cta p {
+        font-size: 1.04rem; color: var(--text-soft);
+        max-width: 540px; margin: 0 auto 28px; line-height: 1.6;
+    }
+    .article-related {
+        padding: 64px 0; background: var(--white);
+        border-top: 1px solid var(--divider);
+    }
+    .article-related h3 {
+        font-size: 1.25rem; font-weight: 600;
+        margin-bottom: 28px; letter-spacing: -0.01em;
+    }
+    .related-grid {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .related-card {
+        display: block; padding: 24px;
+        border: 1px solid var(--divider); border-radius: 12px;
+        text-decoration: none; color: inherit; background: var(--white);
+        transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+    }
+    .related-card:hover {
+        box-shadow: var(--shadow-hover); transform: translateY(-2px);
+    }
+    .related-card .article-tag { margin-bottom: 12px; }
+    .related-card h4 {
+        font-size: 1rem; font-weight: 600;
+        line-height: 1.35; color: var(--text);
+    }
+    .article-back {
+        font-size: 0.82rem; color: var(--text-soft);
+        text-decoration: none; letter-spacing: 0.02em;
+        display: inline-flex; align-items: center; gap: 6px;
+    }
+    .article-back:hover { color: var(--gold); }
+    @media (max-width: 720px) {
+        .related-grid { grid-template-columns: 1fr; }
+        .article-hero { padding: 110px 0 40px; }
+        .article-body { padding: 44px 0 64px; }
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pos.html">POS</a></li>
+                <li><a href="kiosks.html">Kiosks</a></li>
+                <li><a href="web-ordering.html">Web Ordering</a></li>
+                <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                <li><a href="reporting.html">Reporting</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" class="nav-cta-pill">Get a Demo</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ── Article Hero ── -->
+    <section class="article-hero">
+        <div class="container-narrow">
+            <a href="resources.html" class="article-back">‹ Back to Resources</a>
+            <div style="margin-top:18px;">
+                <span class="article-tag">MOBILE &amp; LOYALTY</span>
+            </div>
+            <h1>Should your venue have its own branded app? A practical guide</h1>
+            <p class="article-meta-row">QJumper Team  ·  8 min read  ·  Mobile &amp; Loyalty</p>
+        </div>
+    </section>
+
+    <!-- ── Article Body ── -->
+    <section class="article-body">
+        <div class="container-narrow">
+            <p>A branded app used to feel like something only the biggest chains could justify. That assumption has quietly become outdated. The question now is not whether a branded app is within reach — it is whether one is right for your venue, and what it will actually deliver if it is.</p>
+            <h2 class="article-h2">The third-party platform problem</h2>
+            <p>Before examining what a branded app delivers, it is worth understanding what operators lose by relying entirely on third-party platforms. Delivery and ordering aggregators have been a genuinely useful growth channel for many hospitality businesses — but they come with structural trade-offs that compound over time.</p>
+            <p>Commission fees are the most visible cost. CloudKitchens estimates that commissions on major third-party delivery platforms typically range from 15% to 30% per order, with additional charges for promoted listings, payment processing, and marketing placements. For many food businesses operating on margins of 5-10%, that arithmetic is genuinely difficult.</p>
+            <p>But the cost that matters most is less visible. When customers order through a third-party platform, the platform owns the customer relationship. The restaurant receives a transaction; the platform receives a customer profile. Restaurants using third-party platforms often receive only limited, anonymised order data — and have no ability to market directly to those customers or build a loyalty relationship with them.</p>
+            <p>This means that every customer acquired through a third-party channel is, in a real sense, the platform&#x27;s customer. The restaurant has fulfilled the order, but the relationship belongs to someone else.</p>
+            <h2 class="article-h2">What a branded app actually delivers</h2>
+            <p>Direct ordering without commission. When a customer orders through your own app, you pay no platform commission on that transaction. Analysis suggests that first-party ordering saves restaurants 30-70% compared to equivalent orders placed through third-party platforms. At scale, even a modest shift in order channel mix represents a meaningful margin improvement.</p>
+            <p>Customer data you actually own. Every order placed through your app gives you a verified customer identity, ordering history, visit frequency, and contact details. You can use it to identify your highest-value customers, understand what drives repeat visits, personalise communications, and run loyalty programmes that reward the behaviour you want to encourage.</p>
+            <p>A direct marketing channel. An app gives you push notification capability — the ability to reach opted-in customers directly, at the moment when a message is most relevant. A Tuesday lunchtime push for a special, a birthday reward, or a notification about a new menu item costs nothing and reaches people who have already demonstrated they want to hear from you.</p>
+            <p>Loyalty that works. Research by Paytronix shows that 90% of operators running loyalty programmes report positive ROI — with an average return of 4.8 times investment. Loyalty members visit 20% more frequently and spend 20% more per check than non-members. And critically, 60% of loyalty programme users say they prefer to engage through a smartphone app.</p>
+            <h2 class="article-h2">When a branded app makes sense</h2>
+            <p>Not every venue is at the right stage for a branded app. The investment — in setup, ongoing management, and customer acquisition — needs a customer base large enough, and loyal enough, to justify it.</p>
+            <p>You have a returning customer base. A branded app is a retention tool, not an acquisition tool. It works best when you already have customers who visit regularly and would welcome a more direct relationship with your brand.</p>
+            <p>Third-party commissions are hurting your margins. If a meaningful percentage of your orders are coming through platforms charging 20-30% commission, the maths of a direct channel become very compelling, very quickly.</p>
+            <p>You want to run a loyalty programme seriously. A points-and-rewards programme run through a standalone app is far more effective than a stamp card or a generic third-party loyalty scheme.</p>
+            <p>You operate multiple locations or plan to. A branded app becomes significantly more powerful as you scale. Customers who visit multiple locations accumulate points in one place and receive communications relevant to their nearest venue.</p>
+            <blockquote class="article-quote">
+              <p>“Every order placed through your own app gives you a verified customer identity, ordering history, and contact details. That data is yours — and it compounds.”</p>
+              <cite>— QJumper</cite>
+            </blockquote>
+            <h2 class="article-h2">What a branded app does not do</h2>
+            <p>It is not a replacement for third-party platforms as a discovery channel. Aggregators serve a genuine function for reaching new customers who have never heard of your brand. A branded app does not replicate that function — it deepens relationships with customers who already know you. The two can and should coexist.</p>
+            <p>It is also not a set-and-forget investment. An app that sits untouched — with an outdated menu, no push notifications, and a stale loyalty programme — will not hold users&#x27; attention. The operators who see the strongest results treat their app as a live marketing channel.</p>
+            <h2 class="article-h2">The integration question</h2>
+            <p>One thing that separates a well-functioning branded app from a frustrating one is how deeply it connects to the rest of your operation. An app that runs separately from your POS creates a familiar problem: orders arrive through a different channel, require manual re-entry or reconciliation, and sit in a data silo.</p>
+            <p>When a branded app is built into a unified hospitality platform — sharing the same menu data, order flow, and reporting as your POS, kiosk, and web ordering — the experience is fundamentally different. Menu changes update everywhere at once. Loyalty points accrue accurately regardless of where the order was placed. That integration is not a luxury feature. It is what makes the investment worthwhile.</p>
+            <h2 class="article-h2">Frequently Asked Questions</h2>
+            <div class="article-faq">
+              <h3 class="faq-q">How much does a branded restaurant app typically cost?</h3>
+              <p class="faq-a">Cost varies significantly depending on the solution. Custom-built apps developed from scratch can cost tens of thousands of dollars. Platform-based approaches — where a branded app is built on an existing hospitality platform like QJumper — are considerably more accessible, with costs that need to be weighed against the commission savings from reduced third-party ordering.</p>
+              <h3 class="faq-q">How do I get customers to download and use my app?</h3>
+              <p class="faq-a">The most effective app adoption driver is an incentive — a first-order discount, bonus loyalty points on sign-up, or a free item for downloading. In-venue prompts at the point of sale and on receipts are also important. The key is making the value proposition obvious.</p>
+              <h3 class="faq-q">Can a branded app work alongside third-party delivery platforms?</h3>
+              <p class="faq-a">Yes — and this is typically the right strategy. Third-party platforms remain useful for discovery and reaching new customers. A branded app is a retention tool: once someone knows and likes your venue, you want to give them a reason to order directly.</p>
+              <h3 class="faq-q">What should a branded app include?</h3>
+              <p class="faq-a">At minimum: mobile ordering, a loyalty programme, and push notification capability. The key is that the app connects to your operational systems — so menus update in real time, orders flow directly to the kitchen, and loyalty points accrue accurately without manual reconciliation.</p>
+              <h3 class="faq-q">Is a branded app worth it for a single-site venue?</h3>
+              <p class="faq-a">It depends on your customer base and order volume. A single-site venue with a strong regular customer following and significant third-party delivery volume can absolutely justify a branded app. Compare the ongoing cost of the app against commission savings from orders shifted to your direct channel, plus the estimated revenue uplift from a loyalty programme.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="article-cta">
+        <div class="container-narrow">
+            <h3>Run your venue on one platform</h3>
+            <p>See how QJumper brings POS, ordering, kiosks, and reporting together — and what that looks like for your venue.</p>
+            <a href="index.html#contact" class="btn btn-primary">Get a Demo</a>
+        </div>
+    </section>
+
+    <!-- ── Related ── -->
+    <section class="article-related">
+        <div class="container">
+            <h3>More articles</h3>
+            <div class="related-grid">
+        <a href="article-kiosk-aov.html" class="related-card">
+          <span class="article-tag">Kiosks</span>
+          <h4>Why self-service kiosks increase average order value</h4>
+        </a>
+        <a href="article-multi-site.html" class="related-card">
+          <span class="article-tag">Multi-Site</span>
+          <h4>Scaling from one venue to many</h4>
+        </a>
+        <a href="article-metrics.html" class="related-card">
+          <span class="article-tag">Reporting</span>
+          <h4>The 5 metrics every hospitality operator should be tracking</h4>
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></div>
+                    <p>Making hospitality effortless so owners and teams can focus on great service, happy customers, and sustainable growth.</p>
+                    <a href="mailto:hello@qjumper.com" class="footer-email">hello@qjumper.com</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="pos.html">Point of Sale</a></li>
+                        <li><a href="kiosks.html">Kiosks</a></li>
+                        <li><a href="web-ordering.html">Web Ordering</a></li>
+                        <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                        <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                        <li><a href="reporting.html">Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get started</h4>
+                    <ul>
+                        <li><a href="#contact">Get a Demo</a></li>
+                        <li><a href="mailto:hello@qjumper.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 QJumper. All rights reserved. New Zealand.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); });
+    document.getElementById('hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.reveal').forEach(el => {
+        new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.07 }).observe(el);
+    });
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-q').addEventListener('click', function() {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+            this.setAttribute('aria-expanded', !isOpen);
+        });
+    });
+    </script>
+</body>
+</html>

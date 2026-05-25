@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why self-service kiosks increase average order value — and how to maximise the effect | QJumper</title>
+    <meta name="description" content="The data is consistent: guests who order at kiosks spend more. Here&#x27;s why that happens and how to set your kiosk up for upsell success.">
+    <meta name="author" content="QJumper">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.qjumper.com/article-kiosk-aov">
+    <meta property="og:title" content="Why self-service kiosks increase average order value — and how to maximise the effect | QJumper">
+    <meta property="og:description" content="The data is consistent: guests who order at kiosks spend more. Here&#x27;s why that happens and how to set your kiosk up for upsell success.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.qjumper.com/article-kiosk-aov">
+    <meta property="og:locale" content="en_NZ">
+    <meta property="og:image" content="https://www.qjumper.com/images/qjumper-og.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why self-service kiosks increase average order value — and how to maximise the effect",
+      "description": "The data is consistent: guests who order at kiosks spend more. Here&#x27;s why that happens and how to set your kiosk up for upsell success.",
+      "author": { "@type": "Organization", "name": "QJumper" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "QJumper",
+        "url": "https://www.qjumper.com"
+      },
+      "url": "https://www.qjumper.com/article-kiosk-aov",
+      "mainEntityOfPage": "https://www.qjumper.com/article-kiosk-aov"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="qjumper-v4.css">
+
+    <style>
+    .nav-inner { max-width: 1240px; }
+    .nav-links li a { font-size: 0.72rem; padding: 5px 8px; }
+
+    .article-hero {
+        padding: 140px 0 56px;
+        background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+        border-bottom: 1px solid var(--divider);
+    }
+    .article-hero .container-narrow { max-width: 780px; }
+    .article-hero h1 {
+        font-size: clamp(2rem, 4.4vw, 3.4rem);
+        line-height: 1.12; letter-spacing: -0.02em;
+        margin: 18px 0 22px; font-weight: 700;
+    }
+    .article-meta-row {
+        font-size: 0.82rem; color: var(--text-soft);
+        letter-spacing: 0.02em; margin-top: 4px;
+    }
+    .article-body { padding: 64px 0 88px; background: var(--white); }
+    .article-body .container-narrow { max-width: 720px; }
+    .article-body p {
+        font-size: 1.06rem; line-height: 1.78; color: var(--text);
+        margin: 0 0 22px; font-weight: 400;
+    }
+    .article-h2 {
+        font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+        font-weight: 600; letter-spacing: -0.01em;
+        margin: 48px 0 18px; color: var(--text);
+        line-height: 1.25;
+    }
+    .article-list {
+        margin: 0 0 28px; padding-left: 22px; list-style: none;
+    }
+    .article-list li {
+        position: relative; padding: 8px 0 8px 20px;
+        font-size: 1.04rem; line-height: 1.72; color: var(--text);
+        border-bottom: 1px solid var(--divider);
+    }
+    .article-list li:last-child { border-bottom: 0; }
+    .article-list li::before {
+        content: ''; position: absolute; left: 0; top: 19px;
+        width: 6px; height: 6px; border-radius: 50%;
+        background: var(--gold);
+    }
+    .article-quote {
+        margin: 36px 0; padding: 30px 34px;
+        background: var(--gold-bg);
+        border-left: 3px solid var(--gold);
+        border-radius: 8px;
+    }
+    .article-quote p {
+        font-size: 1.16rem; line-height: 1.6;
+        font-style: italic; color: var(--text);
+        margin: 0 0 12px; font-weight: 500;
+    }
+    .article-quote cite {
+        font-size: 0.82rem; font-style: normal;
+        letter-spacing: 0.06em; color: var(--text-soft);
+        font-weight: 500;
+    }
+    .article-callout {
+        display: inline-block;
+        font-size: 0.72rem; font-weight: 700;
+        letter-spacing: 0.16em; text-transform: uppercase;
+        color: var(--gold); background: var(--gold-bg);
+        border: 1px solid var(--gold-border);
+        padding: 8px 16px; border-radius: 4px;
+        margin: 14px 0 22px;
+    }
+    .article-faq { margin-top: 16px; }
+    .article-faq .faq-q {
+        font-size: 1.08rem; font-weight: 600;
+        margin: 28px 0 10px; color: var(--text);
+        line-height: 1.4;
+    }
+    .article-faq .faq-a {
+        font-size: 1rem; line-height: 1.72;
+        margin: 0 0 18px; color: var(--text);
+    }
+    .article-tag {
+        display: inline-block; font-size: 0.65rem; font-weight: 600;
+        letter-spacing: 0.1em; text-transform: uppercase;
+        color: var(--gold); background: var(--gold-bg);
+        border: 1px solid var(--gold-border); border-radius: 100px;
+        padding: 4px 12px;
+    }
+    .article-cta {
+        background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+        padding: 72px 0; text-align: center;
+        border-top: 1px solid var(--divider);
+    }
+    .article-cta h3 {
+        font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+        font-weight: 600; margin-bottom: 14px;
+        letter-spacing: -0.01em;
+    }
+    .article-cta p {
+        font-size: 1.04rem; color: var(--text-soft);
+        max-width: 540px; margin: 0 auto 28px; line-height: 1.6;
+    }
+    .article-related {
+        padding: 64px 0; background: var(--white);
+        border-top: 1px solid var(--divider);
+    }
+    .article-related h3 {
+        font-size: 1.25rem; font-weight: 600;
+        margin-bottom: 28px; letter-spacing: -0.01em;
+    }
+    .related-grid {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+    }
+    .related-card {
+        display: block; padding: 24px;
+        border: 1px solid var(--divider); border-radius: 12px;
+        text-decoration: none; color: inherit; background: var(--white);
+        transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+    }
+    .related-card:hover {
+        box-shadow: var(--shadow-hover); transform: translateY(-2px);
+    }
+    .related-card .article-tag { margin-bottom: 12px; }
+    .related-card h4 {
+        font-size: 1rem; font-weight: 600;
+        line-height: 1.35; color: var(--text);
+    }
+    .article-back {
+        font-size: 0.82rem; color: var(--text-soft);
+        text-decoration: none; letter-spacing: 0.02em;
+        display: inline-flex; align-items: center; gap: 6px;
+    }
+    .article-back:hover { color: var(--gold); }
+    @media (max-width: 720px) {
+        .related-grid { grid-template-columns: 1fr; }
+        .article-hero { padding: 110px 0 40px; }
+        .article-body { padding: 44px 0 64px; }
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pos.html">POS</a></li>
+                <li><a href="kiosks.html">Kiosks</a></li>
+                <li><a href="web-ordering.html">Web Ordering</a></li>
+                <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                <li><a href="reporting.html">Reporting</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" class="nav-cta-pill">Get a Demo</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ── Article Hero ── -->
+    <section class="article-hero">
+        <div class="container-narrow">
+            <a href="resources.html" class="article-back">‹ Back to Resources</a>
+            <div style="margin-top:18px;">
+                <span class="article-tag">KIOSK &amp; TECHNOLOGY</span>
+            </div>
+            <h1>Why self-service kiosks increase average order value — and how to maximise the effect</h1>
+            <p class="article-meta-row">QJumper Team  ·  7 min read  ·  Kiosk &amp; Technology</p>
+        </div>
+    </section>
+
+    <!-- ── Article Body ── -->
+    <section class="article-body">
+        <div class="container-narrow">
+            <p>The data on self-service kiosks and average order value is about as consistent as you will find in hospitality technology research. Operators who introduce kiosks almost universally report that customers spend more. The interesting question is not whether it happens — it does — but why, and what that means for how you set up and manage your kiosks.</p>
+            <h2 class="article-h2">The evidence is hard to ignore</h2>
+            <p>The consistency of the data across different operators and markets is striking. According to data compiled by Restroworks, self-service kiosks can increase average order value by 10-30% in quick service restaurant environments. That is not a marginal improvement — it represents a meaningful uplift across every transaction, every day.</p>
+            <p>McDonald&#x27;s remains the most studied deployment at scale. The chain reported a 30% rise in average order value following its kiosk rollout — a figure that has become something of a benchmark in the industry because of the sheer volume of transactions it represents.</p>
+            <p>The broader adoption picture reinforces why this matters. Between 2021 and 2023, the number of restaurant kiosks worldwide surged by 43%, reaching nearly 350,000 installations, with projections suggesting that figure will double by 2028. QSR Magazine notes that digital menus and upsell prompts can boost average ticket size by up to 25%, with approximately 20% of customers opting for suggested extras.</p>
+            <h2 class="article-h2">The psychology behind why people spend more</h2>
+            <p>Understanding the mechanism matters because it tells you how to configure a kiosk to do its job well. The AOV uplift is not random or accidental — it is the predictable outcome of several well-documented behavioural dynamics.</p>
+            <p>The most significant factor is the removal of social judgment. Research shows that removing a human cashier from the equation significantly reduces social inhibition. Without the fear of being judged for ordering an extra side, a dessert, or a larger size, customers are measurably more likely to add items.</p>
+            <p>There is also a touch-based ownership effect at work. When customers can visually browse and tap through menu items on a kiosk screen, the act of engaging with those items creates a psychological connection — a sense of exploration and investment that increases the perceived value of adding extras.</p>
+            <p>Visual anchoring plays a role too. Kiosks allow operators to position high-value items prominently, which shifts the frame of reference for the rest of the menu. When premium items are shown first, lower-priced options are perceived as a better deal — subtly moving order composition upward without any explicit pressure.</p>
+            <p>Finally, there is the factor of time. Unlike a counter interaction where queue pressure pushes customers toward quick, familiar choices, kiosks give customers room to browse at their own pace. That browsing time consistently translates into more items added.</p>
+            <h2 class="article-h2">How to set up your kiosk to maximise order value</h2>
+            <p>Menu architecture matters more than most operators realise. Hero items should sit at the top — the items you are most proud of and that represent the best of your venue. High-margin items should be featured prominently, and premium options should appear before standard ones.</p>
+            <p>Upsell triggers should be contextual, not generic. Programme specific prompts at the right moments — after a main is selected, prompt a drink; after drinks, prompt a dessert or a side. &quot;Customers who ordered this also chose...&quot; consistently outperforms a generic prompt because it feels like a recommendation rather than a sales pitch.</p>
+            <p>Photography is not optional — it is a performance driver. Kiosk screens offer significantly more visual real estate than a standard menu board, and strong food photography dramatically increases add-on rates. Items that look appealing get ordered more often.</p>
+            <p>Promotional placement can drive urgency. Items with a perceived deadline or scarcity cue drive stronger conversion because they activate a different decision frame. Customers who might otherwise skip a special are more likely to act when there is a reason to act now.</p>
+            <blockquote class="article-quote">
+              <p>“Without the fear of being judged for ordering an extra side or larger size, customers are measurably more likely to add items.”</p>
+              <cite>— Behavioural research on self-ordering psychology</cite>
+            </blockquote>
+            <p>Keep the experience fast. Kiosks work best when upsell prompts are limited to one or two per transaction and easy to dismiss. Overloading the experience with prompts erodes both customer satisfaction and queue throughput. The goal is a smoother, higher-value experience, not an obstacle course.</p>
+            <h2 class="article-h2">What this means for your venue</h2>
+            <p>The AOV increase is not guaranteed simply by installing a kiosk. It depends on how well the kiosk experience is configured — the menu structure, the quality of the upsell prompts, the photography, and the overall ease of use.</p>
+            <p>It also does not mean every customer should be directed to a kiosk. Some transaction types are better served by staff — complex orders, customers who need assistance, or moments where a genuine human interaction is part of the experience you offer.</p>
+            <p>When kiosk ordering is unified with your POS, reporting, and other ordering channels in a single platform, you gain accurate per-channel data. That means you can track the actual AOV uplift from your kiosks, compare it against other channels, and refine the configuration over time based on what the numbers show.</p>
+            <h2 class="article-h2">Frequently Asked Questions</h2>
+            <div class="article-faq">
+              <h3 class="faq-q">Do self-service kiosks always increase average order value?</h3>
+              <p class="faq-a">Not automatically. The AOV uplift depends significantly on how the kiosk experience is configured. Research consistently shows the potential for 10-30% increases, but realising that potential requires deliberate setup and ongoing optimisation.</p>
+              <h3 class="faq-q">Why do customers spend more at kiosks than at the counter?</h3>
+              <p class="faq-a">Behavioural research points to several factors: the absence of social pressure from a cashier, more time to browse the menu, visual engagement with food imagery, and well-placed upsell prompts. Together, these create conditions where customers are more likely to add items they might not have ordered in a face-to-face interaction.</p>
+              <h3 class="faq-q">Are kiosks suitable for all restaurant types?</h3>
+              <p class="faq-a">Kiosks perform particularly well in high-volume environments — quick service restaurants, stadiums, busy cafes, and multi-site groups — where speed and throughput are priorities. For venues where a high-touch, personalised service experience is the primary differentiator, kiosks may complement rather than replace staff interactions.</p>
+              <h3 class="faq-q">How do kiosks connect to the rest of my operation?</h3>
+              <p class="faq-a">When integrated with a unified platform like QJumper, kiosk orders flow directly into your POS and kitchen workflows — no manual re-entry required. Menu changes made centrally update across kiosks immediately, and every transaction is captured in your reporting dashboard for performance tracking.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="article-cta">
+        <div class="container-narrow">
+            <h3>Run your venue on one platform</h3>
+            <p>See how QJumper brings POS, ordering, kiosks, and reporting together — and what that looks like for your venue.</p>
+            <a href="index.html#contact" class="btn btn-primary">Get a Demo</a>
+        </div>
+    </section>
+
+    <!-- ── Related ── -->
+    <section class="article-related">
+        <div class="container">
+            <h3>More articles</h3>
+            <div class="related-grid">
+        <a href="article-branded-app.html" class="related-card">
+          <span class="article-tag">Mobile &amp; Loyalty</span>
+          <h4>Should your venue have its own branded app?</h4>
+        </a>
+        <a href="article-metrics.html" class="related-card">
+          <span class="article-tag">Reporting</span>
+          <h4>The 5 metrics every hospitality operator should be tracking</h4>
+        </a>
+        <a href="article-hidden-cost.html" class="related-card">
+          <span class="article-tag">Operations &amp; Technology</span>
+          <h4>The hidden cost of running multiple hospitality systems</h4>
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo"><img src="Qjumper Logo.jpeg" alt="QJumper"></div>
+                    <p>Making hospitality effortless so owners and teams can focus on great service, happy customers, and sustainable growth.</p>
+                    <a href="mailto:hello@qjumper.com" class="footer-email">hello@qjumper.com</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="pos.html">Point of Sale</a></li>
+                        <li><a href="kiosks.html">Kiosks</a></li>
+                        <li><a href="web-ordering.html">Web Ordering</a></li>
+                        <li><a href="qr-ordering.html">QR Code Ordering</a></li>
+                        <li><a href="mobile-ordering.html">Mobile Ordering</a></li>
+                        <li><a href="reporting.html">Reporting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get started</h4>
+                    <ul>
+                        <li><a href="#contact">Get a Demo</a></li>
+                        <li><a href="mailto:hello@qjumper.com">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 QJumper. All rights reserved. New Zealand.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); });
+    document.getElementById('hamburger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.getElementById('navLinks').classList.toggle('open');
+    });
+    document.querySelectorAll('.reveal').forEach(el => {
+        new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.07 }).observe(el);
+    });
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.querySelector('.faq-q').addEventListener('click', function() {
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
+            if (!isOpen) item.classList.add('open');
+            this.setAttribute('aria-expanded', !isOpen);
+        });
+    });
+    </script>
+</body>
+</html>
