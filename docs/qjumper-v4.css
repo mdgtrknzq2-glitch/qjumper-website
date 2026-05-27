@@ -377,150 +377,143 @@ ul { list-style: none; }
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   COGNITO FORMS — BRAND OVERRIDES
-   Scoped to .contact-form-wrap so it only affects the embedded
-   demo form, not anything else. Matches the original hand-built
-   form's look: Inter font, uppercase gold-ish labels, rounded
-   inputs, gold gradient submit button.
+   COGNITO FORMS — BRAND OVERRIDES (v2 — correct selectors)
+   Targets the actual classes Cognito injects (Element UI + cog-*),
+   uses doubled .contact-form-wrap.contact-form-wrap for specificity
+   so we beat Cognito's own !important-laden stylesheet.
 ═══════════════════════════════════════════════════════════════ */
 
-/* Reset root container styles Cognito injects */
-.contact-form-wrap .cognito,
-.contact-form-wrap .cog-cognito,
-.contact-form-wrap .cog-form,
-.contact-form-wrap [class^="cog-"] {
+/* Inherit Inter font across the whole Cognito form */
+.contact-form-wrap.contact-form-wrap .cog-cognito,
+.contact-form-wrap.contact-form-wrap .cog-cognito *,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-input__inner,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-textarea__inner,
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-button {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
-    color: var(--text);
-    box-sizing: border-box;
 }
 
-/* Hide the form title and description if any (we have our own header) */
-.contact-form-wrap .cog-form__title,
-.contact-form-wrap .cog-form__description {
+/* Hide the "Contact Us" form heading — we have our own section header above */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-heading,
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-header {
     display: none !important;
 }
 
-/* Field group / section labels (e.g. "Name *", "Email *") */
-.contact-form-wrap .cog-section__name,
-.contact-form-wrap .cog-label,
-.contact-form-wrap .cog-input-table__caption {
+/* Section / field labels — uppercase, letter-spaced, small */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-label {
     font-size: 0.7rem !important;
     font-weight: 600 !important;
     letter-spacing: 0.1em !important;
     text-transform: uppercase !important;
-    color: var(--text-3, #6e6e73) !important;
-    margin-bottom: 7px !important;
+    color: #6e6e73 !important;
     line-height: 1.4 !important;
+    margin-bottom: 7px !important;
+    padding: 0 !important;
 }
 
-/* Sub-labels (First/Last under Name) */
-.contact-form-wrap .cog-input-label,
-.contact-form-wrap label {
-    font-size: 0.7rem !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.1em !important;
-    text-transform: uppercase !important;
-    color: var(--text-3, #6e6e73) !important;
-}
-
-/* The required-field asterisk */
-.contact-form-wrap .cog-required {
+/* The "*" asterisk for required fields — gold instead of red */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-asterisk {
     color: var(--gold) !important;
-    margin-left: 2px;
+    margin-left: 2px !important;
 }
 
-/* All inputs — text, email, tel, textarea, select */
-.contact-form-wrap .cog-input,
-.contact-form-wrap input[type="text"],
-.contact-form-wrap input[type="email"],
-.contact-form-wrap input[type="tel"],
-.contact-form-wrap input[type="number"],
-.contact-form-wrap textarea,
-.contact-form-wrap select {
+/* Hide the "(required)" offscreen text positioning artifact if visible */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-offscreen {
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+/* All text/email/tel/number/textarea inputs */
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-input__inner,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-textarea__inner {
     background: var(--tile) !important;
     border: 1px solid var(--divider) !important;
     border-radius: var(--radius-sm) !important;
     padding: 13px 15px !important;
     font-size: 0.9rem !important;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
     color: var(--text) !important;
     box-shadow: none !important;
     width: 100% !important;
-    transition: border-color 0.2s, background 0.2s !important;
     height: auto !important;
     line-height: 1.4 !important;
+    transition: border-color 0.2s, background 0.2s !important;
 }
 
-.contact-form-wrap textarea {
-    min-height: 110px;
-    resize: vertical;
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-textarea__inner {
+    min-height: 110px !important;
+    resize: vertical !important;
 }
 
-.contact-form-wrap input:focus,
-.contact-form-wrap textarea:focus,
-.contact-form-wrap select:focus {
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-input__inner:focus,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-textarea__inner:focus {
     background: var(--white) !important;
     border-color: var(--gold) !important;
     outline: none !important;
 }
 
-.contact-form-wrap input::placeholder,
-.contact-form-wrap textarea::placeholder {
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-input__inner::placeholder,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-textarea__inner::placeholder {
     color: #a1a1a6 !important;
+    font-family: inherit !important;
 }
 
-/* Submit button — gold gradient pill matching the rest of the site */
-.contact-form-wrap .cog-button,
-.contact-form-wrap .cog-button--submit,
-.contact-form-wrap button[type="submit"] {
+/* Help text under fields */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-helptext {
+    font-size: 0.72rem !important;
+    color: #6e6e73 !important;
+    margin-top: 4px !important;
+    font-weight: 400 !important;
+}
+
+/* Field row spacing */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-row {
+    margin-bottom: 14px !important;
+}
+
+/* Submit button — gold pill matching the rest of the site */
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-button,
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-button--submit,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-button {
     background: var(--gold-pill-bg) !important;
+    background-color: var(--gold-pill-bg) !important;
     color: var(--white) !important;
     border: 0 !important;
+    border-color: transparent !important;
     border-radius: var(--radius-sm) !important;
     padding: 16px 28px !important;
     font-size: 0.95rem !important;
     font-weight: 600 !important;
     letter-spacing: 0.01em !important;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
     cursor: pointer !important;
     width: 100% !important;
     transition: background 0.2s !important;
     box-shadow: none !important;
     text-transform: none !important;
     line-height: 1.2 !important;
+    min-height: 0 !important;
+    height: auto !important;
 }
 
-.contact-form-wrap .cog-button:hover,
-.contact-form-wrap .cog-button--submit:hover,
-.contact-form-wrap button[type="submit"]:hover {
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-button:hover,
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-button--submit:hover,
+.contact-form-wrap.contact-form-wrap .cog-cognito .el-button:hover {
     background: var(--gold-pill-hover) !important;
-}
-
-/* Help text beneath fields */
-.contact-form-wrap .cog-help-text {
-    font-size: 0.72rem !important;
-    color: var(--text-3, #6e6e73) !important;
-    margin-top: 4px !important;
-}
-
-/* Field spacing */
-.contact-form-wrap .cog-section,
-.contact-form-wrap .cog-row {
-    margin-bottom: 14px !important;
+    background-color: var(--gold-pill-hover) !important;
+    color: var(--white) !important;
 }
 
 /* Confirmation message after submit */
-.contact-form-wrap .cog-confirmation {
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-confirmation {
     font-size: 0.95rem !important;
     color: var(--text) !important;
-    text-align: center;
-    padding: 20px 0;
+    text-align: center !important;
+    padding: 20px 0 !important;
 }
 
-/* Validation error text */
-.contact-form-wrap .cog-error-message,
-.contact-form-wrap .cog-error {
-    font-size: 0.74rem !important;
-    color: #d33b3b !important;
-    margin-top: 4px;
+/* Strip Cognito's default container background/padding so our card frames it */
+.contact-form-wrap.contact-form-wrap .cog-cognito,
+.contact-form-wrap.contact-form-wrap .cog-cognito.cog-cognito--styled {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
 }
