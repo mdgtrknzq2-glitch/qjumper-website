@@ -263,7 +263,7 @@ ul { list-style: none; }
 }
 .contact-form-wrap {
     background: var(--white); border-radius: var(--radius-lg);
-    padding: 48px; max-width: 660px; margin: 0 auto;
+    padding: 32px; max-width: 440px; margin: 0 auto;
     box-shadow: 0 4px 28px rgba(0,0,0,0.07);
 }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
@@ -291,7 +291,7 @@ ul { list-style: none; }
     width: 100%; justify-content: center;
     padding: 16px; font-size: 0.95rem; border-radius: var(--radius-sm);
 }
-.form-footnote { font-size: 0.74rem; color: var(--text-3); text-align: center; margin-top: 14px; }
+.form-footnote { font-size: 0.68rem; color: var(--text-3); text-align: center; margin-top: 14px; }
 
 /* ═══════════════════════════════════════════════════════════════
    FOOTER
@@ -399,14 +399,17 @@ ul { list-style: none; }
 }
 
 /* Section / field labels — uppercase, letter-spaced, small */
-.contact-form-wrap.contact-form-wrap .cog-cognito .cog-label {
-    font-size: 0.7rem !important;
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-label,
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-name__first,
+.contact-form-wrap.contact-form-wrap .cog-cognito .cog-name__last,
+.contact-form-wrap.contact-form-wrap .cog-cognito legend {
+    font-size: 0.62rem !important;
     font-weight: 600 !important;
     letter-spacing: 0.1em !important;
     text-transform: uppercase !important;
     color: #6e6e73 !important;
     line-height: 1.4 !important;
-    margin-bottom: 7px !important;
+    margin-bottom: 5px !important;
     padding: 0 !important;
 }
 
@@ -428,8 +431,8 @@ ul { list-style: none; }
     background: var(--tile) !important;
     border: 1px solid var(--divider) !important;
     border-radius: var(--radius-sm) !important;
-    padding: 13px 15px !important;
-    font-size: 0.9rem !important;
+    padding: 9px 12px !important;
+    font-size: 0.82rem !important;
     color: var(--text) !important;
     box-shadow: none !important;
     width: 100% !important;
@@ -439,7 +442,7 @@ ul { list-style: none; }
 }
 
 .contact-form-wrap.contact-form-wrap .cog-cognito .el-textarea__inner {
-    min-height: 110px !important;
+    min-height: 80px !important;
     resize: vertical !important;
 }
 
@@ -466,7 +469,7 @@ ul { list-style: none; }
 
 /* Field row spacing */
 .contact-form-wrap.contact-form-wrap .cog-cognito .cog-row {
-    margin-bottom: 14px !important;
+    margin-bottom: 10px !important;
 }
 
 /* Submit button — gold pill matching the rest of the site */
@@ -479,8 +482,8 @@ ul { list-style: none; }
     border: 0 !important;
     border-color: transparent !important;
     border-radius: var(--radius-sm) !important;
-    padding: 16px 28px !important;
-    font-size: 0.95rem !important;
+    padding: 11px 22px !important;
+    font-size: 0.85rem !important;
     font-weight: 600 !important;
     letter-spacing: 0.01em !important;
     cursor: pointer !important;
