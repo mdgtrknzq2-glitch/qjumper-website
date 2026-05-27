@@ -375,3 +375,152 @@ ul { list-style: none; }
     .pill-row { flex-direction: column; align-items: center; }
     .btn-pill, .btn-pill-outline { width: 100%; max-width: 300px; justify-content: center; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   COGNITO FORMS — BRAND OVERRIDES
+   Scoped to .contact-form-wrap so it only affects the embedded
+   demo form, not anything else. Matches the original hand-built
+   form's look: Inter font, uppercase gold-ish labels, rounded
+   inputs, gold gradient submit button.
+═══════════════════════════════════════════════════════════════ */
+
+/* Reset root container styles Cognito injects */
+.contact-form-wrap .cognito,
+.contact-form-wrap .cog-cognito,
+.contact-form-wrap .cog-form,
+.contact-form-wrap [class^="cog-"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+/* Hide the form title and description if any (we have our own header) */
+.contact-form-wrap .cog-form__title,
+.contact-form-wrap .cog-form__description {
+    display: none !important;
+}
+
+/* Field group / section labels (e.g. "Name *", "Email *") */
+.contact-form-wrap .cog-section__name,
+.contact-form-wrap .cog-label,
+.contact-form-wrap .cog-input-table__caption {
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    color: var(--text-3, #6e6e73) !important;
+    margin-bottom: 7px !important;
+    line-height: 1.4 !important;
+}
+
+/* Sub-labels (First/Last under Name) */
+.contact-form-wrap .cog-input-label,
+.contact-form-wrap label {
+    font-size: 0.7rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    color: var(--text-3, #6e6e73) !important;
+}
+
+/* The required-field asterisk */
+.contact-form-wrap .cog-required {
+    color: var(--gold) !important;
+    margin-left: 2px;
+}
+
+/* All inputs — text, email, tel, textarea, select */
+.contact-form-wrap .cog-input,
+.contact-form-wrap input[type="text"],
+.contact-form-wrap input[type="email"],
+.contact-form-wrap input[type="tel"],
+.contact-form-wrap input[type="number"],
+.contact-form-wrap textarea,
+.contact-form-wrap select {
+    background: var(--tile) !important;
+    border: 1px solid var(--divider) !important;
+    border-radius: var(--radius-sm) !important;
+    padding: 13px 15px !important;
+    font-size: 0.9rem !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    color: var(--text) !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    transition: border-color 0.2s, background 0.2s !important;
+    height: auto !important;
+    line-height: 1.4 !important;
+}
+
+.contact-form-wrap textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.contact-form-wrap input:focus,
+.contact-form-wrap textarea:focus,
+.contact-form-wrap select:focus {
+    background: var(--white) !important;
+    border-color: var(--gold) !important;
+    outline: none !important;
+}
+
+.contact-form-wrap input::placeholder,
+.contact-form-wrap textarea::placeholder {
+    color: #a1a1a6 !important;
+}
+
+/* Submit button — gold gradient pill matching the rest of the site */
+.contact-form-wrap .cog-button,
+.contact-form-wrap .cog-button--submit,
+.contact-form-wrap button[type="submit"] {
+    background: var(--gold-pill-bg) !important;
+    color: var(--white) !important;
+    border: 0 !important;
+    border-radius: var(--radius-sm) !important;
+    padding: 16px 28px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    cursor: pointer !important;
+    width: 100% !important;
+    transition: background 0.2s !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    line-height: 1.2 !important;
+}
+
+.contact-form-wrap .cog-button:hover,
+.contact-form-wrap .cog-button--submit:hover,
+.contact-form-wrap button[type="submit"]:hover {
+    background: var(--gold-pill-hover) !important;
+}
+
+/* Help text beneath fields */
+.contact-form-wrap .cog-help-text {
+    font-size: 0.72rem !important;
+    color: var(--text-3, #6e6e73) !important;
+    margin-top: 4px !important;
+}
+
+/* Field spacing */
+.contact-form-wrap .cog-section,
+.contact-form-wrap .cog-row {
+    margin-bottom: 14px !important;
+}
+
+/* Confirmation message after submit */
+.contact-form-wrap .cog-confirmation {
+    font-size: 0.95rem !important;
+    color: var(--text) !important;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Validation error text */
+.contact-form-wrap .cog-error-message,
+.contact-form-wrap .cog-error {
+    font-size: 0.74rem !important;
+    color: #d33b3b !important;
+    margin-top: 4px;
+}
